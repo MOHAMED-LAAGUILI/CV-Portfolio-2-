@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Allow: /public/
+
+Sitemap: http://laaguili.epizy.com/sitemap.xml
