@@ -1,0 +1,47 @@
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+.portfolio-section {
+    padding: 60px 0;
+}
+.portfolio-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+.portfolio-item h3 {
+    font-size: 24px;
+    margin: 0;
+}
+.portfolio-item p {
+    font-size: 16px;
+}
