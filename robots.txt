@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /private/
 Allow: /public/
 
-Sitemap: http://laaguili.epizy.com/sitemap.xml
+Sitemap: https://laaguili.app.genez.io//sitemap.xml

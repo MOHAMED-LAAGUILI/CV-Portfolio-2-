@@ -4,8 +4,8 @@
     "description":"This is my portfolio website",
     "start_url":"/",
     "display":"standalone",
-    "background_color":"#5900b3",
-    "theme_color":"#5900b3",
+    "background_color":"#1450b3",
+    "theme_color":"#1450b3",
     "scope": ".",
     "icons":[
     {
