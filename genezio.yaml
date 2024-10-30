@@ -1,0 +1,10 @@
+frontend:
+    path: ./
+    publish: ""
+    scripts:
+        build: ""
+        deploy: ""
+    subdomain: mediumvioletred-none-tiger
+name: portfolio
+region: us-east-1
+yamlVersion: 2
