@@ -4,7 +4,7 @@ frontend:
     scripts:
         build: ""
         deploy: ""
-    subdomain: mediumvioletred-none-tiger
-name: portfolio
+    subdomain: laaguili-dev
+name: laaguili-dev
 region: us-east-1
 yamlVersion: 2
