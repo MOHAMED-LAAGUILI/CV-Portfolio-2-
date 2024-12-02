@@ -21,12 +21,12 @@ btn.addEventListener("click", function () {
         switch (value) {
             case "English":
                 swal("Success!", "Your CV in English will start downloading...", "success");
-                cvLink.href = "/assets/docs/CV-EN..pdf"; // Set the English CV link
+                cvLink.href = "./assets/docs/CV-EN.pdf"; // Set the English CV link
                 cvLink.click(); // Trigger download
                 break;
             case "Français":
                 swal("Success!", "Votre CV en français va commencer à télécharger...", "success");
-                cvLink.href = "/assets/docs/CV-FR .pdf"; // Set the French CV link
+                cvLink.href = "./assets/docs/CV-FR.pdf"; // Set the French CV link
                 cvLink.click(); // Trigger download
                 break;
             default:

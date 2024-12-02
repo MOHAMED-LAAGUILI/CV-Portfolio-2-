@@ -4,7 +4,7 @@ function updateFooterDate() {
     // Display the current year
     const year = now.getFullYear();
     document.getElementById('year').textContent = year;
-
+/*
     // Function to update the current time every second
     function updateCurrentTime() {
       const options = { weekday: 'long', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
@@ -20,6 +20,8 @@ function updateFooterDate() {
       now.setSeconds(now.getSeconds() + 1);
       updateCurrentTime();
     }, 1000);
+
+    */
   }
 
   // Call the function on page load
