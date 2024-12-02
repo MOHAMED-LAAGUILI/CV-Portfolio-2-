@@ -1,111 +1,34 @@
 
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-.resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #45505b;
-  }
-  
-  .resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid var(--primary);
-    position: relative;
-  }
-  
-  .resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color:var(--primary);
-    margin-bottom: 10px;
-  }
-  
-  .resume .resume-item h5 {
-    font-size: 16px;
-    background: #f7f8f9;
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .resume .resume-item ul {
-    padding-left: 20px;
-  }
-  
-  .resume .resume-item ul li {
-    padding-bottom: 10px;
-  }
-  
-  .resume .resume-item:last-child {
-    padding-bottom: 0;
-  }
-  
-  .resume .resume-item::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -9px;
-    top: 0;
-    background: #fff;
-    border: 2px solid var(--primary);
-  }
-  
-  /*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-/*
-.profile-lg{
-     filter: grayscale(100%);
-     transition: .7s;
+:root{
+  --primary:#7002ee;
+  --secondary:#4d01a5;
+  --primary-soft:#c174f5;
 }
-.profile-lg:hover{
-     filter: grayscale(0%);
-     transition: .7s;
-}
-*/
 
-.profile-lg{
-    border-radius: 15px;
-  }
-  .about .content h3 {
-    font-weight: 700;
-    font-size: 26px;
-    color: #728394;
-  }
-  
-  .about .content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about .content ul li {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .about .content ul strong {
-    margin-right: 10px;
-  }
-  
-  .about .content ul i {
-    font-size: 16px;
-    margin-right: 5px;
-    color: var(--primary);
-    line-height: 0;
-  }
-  
-  .about .content p:last-child {
-    margin-bottom: 0;
-  }
-  
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 650px; /* Fixed height for container */
+  perspective: 1000px; /* Depth effect */
+  overflow: hidden;
+  background: var(--primary); /* Optional placeholder background */
+}
+
+.slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Match container height */
+  object-fit: cover; /* Ensure images fill the container */
+  opacity: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg); /* Start flipped */
+  transition: transform 1s ease, opacity 1s ease; /* Smooth animation */
+}
+
+.slide-img.active {
+  opacity: 1;
+  transform: rotateY(0); /* Bring the active image forward */
+}

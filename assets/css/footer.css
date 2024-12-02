@@ -1,85 +1,70 @@
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+:root{
+  --primary:#7002ee;
+  --secondary:#4d01a5;
+  --primary-soft:#c174f5;
+}
+
+
+/* Footer Styles */
 #footer {
-    background: #f7f8f9;
-    color: #45505b;
-    font-size: 14px;
-    text-align: center;
-    padding: 30px 0;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+}
+
+#footer .copyright {
+  margin-bottom: 5px;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+
+/* Video Background */
+#footer-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+ 
+}
+
+/* Content Overlay */
+#footer .container {
+  position: relative;
+  z-index: 1; /* Ensures content is above the video */
+}
+
+/* Soft UI styles */
+#footer {
+  background: transparent !important;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
   }
-  
-  #footer h3 {
-    font-size: 36px;
-    font-weight: 700;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    padding: 0;
-    margin: 0 0 15px 0;
+  50% {
+    transform: translateY(-10px);
   }
-  
-  #footer p {
-    font-size: 15;
-    font-style: italic;
-    padding: 0;
-    margin: 0 0 40px 0;
-  }
-  
-  #footer .social-links {
-    margin: 0 0 40px 0;
-  }
-  
-  #footer .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  
-  #footer .social-links a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  #footer .copyright {
-    margin: 0 0 5px 0;
-  }
-  
-  #footer .credits {
-    font-size: 13px;
-  }
-    /* Soft UI styles for the footer */
-  #footer {
-    background: linear-gradient(145deg, #f31b0c, #0972e2) !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    transition: all 0.3s ease;
-  }
-  #footer:hover {
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
-  }
-  .floating {
-    animation: float 3s ease-in-out infinite;
-  }
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-  .social-links a {
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  .social-links a:hover {
-    color: #ffcc00; /* Change to a desired hover color */
-  }
+}
+

@@ -1,3 +1,12 @@
+:root{
+  --primary:#7002ee;
+  --secondary:#4d01a5;
+  --primary-soft:#c174f5;
+}
+
+
+
+
 #preloader {
   position: fixed;
   top: 0;
@@ -5,7 +14,7 @@
   right: 0;
   bottom: 0;
   z-index: 9999;
-  background: #fff;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;

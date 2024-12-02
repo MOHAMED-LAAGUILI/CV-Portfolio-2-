@@ -1,0 +1,43 @@
+:root{
+    --primary:#7002ee;
+    --secondary:#4d01a5;
+    --primary-soft:#c174f5;
+  }
+/*--------------------------------------------------------------
+# Scroll-Bar
+--------------------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 10px; /* Reduced width for a thinner scrollbar */
+    height: 10px; /* Reduced height for horizontal scrollbar */
+  }
+  
+  ::-webkit-scrollbar-button {
+    width: 0; /* Hidden buttons for a cleaner look */
+    height: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background:  var(--primary); /* Primary color for the scrollbar thumb */
+    border-radius: 10px; /* Smooth, rounded edges */
+
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000000; /* Darker shade on hover */
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background:  var(--primary); /* Active shade for feedback */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light gray track for subtle contrast */
+    border-radius: 10px;
+  }
+  
+ 
+  
+  ::-webkit-scrollbar-corner {
+    background: transparent; /* Corner remains invisible */
+  }
+  

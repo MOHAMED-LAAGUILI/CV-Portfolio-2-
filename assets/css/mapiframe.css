@@ -1,3 +1,9 @@
+:root{
+    --primary:#7002ee;
+    --secondary:#4d01a5;
+    --primary-soft:#c174f5;
+  }
+
 iframe{
     border-radius: 20px;
    

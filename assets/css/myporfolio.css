@@ -1,3 +1,10 @@
+:root{
+  --primary:#7002ee;
+  --secondary:#4d01a5;
+  --primary-soft:#c174f5;
+}
+
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -155,75 +162,8 @@
     right: 15px;
   }
   
-  /*--------------------------------------------------------------
-  # Portfolio Details
-  --------------------------------------------------------------*/
-  .portfolio-details {
-    padding-top: 40px;
-  }
   
-  .portfolio-details .portfolio-details-slider img {
-    width: 100%;
-  }
-  
-  .portfolio-details .portfolio-details-slider .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid var(--primary);
-  }
-  
-  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: var(--primary);
-  }
-  
-  .portfolio-details .portfolio-info {
-    padding: 30px;
-    box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
-  }
-  
-  .portfolio-details .portfolio-info h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .portfolio-details .portfolio-info ul {
-    list-style: none;
-    padding: 0;
-    font-size: 15px;
-  }
-  
-  .portfolio-details .portfolio-info ul li+li {
-    margin-top: 10px;
-  }
-  
-  .portfolio-details .portfolio-description {
-    padding-top: 30px;
-  }
-  
-  .portfolio-details .portfolio-description h2 {
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  .portfolio-details .portfolio-description p {
-    padding: 0;
-  }
-  
-body {
-    background-color: #f8f9fa;
-    color: #343a40;
-}
+
 .portfolio-section {
     padding: 60px 0;
 }
@@ -280,7 +220,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(97, 4, 185, 0.7);
     opacity: 0;
     transition: opacity 0.4s ease;
   }
@@ -291,3 +231,4 @@ body {
     width: 100%;
     height: auto;
   }
+  

@@ -1,0 +1,205 @@
+:root{
+    --primary:#7002ee;
+    --secondary:#4d01a5;
+    --primary-soft:#c174f5;
+  }
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+/*Hero*/
+#hero {
+    width: 100%;
+    height: 100vh;
+  /*
+  background: url("../") top right no-repeat;
+  */
+    background-size: cover;
+    position: relative;
+  }
+  
+  @media (min-width: 992px) {
+    #hero {
+      padding-left: 160px;
+    }
+  }
+  
+  #hero:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero h1 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #ffffff;
+  }
+  
+  .hero-text{
+    background-color: hsla(0, 0%, 0%, 0.637);
+    padding: 20px 0;
+    border-radius: 15px;
+
+  }
+  #hero p {
+    color: #ffffff;
+    margin: 15px 0 0 0;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #hero p span {
+    color: var(--primary-soft);
+    letter-spacing: 1px;
+  }
+  
+  #hero .social-links {
+    margin-top: 30px;
+  }
+  
+  #hero .social-links a {
+    font-size: 24px;
+    display: inline-block;
+    color: #45505b;
+    line-height: 1;
+    margin-right: 20px;
+    transition: 0.3s;
+  }
+
+  
+  
+  @media (max-width: 992px) {
+    #hero {
+      text-align: center;
+    }
+  
+    #hero h1 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  
+    #hero p {
+      margin-top: 10px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  #hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure the video stays behind content */
+  }
+  
+ 
+  /*Extra */
+/*--------------------------------------------------------------
+# Social media
+--------------------------------------------------------------*/
+
+.facebook,
+.linkedin,
+.github,
+.cell-phone,
+.whatsapp {
+  font-size: 35px !important;
+  transition: 0.7s !important;
+}
+
+.facebook{
+  background-color: #0066ff;
+  color: #ffffff !important;
+  border-radius: 50px;
+  transition: .7s;
+  padding: 4px;
+}
+
+.linkedin{
+  background-color: #1e55a7;
+  color: #ffffff !important;
+  border-radius: 4px;
+  transition: .7s;
+  padding: 3px;
+}
+
+.github{
+  background-color: #000000;
+  color: #ffffff !important;
+  border-radius: 50px;
+  transition: .7s;
+  padding: 3px;
+}
+
+.whatsapp{
+  background-color: #0fd35a;
+  color: #ffffff !important;
+  border-radius: 50px;
+  transition: .7s;
+  padding: 3px;
+}
+
+.cell-phone{
+  background-color: #0a50e9;
+  color: #ffffff !important;
+  border-radius: 5px;
+  transition: .7s;
+  padding: 3px;
+}
+
+/*--------------------------------------------------------------
+# Hero Name GRADIENT
+--------------------------------------------------------------*/
+.b::first-letter {
+    font-weight: 200px !important;
+    font-family: "Sofia", sans-serif !important;
+  }
+  
+  .myName {
+    background: linear-gradient(to right,
+    #ffffff 20%, #6f00ff 40%);
+    background-size: 200% auto;
+    color: #ffffff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  
+  
+/* Hero Section Button Styling */
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Semi-transparent border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(10px); /* Apply blur to the background */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hero-button:hover {
+ 
+    transform: scale(1.05); /* Slightly scale up the button */
+  }
+  
