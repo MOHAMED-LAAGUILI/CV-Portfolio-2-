@@ -95,6 +95,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    
   }
   
   #hero-video {
@@ -172,7 +173,7 @@
   
   .myName {
     background: linear-gradient(to right,
-    #ffffff 20%, #6f00ff 40%);
+    #ffffff 20%, #cea9fa 40%);
     background-size: 200% auto;
     color: #ffffff;
     background-clip: text;
@@ -188,16 +189,23 @@
     padding: 10px 20px;
     font-size: 13px;
     font-weight: 600;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0.6); /* Semi-transparent border */
     border-radius: 5px; /* Rounded corners */
-    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    background-color: rgba(255, 255, 255, 0.158); /* Transparent background */
     backdrop-filter: blur(10px); /* Apply blur to the background */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     transition: all 0.3s ease-in-out;
   }
   
+  .hero-icon-button{
+    font-size: 25px;
+    padding-right:10px ;
+    font-weight: 600;
+    color: #ffffff;
+    
+  }
   .hero-button:hover {
  
     transform: scale(1.05); /* Slightly scale up the button */

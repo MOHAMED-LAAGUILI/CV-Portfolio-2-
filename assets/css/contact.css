@@ -130,20 +130,32 @@
 .contact  .php-email-form button[type=submit]:hover {
   background:  var(--primary);
 }
-.contact-btn  {
+#my-form-button {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 13px;
+  font-size: 15px;
+  box-shadow: #000000 2px 2px;
   font-weight: 600;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.6); /* Semi-transparent border */
+  border: 1px solid white; /* Semi-transparent border */
   border-radius: 5px; /* Rounded corners */
-  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+  background-color: var(--primary); /* Transparent background */
   backdrop-filter: blur(10px); /* Apply blur to the background */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   transition: all 0.3s ease-in-out;
 }
+
+#my-form-button:hover {
+  box-shadow: #8705dd 2px 2px;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid rgb(0, 0, 0); /* Semi-transparent border */
+  border-radius: 5px; /* Rounded corners */
+  background-color:white; 
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
