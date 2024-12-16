@@ -9,6 +9,7 @@
 .contact .info {
   width: 100%;
   background: #fff;
+
 }
 
 .contact .info i {
@@ -144,6 +145,7 @@
   backdrop-filter: blur(10px); /* Apply blur to the background */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   transition: all 0.3s ease-in-out;
+  margin-bottom: 50px;
 }
 
 #my-form-button:hover {

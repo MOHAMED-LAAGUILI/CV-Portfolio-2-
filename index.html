@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
-
   <!-- Basic meta -->
   <title>MOHAMED LAAGUILI | WEB DEVELOPER</title>
   <meta charset="utf-8" />
@@ -49,6 +47,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css" />
 
+  <!-- OpenLayers CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v6.15.0/ol.css" />
+
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/hero.css" />
@@ -64,24 +65,7 @@
   <link rel="stylesheet" href="./assets/css/testimonials.css" />
   <link rel="stylesheet" href="./assets/css/footer.css" />
   <link rel="stylesheet" href="./assets/css/scrollbar.css" />
-
-
-  <!--Start of Tawk.to Script-->
-  <!--Chat bot-->
-  <!--
-    <script defer type="text/javascript">
-      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-      (function () {
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/6474b0f3ad80445890efb868/1h1jt6ejc';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    </script>
-    -->
-  <!--End of Tawk.to Script-->
+  <link rel="stylesheet" href="./assets/css/iframe.css" />
 </head>
 <body>
   <!-- ======= SideBar Button  ======= -->
@@ -110,7 +94,7 @@
       and I'am
       <span class="typed fw-bolder"
         data-typed-items="Web Designer and Developer, an IT Specialist, also a Freelancer"></span>
-      <br>at your service, just hit the call <i class="fa fa-phone-flip"></i>
+      <br>at your service, just hit the call
     </p>
     <div class="social-links mb-3">
       <a href="https://www.facebook.com/said.agili.7" class="facebook shadow " style="color: rgb(33, 100, 226)"
@@ -125,12 +109,7 @@
         target="_blank">
         <i class="bi-github"></i>
       </a>
-      <a href="https://wa.me/+212689770809" class="whatsapp shadow " style="color: green">
-        <i class="bi-whatsapp"></i>
-      </a>
-      <a href="tel:+212689770809" class="cell-phone shadow" style="color: rgb(2, 86, 182)">
-        <i class="bi-phone"></i>
-      </a>
+      
     </div>
     <button class="hero-button" id="download-btn" role="button" aria-label="Download Resume">
       <i class="bi bi-cloud-download-fill hero-icon-button"></i>
@@ -145,8 +124,10 @@
 
 
 <!-- ======= MAIN CONTENT ======= -->
+<div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 999;"></div>
   <main id="main">
     
+
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -243,24 +224,23 @@
     </section>
     <!-- End achievement/Facts Section -->
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Digital Skills</h2>
-          <p></p>
-          <img class="testimg" src="/assets/img/lounge-man-working-on-web-design.gif" alt="" width="200px">
-          <div class="main-title position-relative">
-            Here's what I know in web development
-          </div>
-        </div>
+<!-- ======= Skills Section ======= -->
+<section id="skills" class="skills section-bg py-16">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center mb-12">
+      <h2 class="text-4xl font-bold">Digital Skills</h2>
+      <img class=" mx-auto rounded-full border-4 border-primary " src="/assets/img/lounge-man-working-on-web-design.gif" alt="Lounge Man Working on Web Design" width="220px">
+      <p class="text-lg text-gray-600 mb-4">Here’s an overview of my expertise in web development <br> and What I’m proficient in</p>
+    </div>
 
-        <div class="row skills-content" id="skills-container">
-          <!-- Skills will be dynamically inserted here from the skill js-->
-        </div>
-      </div>
-    </section>
-    <!-- End Skills Section -->
+    <!-- Skills Container (where dynamic cards will be inserted) -->
+    <div id="skills-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-12 px-4">
+      <!-- Skill cards will be dynamically added here -->
+    </div>
+  </div>
+</section>
+
+<!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
@@ -451,13 +431,13 @@
     </section>
     <!-- End Contact Section -->
 
-    <!-- MAP 
-    <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d744.3987549184914!2d-5.905042157601587!3d34.99100365495278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sma!4v1733152250337!5m2!1sen!2sma" 
-    width="100%" 
-    height="600"
-     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     End of MAP -->
+
+    <!-- Map Container -->  
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d744.3987549184914!2d-5.905042157601587!3d34.99100365495278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sma!4v1733152250337!5m2!1sen!2sma"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
   
   </main>
 <!-- END MAIN CONTENT -->
@@ -505,6 +485,32 @@
     <i class="fs-1 bi bi-arrow-up-short"></i>
   </a>
 
+
+
+  
+  <div class="phone-icon">
+    <!-- Phone Dialer link -->
+    <a href="tel:+212689770809" class="cell-phone">
+      <i class="fa fa-phone-flip"></i>
+        </a>
+  </div>
+
+  <div class="whatsapp-icon">
+    <!-- WhatsApp link -->
+    <a href="https://wa.me/+212689770809" target="_blank" aria-label="Contact us on WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp icon">
+    </a>
+  </div>
+  
+  
+
+      
+  </div>
+  
+
+
+    <!-- Particles Background -->
+
   <!-- Vendor JS Files -->
   <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
@@ -519,7 +525,8 @@
     crossorigin="anonymous"></script>
   <script  src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
   <script  src="./assets/js/purecounter_vanilla.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  
   <!-- Template Main JS Files -->
   <script  src="./assets/js/main.js"></script>
   <script  src="./assets/js/nav.js"></script>
@@ -535,7 +542,12 @@
   <script  src="./assets/js/AlertForm.js"></script>
   <script  src="./assets/js/Footer.js"></script>
 
+    <!-- Particals js must be bellow the source: /particles.min.js and the main.js-->
+  <script  src="./assets/js/HeroParticals.js"></script>
+  
 
+
+  
   <!-- Service Worker Caller of PWA -->
   <script >
     if ('serviceWorker' in navigator) {

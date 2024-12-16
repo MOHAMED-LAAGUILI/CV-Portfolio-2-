@@ -117,7 +117,6 @@
 .facebook,
 .linkedin,
 .github,
-.cell-phone,
 .whatsapp {
   font-size: 35px !important;
   transition: 0.7s !important;
@@ -155,13 +154,7 @@
   padding: 3px;
 }
 
-.cell-phone{
-  background-color: #0a50e9;
-  color: #ffffff !important;
-  border-radius: 5px;
-  transition: .7s;
-  padding: 3px;
-}
+
 
 /*--------------------------------------------------------------
 # Hero Name GRADIENT

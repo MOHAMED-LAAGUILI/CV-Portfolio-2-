@@ -1,61 +1,59 @@
 const skills = [
-    { name: "HTML - CSS", percentage: 85, icons: ["fa-html5", "fa-css3-alt"], colors: ["#db671a", "#1c5fd4"] },
-    { name: "JavaScript (ES6+)", percentage: 70, icons: ["fa-js"], colors: ["#cdc70e"] },
-    { name: "React (Vite/Next.js)", percentage: 65, icons: ["fa-react"], colors: ["#4e80d6"] },
-    { name: "Node.js (Express)", percentage: 60, icons: ["fa-node-js"], colors: ["#4e80d6"] },
-    { name: "Tailwind CSS", percentage: 65, icons: [], colors: [] },
-    { name: "PHP", percentage: 50, icons: ["fa-php"], colors: ["#5c60cc"] },
-    { name: "MySQL", percentage: 70, icons: ["fas fa-database"], colors: ["#EA8C10"] },
-    { name: "MongoDB", percentage: 50, icons: ["fas fa-database"], colors: ["#00684A"] },
-    { name: "Web Automation (Puppeteer)", percentage: 40, icons: [], colors: [] },
-    { name: "NPM & Git", percentage: 60, icons: ["fa-git", "fa-npm"], colors: ["#f68709", "#d8400e"] },
-    { name: "C (Algorithms, Data Structures)", percentage: 50, icons: [], colors: [] },
-  ];
-  
-  const skillsContainer = document.getElementById("skills-container");
-  
-  skills.forEach((skill, index) => {
-    const colDiv = document.createElement("div");
-    colDiv.className = "col-lg-6";
-  
-    const progressDiv = document.createElement("div");
-    progressDiv.className = "progress";
-  
-    const skillSpan = document.createElement("span");
-    skillSpan.className = "skill";
-  
-    skill.icons.forEach((icon, idx) => {
-      const iconElem = document.createElement("i");
-      iconElem.className = `fa-brands ${icon}`;
-      iconElem.style.color = skill.colors[idx];
-      iconElem.style.fontSize = "30px";
-      skillSpan.appendChild(iconElem);
-    });
-  
-    skillSpan.innerHTML += ` ${skill.name} <i class="val">${skill.percentage}%</i>`;
-  
-    const progressBarWrap = document.createElement("div");
-    progressBarWrap.className = "progress-bar-wrap";
-  
-    const progressBar = document.createElement("div");
-    progressBar.className = "progress-bar";
-    progressBar.setAttribute("role", "progressbar");
-    progressBar.setAttribute("aria-valuenow", skill.percentage);
-    progressBar.setAttribute("aria-valuemin", "0");
-    progressBar.setAttribute("aria-valuemax", "100");
-    progressBar.style.width = `${skill.percentage}%`;
-  
-    progressBarWrap.appendChild(progressBar);
-    progressDiv.appendChild(skillSpan);
-    progressDiv.appendChild(progressBarWrap);
-    colDiv.appendChild(progressDiv);
-  
-    if (index % 2 === 0) {
-      // Add a new row for every two items
-      const rowDiv = document.createElement("div");
-      rowDiv.className = "row skills-content";
-      skillsContainer.appendChild(rowDiv);
-    }
-    skillsContainer.lastElementChild.appendChild(colDiv);
-  });
-  
+  { name: "HTML", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/html5.svg" },
+  { name: "CSS", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/css3.svg" },
+  { name: "Tailwind CSS", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/tailwindcss.svg" },
+  { name: "Bootstrap", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/bootstrap.svg" },
+  { name: "JavaScript (ES6+)", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/javascript.svg" },
+  { name: "jQuery", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/jquery.svg" },
+  { name: "React", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/react.svg" },
+  { name: "Vite", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/vite.svg" },
+  { name: "Next.js", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/nextdotjs.svg" },
+  { name: "Node.js", logo: "https://tse1.mm.bing.net/th?id=OIP.LJtM3-xO2hKLEyuu0BSotgHaC8&pid=Api&P=0&h=180" },
+  { name: "Express.js", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/express.svg" },
+  { name: "Django", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/django.svg" },
+  { name: "PHP", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/php.svg" },
+  { name: "REST APIs", logo: "https://static.vecteezy.com/system/resources/previews/007/607/460/non_2x/api-icon-design-illustration-free-vector.jpg" },
+  { name: "JSON Server", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/json.svg" },
+  { name: "WebSockets", logo: "https://tse1.mm.bing.net/th?id=OIP.3HHPvqjSjQM7eJATq_QCOgHaHa&pid=Api&P=0&h=180" },
+  { name: "MySQL", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/mysql.svg" },
+  { name: "T-SQL", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/microsoftsqlserver.svg" },
+  { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/postgresql.svg" },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/mongodb.svg" },
+  { name: "Firebase", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/firebase.svg" },
+  { name: "Puppeteer", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/puppeteer.svg" },
+  { name: "C (Algorithms, Data Structures)", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/c.svg" },
+  { name: "UML", logo: "https://tse4.mm.bing.net/th?id=OIP.u2itAc25IbiWDOvqmBv-4QHaHa&pid=Api&P=0&h=180" },
+  { name: "NPM", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/npm.svg" },
+  { name: "Git", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/git.svg" },
+  { name: "Apache", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/apache.svg" },
+  { name: "TypeScript", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/typescript.svg" },
+  { name: "JWT", logo: "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/jsonwebtokens.svg" },
+  { name: "Bcrypt", logo: "https://tse1.mm.bing.net/th?id=OIP.z7S9hZDYhxk208RoTNvPGQAAAA&pid=Api&P=0&h=180" }
+
+];
+
+const skillsContainer = document.getElementById("skills-container");
+
+skills.forEach((skill) => {
+  const skillCard = document.createElement("div");
+  skillCard.classList.add("skill-card");
+
+  const skillLogo = document.createElement("img");
+  skillLogo.src = skill.logo;
+  skillLogo.alt = `${skill.name} logo`;
+  skillLogo.classList.add("skill-logo");
+
+  const skillName = document.createElement("div");
+  skillName.classList.add("skill-name");
+  skillName.innerText = skill.name;
+
+  const tooltip = document.createElement("div");
+  tooltip.classList.add("tooltip");
+  tooltip.innerText = `${skill.name} - A powerful technology in modern web development.`;
+
+  skillCard.appendChild(skillLogo);
+  skillCard.appendChild(skillName);
+  skillCard.appendChild(tooltip);
+
+  skillsContainer.appendChild(skillCard);
+});
