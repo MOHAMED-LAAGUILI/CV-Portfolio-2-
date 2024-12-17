@@ -7,20 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="version" content="2.0" />
   <meta name="theme-color" content="#7002EE" />
-  <meta name="color-scheme" content="dark light">
+
+   <!-- Link to the Manifest file -->
+   <link rel="manifest" href="./manifest.json">
 
   <!-- SEO and verification -->
-  <meta name="description" content="Developer; MOHAMED-LAAGUILI, Category: Portfolio" />
-  <meta name="keywords" content="mohamed laaguili, MOHAMED, LAAGUILI, portfolio, laaguili.com" />
-  <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="q7S9IAtB9oaCHCkscATDzBLfrlpVu3faGidr-kurVJw" />
-  <meta name="yandex-verification" content="8016fd12477a5213" />
+  <meta name="description" content="Developer: MOHAMED LAAGUILI, Category: Portfolio" />
+  <meta name="keywords" content="mohamed laaguili, MOHAMED, LAAGUILI, laaguili.com" />
 
   <!-- Open Graph for social media -->
   <meta property="og:title" content="MOHAMED-LAAGUILI" />
-  <meta property="og:description" content="Portfolio of a developer" />
-  <meta property="og:image" content="https://laaguili.app.genez.io/assets/img/favicon.png" />
-  <meta property="og:url" content="https://laaguili.app.genez.io/" />
+  <meta property="og:description" content="Full Stack Web Developer" />
+  <meta property="og:image" content="https://laaguili-dev.app.genez.io/assets/img/favicon.png" />
+  <meta property="og:url" content="https://laaguili-dev.app.genez.io/" />
   <meta property="og:type" content="portfolio" />
 
   <!-- Favicon -->
@@ -46,7 +45,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css" />
-
+<!-- Hover.css library -->
+<link href="https://cdn.jsdelivr.net/npm/hover.css/css/hover-min.css" rel="stylesheet"> 
+  
   <!-- OpenLayers CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v6.15.0/ol.css" />
 
@@ -65,7 +66,9 @@
   <link rel="stylesheet" href="./assets/css/testimonials.css" />
   <link rel="stylesheet" href="./assets/css/footer.css" />
   <link rel="stylesheet" href="./assets/css/scrollbar.css" />
-  <link rel="stylesheet" href="./assets/css/iframe.css" />
+  <link rel="stylesheet" href="./assets/css/cursor.css" />
+
+  
 </head>
 <body>
   <!-- ======= SideBar Button  ======= -->
@@ -229,16 +232,18 @@
   <div class="container" data-aos="fade-up">
     <div class="section-title text-center mb-12">
       <h2 class="text-4xl font-bold">Digital Skills</h2>
-      <img class=" mx-auto rounded-full border-4 border-primary " src="/assets/img/lounge-man-working-on-web-design.gif" alt="Lounge Man Working on Web Design" width="220px">
-      <p class="text-lg text-gray-600 mb-4">Here’s an overview of my expertise in web development <br> and What I’m proficient in</p>
+      <img class="mx-auto rounded-full border-4 border-primary" src="/assets/img/lounge-man-working-on-web-design.gif" alt="Lounge Man Working on Web Design" width="220px">
+      <p class="text-lg text-gray-600 mb-4">Here’s an overview of my expertise in web development <br> and what I’m proficient in</p>
     </div>
 
-    <!-- Skills Container (where dynamic cards will be inserted) -->
+    <!-- Skills Container -->
     <div id="skills-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-12 px-4">
-      <!-- Skill cards will be dynamically added here -->
+      <!-- Skill cards will be dynamically inserted here -->
     </div>
   </div>
 </section>
+<!-- End Skills Section -->
+
 
 <!-- End Skills Section -->
 
@@ -322,10 +327,9 @@
     </section>
     <!-- End Services Section -->
 
-    <!-- Start of Portfolio Section -->
-   <section id="portfolio" class="portfolio-section text-center py-5 bg-light">
+<!-- Start of Portfolio Section -->
+<section id="portfolio" class="portfolio-section text-center py-5 bg-light">
   <div class="container">
-
     <!-- Section Title -->
     <div class="section-title mb-5">
       <h2 class="display-4 text-uppercase fw-bold">My Portfolio</h2>
@@ -333,13 +337,15 @@
     </div>
 
     <!-- Portfolio Items Grid -->
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="portfolio-items">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5" id="portfolio-items">
       <!-- Portfolio items will be inserted here dynamically -->
     </div>
-
   </div>
+  <span id="my-portfolio-button" >
+    <i class="bi bi-stack"></i> More projects soon ...
+  </span>
 </section>
-    <!-- End of Portfolio Section -->
+<!-- End of Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
@@ -432,12 +438,6 @@
     <!-- End Contact Section -->
 
 
-    <!-- Map Container -->  
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d744.3987549184914!2d-5.905042157601587!3d34.99100365495278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sma!4v1733152250337!5m2!1sen!2sma"
-      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-
   
   </main>
 <!-- END MAIN CONTENT -->
@@ -478,7 +478,11 @@
   <!-- preloader -->
   <div id="preloader"></div>
 
-
+    <!-- Cursor -->
+    <div>
+      <div id="cursor" class="cursor"></div>
+      <div id="cursor-ring" class="cursor-ring"></div>
+    </div>
   <!-- Back to top btn -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center shadow p-4 bottom-10 start-0"
     style="margin-left: 100px;">
@@ -488,28 +492,25 @@
 
 
   
-  <div class="phone-icon">
+  <div class="contact-icons"
+  >
     <!-- Phone Dialer link -->
-    <a href="tel:+212689770809" class="cell-phone">
-      <i class="fa fa-phone-flip"></i>
-        </a>
-  </div>
-
-  <div class="whatsapp-icon">
+    <div class="phone-icon">
+      <a href="tel:+212689770809" class="cell-phone">
+        <i class="fa fa-phone-flip"></i>
+      </a>
+    </div>
+  
     <!-- WhatsApp link -->
-    <a href="https://wa.me/+212689770809" target="_blank" aria-label="Contact us on WhatsApp">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp icon">
-    </a>
+    <div class="whatsapp-icon">
+      <a href="https://wa.me/+212689770809" target="_blank" aria-label="Contact us on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp icon">
+      </a>
+    </div>
+  </div>
+     
   </div>
   
-  
-
-      
-  </div>
-  
-
-
-    <!-- Particles Background -->
 
   <!-- Vendor JS Files -->
   <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -526,6 +527,7 @@
   <script  src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
   <script  src="./assets/js/purecounter_vanilla.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/custom-cursor-js@1.0.0/dist/cursor.min.js"></script>
   
   <!-- Template Main JS Files -->
   <script  src="./assets/js/main.js"></script>
@@ -545,25 +547,42 @@
     <!-- Particals js must be bellow the source: /particles.min.js and the main.js-->
   <script  src="./assets/js/HeroParticals.js"></script>
   
+<!-- cursor -->
+<script  src="./assets/js/cursor.js"></script>
 
 
-  
-  <!-- Service Worker Caller of PWA -->
-  <script >
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./service-worker.js')
-          .then(registration => {
-            console.log('Service Worker registered successfully:', registration);
-          })
-          .catch(error => {
-            console.error('Service Worker registration failed:', error);
-          });
-      });
-    } else {
-      console.error('Service Worker not supported');
+
+    
+  <!-- Service Worker Caller for PWA -->
+  <script>
+    try {
+      // Check if Service Worker is supported by the browser
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          try {
+            // Attempt to register the service worker
+            navigator.serviceWorker.register('./assets/js/service-worker.js')
+              .then(registration => {
+                console.log('Service Worker registered successfully:', registration);
+              })
+              .catch(err => {
+                // Handle failure during service worker registration
+                console.error('Service Worker registration failed:', err);
+              });
+          } catch (registrationError) {
+            // Handle any errors that happen during the service worker registration process
+            console.error('Error during service worker registration:', registrationError);
+          }
+        });
+      } else {
+        // Service Worker is not supported
+        console.error('Service Worker not supported in this browser.');
+      }
+    } catch (error) {
+      // Catch any unexpected errors that might occur in the entire script
+      console.error('An unexpected error occurred during script execution:', error);
     }
-  </script>
+  </script>  
+  
 </body>
-
 </html>

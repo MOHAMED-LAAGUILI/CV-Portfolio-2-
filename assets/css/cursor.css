@@ -1,0 +1,49 @@
+    :root {
+      /* Define color and size variables */
+      --cursor-size: 24px;
+      --cursor-ring-size: 50px;
+      --flare-size: 12px;
+      --cursor-color: #7002ee;
+      --cursor-ring-color: rgba(112, 2, 238, 0.4);
+      --flare-color: rgba(112, 2, 238, 0.7);
+      --cursor-shadow: rgba(112, 2, 238, 0.5);
+      --transition-duration: 0.3s;
+      --flare-transition-duration: 0.3s;
+      --flare-opacity-duration: 0.3s;
+    }
+
+    /* Custom cursor */
+    .cursor {
+      position: absolute;
+      width: var(--cursor-size);
+      height: var(--cursor-size);
+      background-color: var(--cursor-color);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.2s ease, background-color var(--transition-duration) ease;
+      box-shadow: 0 0 20px var(--cursor-shadow);
+    }
+
+    /* Cursor outer ring for layering effect */
+    .cursor-ring {
+      position: absolute;
+      width: var(--cursor-ring-size);
+      height: var(--cursor-ring-size);
+      border: 2px solid var(--cursor-ring-color);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.2s ease, border var(--transition-duration) ease;
+    }
+
+    /* Short tail flare effect */
+    .cursor-flare {
+      position: absolute;
+      width: var(--flare-size);
+      height: var(--flare-size);
+      background-color: var(--flare-color);
+      border-radius: 50%;
+      pointer-events: none;
+      transition: transform 0.1s ease, opacity var(--flare-opacity-duration) ease, width var(--flare-transition-duration) ease, height var(--flare-transition-duration) ease;
+    }

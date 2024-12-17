@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /private/
-Allow: /public/
-
-Sitemap: https://laaguili-dev.app.genez.io//sitemap.xml

@@ -1,11 +1,11 @@
 {
     "name":"LAAGUILI MOHAMED",
     "short_name":"ML",
-    "description":"This is my portfolio website",
+    "description":"Full Stack Web Developer",
     "start_url":"/",
     "display":"standalone",
-    "background_color":"#1450b3",
-    "theme_color":"#1450b3",
+    "background_color":"#7002ee",
+    "theme_color":"#7002ee",
     "scope": ".",
     "icons":[
     {

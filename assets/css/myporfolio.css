@@ -232,3 +232,31 @@
     height: auto;
   }
   
+
+  #my-portfolio-button {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    box-shadow: #000000 2px 2px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid white; /* Semi-transparent border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: var(--primary); /* Transparent background */
+    backdrop-filter: blur(10px); /* Apply blur to the background */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 50px;
+  }
+  
+  #my-portfolio-button:hover {
+    box-shadow: #8705dd 2px 2px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0); /* Semi-transparent border */
+    border-radius: 5px; /* Rounded corners */
+    background-color:white; 
+  }

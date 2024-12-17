@@ -116,8 +116,7 @@
 
 .facebook,
 .linkedin,
-.github,
-.whatsapp {
+.github {
   font-size: 35px !important;
   transition: 0.7s !important;
 }
@@ -146,13 +145,6 @@
   padding: 3px;
 }
 
-.whatsapp{
-  background-color: #0fd35a;
-  color: #ffffff !important;
-  border-radius: 50px;
-  transition: .7s;
-  padding: 3px;
-}
 
 
 
@@ -166,7 +158,7 @@
   
   .myName {
     background: linear-gradient(to right,
-    #ffffff 20%, #cea9fa 40%);
+    #ffffff 20%, #ffffff 40%);
     background-size: 200% auto;
     color: #ffffff;
     background-clip: text;

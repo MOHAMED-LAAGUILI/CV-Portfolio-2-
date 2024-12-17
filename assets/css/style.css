@@ -357,15 +357,15 @@ section {
 --------------------------------------------------------------*/
 .whatsapp-icon {
   position: fixed;
-  bottom: 100px;  /* Adjust position for WhatsApp icon */
-  right: 20px;   /* Fixed on the right side */
+  bottom: 105px;  /* Adjust position for WhatsApp icon */
+  right: 20px;    /* Fixed on the right side */
   background: linear-gradient(135deg, #128C7E, #25D366); /* Elegant gradient */
   border-radius: 50%;
   padding: 15px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);  /* Softer shadow for depth */
   cursor: pointer;
   z-index: 1000;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -374,8 +374,8 @@ section {
 
 /* WhatsApp icon image */
 .whatsapp-icon img {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -385,6 +385,7 @@ section {
   transform: scale(1.1) rotate(15deg);  /* Slight tilt for elegance */
   box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.5);  /* Stronger shadow on hover */
   opacity: 0.9;  /* Slight opacity change on hover */
+  background-color: #075E54; /* Slight change in background color on hover */
 }
 
 /* Focus state for accessibility */
@@ -395,16 +396,16 @@ section {
 
 /* Hover effect on WhatsApp logo */
 .whatsapp-icon:hover img {
-  transform: scale(1.1);  /* Slight scale for icon */
+  transform: scale(1.2);  /* Slight scale for icon */
 }
 
-/* Tooltip (optional) */
+/* Tooltip */
 .whatsapp-icon::after {
   content: "Whatsapp +212689770809";
   position: absolute;
   bottom: 70px;
   right: 10px;
-  background-color: var(--primary);
+  background-color: #25D366;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -427,25 +428,26 @@ section {
   bottom: 20px;  /* Adjust position for phone icon */
   right: 22px;   /* Fixed on the right side */
   background: linear-gradient(135deg, #0a50e9, #0a50e9); /* Elegant gradient */
-  border-radius: 10px;
+  border-radius: 50%;   /* Ensure it's perfectly round */
   padding: 15px;
+  width: 60px;    /* Set a specific width */
+  height: 60px;   /* Set a specific height */
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);  /* Softer shadow for depth */
   cursor: pointer;
   z-index: 1000;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: scale(1);  /* Initial state */
 }
 
-
-
 /* Hover effect for the Phone icon */
 .phone-icon:hover {
   transform: scale(1.1) rotate(15deg);  /* Slight tilt for elegance */
   box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.5);  /* Stronger shadow on hover */
   opacity: 0.9;  /* Slight opacity change on hover */
+  background-color: #0052D4; /* Change background color on hover */
 }
 
 /* Focus state for accessibility */
@@ -454,14 +456,13 @@ section {
   transform: scale(1.05); /* Slight zoom effect when focused */
 }
 
-
-/* Tooltip (optional) */
+/* Tooltip */
 .phone-icon::after {
   content: "Call me +212689770809";
   position: absolute;
   bottom: 50px;
   right: 10px;
-  background-color: var(--primary);
+  background-color: #0a50e9;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -475,7 +476,8 @@ section {
   opacity: 1;
 }
 
-.cell-phone{
+/* Cell phone button */
+.cell-phone {
   background-color: #0a50e9;
   color: #ffffff !important;
   border-radius: 5px;
@@ -483,3 +485,43 @@ section {
   padding: 3px;
   font-size: larger;
 }
+
+/*--------------------------------------------------------------
+# Site cursor
+--------------------------------------------------------------*/
+
+    /* Custom cursor */
+    .cursor {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-color: #7002ee;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      box-shadow: 0 0 20px rgba(112, 2, 238, 0.5);
+    }
+
+    /* Cursor outer ring for layering effect */
+    .cursor-ring {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border: 2px solid rgba(112, 2, 238, 0.4);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.2s ease, border 0.3s ease;
+    }
+    
+    /* Cursor trail effect */
+    .cursor-trail {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: rgba(112, 2, 238, 0.3);
+      border-radius: 50%;
+      pointer-events: none;
+      transition: transform 0.2s ease, opacity 0.3s ease;
+    }
