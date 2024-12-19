@@ -380,32 +380,42 @@
         <div class="container mt-4">
           <div class="row justify-content-center">
             <div class="col-md-6">
-              <form id="my-form" action="https://formspree.io/f/mknaezrr" method="POST">
+              <form id="my-form" action="https://formspree.io/f/xvgoekre" method="POST">
                 <div id="my-form-status"></div>
-
+              
+                <!-- Name Field -->
                 <div class="mb-3">
-                
-                   <label for="name" class="form-label">Nom:</label>
-                  <input type="text" name="name" class="form-control" id="name"  autocomplete="name" />
+                  <label for="name" class="form-label">Nom:</label>
+                  <input type="text" name="name" class="form-control" id="name" autocomplete="name" required />
                 </div>
+              
+                <!-- Email Field -->
                 <div class="mb-3">
                   <label for="email" class="form-label">Email:</label>
-                  <input type="email" name="email" class="form-control" id="email"  autocomplete="email" />
+                  <input type="email" name="email" class="form-control" id="email" autocomplete="email" required />
                 </div>
+              
+                <!-- Message Field -->
                 <div class="mb-3">
                   <label for="message" class="form-label">Message:</label>
-                  <textarea name="message" class="form-control" id="message"  autocomplete="message"></textarea>
+                  <textarea name="message" class="form-control" id="message" autocomplete="message" required></textarea>
                 </div>
+              
+                <!-- Submit Button -->
                 <div class="text-center">
-                  <button id="my-form-button" type="submit"
-                    class="">
+                  <button id="my-form-button" type="submit" class="btn btn-primary">
                     <i class="bi bi-send"></i> Submit
                   </button>
                 </div>
               </form>
+              
+           
+              
+              
             </div>
           </div>
         </div>
+        
 
         <div class="row w-100 justify-content-center">
           <div class="col-lg-6 col-md-8">
@@ -471,8 +481,6 @@
 </footer>
 <!-- End Footer -->
 
-
-
   <!-- preloader -->
   <div id="preloader"></div>
 
@@ -488,11 +496,8 @@
     <i class="fs-2 bi bi-arrow-up-short"></i>
   </a>
 
-
-
   
   <div class="contact-icons">
-
     <!-- Phone Dialer link -->
     <div class="phone-icon">
       <a href="tel:+212689770809" class="cell-phone">
@@ -506,8 +511,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp icon">
       </a>
     </div>
-  </div>
-     
+  </div>  
   </div>
   
 
@@ -527,7 +531,6 @@
   <script  src="./assets/js/purecounter_vanilla.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/custom-cursor-js@1.0.0/dist/cursor.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/validate.js"></script>
 
   <!-- Template Main JS Files -->
   <script  src="./assets/js/main.js"></script>
@@ -543,12 +546,10 @@
   <script  src="./assets/js/SweetAlert.min.js"></script>
   <script  src="./assets/js/AlertForm.js"></script>
   <script  src="./assets/js/Footer.js"></script>
-
   <!-- Particals js must be bellow the source: /particles.min.js and the main.js-->
   <script  src="./assets/js/HeroParticals.js"></script>
   <!-- cursor -->
   <script  src="./assets/js/cursor.js"></script>
-
   <!-- Service Worker Caller for PWA -->
   <script>
     try {

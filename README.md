@@ -26,7 +26,7 @@ https://laaguili-dev.app.genez.io
 - Particles.js
 - GlightBox
 - PureCounter
-- FormsPre
+- FormsPree
 
 ## Installation
 1. Clone the repository
