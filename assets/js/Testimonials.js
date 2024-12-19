@@ -25,12 +25,6 @@
         image: "assets/img/testimonials/prof-soufiane.png",
         text: "Pas Disponible a ce moment"
       },
-      {
-        name: "Abdelkrim Abiid",
-        job: "Directeur MIAGE Casablanca",
-        image: "assets/img/testimonials/abiid.png",
-        text: "Pas Disponible a ce moment"
-      }
     ];
 
     // Get the testimonial list container
