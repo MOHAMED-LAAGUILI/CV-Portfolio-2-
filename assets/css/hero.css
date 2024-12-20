@@ -116,34 +116,44 @@
 
 .facebook,
 .linkedin,
-.github {
+.github,
+.codepen {
   font-size: 35px !important;
   transition: 0.7s !important;
 }
 
-.facebook{
+.facebook {
   background-color: #0066ff;
   color: #ffffff !important;
   border-radius: 50px;
-  transition: .7s;
+  transition: 0.7s;
   padding: 4px;
 }
 
-.linkedin{
+.linkedin {
   background-color: #1e55a7;
   color: #ffffff !important;
   border-radius: 4px;
-  transition: .7s;
+  transition: 0.7s;
   padding: 3px;
 }
 
-.github{
+.github {
   background-color: #000000;
   color: #ffffff !important;
   border-radius: 50px;
-  transition: .7s;
+  transition: 0.7s;
   padding: 3px;
 }
+
+.codepen {
+  background-color: #ffffff; /* CodePen dark theme color */
+  color: #000000 !important;
+  border-radius: 50px;
+  transition: 0.7s;
+  padding: 3px;
+}
+
 
 
 
