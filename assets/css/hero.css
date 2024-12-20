@@ -196,3 +196,39 @@
     transform: scale(1.05); /* Slightly scale up the button */
   }
   
+  
+
+
+/*--------------------------------------------------------------
+# Download button alert 
+--------------------------------------------------------------*/
+.glass-popup {
+  background: rgba(187, 93, 250, 0.116); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  color: #fff; /* Text color for contrast */
+}
+
+.glass-popup .swal2-title {
+  color: #fff; /* Title color */
+}
+
+.glass-popup .swal2-html-container {
+  color: #ddd; /* Text color */
+}
+
+.glass-popup .swal2-confirm,
+.glass-popup .swal2-deny,
+.glass-popup .swal2-cancel {
+  background-color: rgba(0, 0, 0, 0.3); /* Glass button */
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.glass-popup .swal2-confirm:hover,
+.glass-popup .swal2-deny:hover,
+.glass-popup .swal2-cancel:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Bright hover */
+}
