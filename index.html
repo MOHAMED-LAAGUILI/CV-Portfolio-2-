@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Basic meta -->
   <title>MOHAMED LAAGUILI | WEB DEVELOPER</title>
@@ -8,8 +9,8 @@
   <meta name="version" content="2.0" />
   <meta name="theme-color" content="#7002EE" />
 
-   <!-- Link to the Manifest file -->
-   <link rel="manifest" href="./manifest.json">
+  <!-- Link to the Manifest file -->
+  <link rel="manifest" href="./manifest.json">
 
   <!-- SEO and verification -->
   <meta name="description" content="Developer: MOHAMED LAAGUILI, Category: Portfolio" />
@@ -45,14 +46,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css" />
-<!-- Hover.css library -->
-<link href="https://cdn.jsdelivr.net/npm/hover.css/css/hover-min.css" rel="stylesheet"> 
-  
-  <!-- OpenLayers CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v6.15.0/ol.css" />
+  <!-- Hover.css library -->
+  <link href="https://cdn.jsdelivr.net/npm/hover.css/css/hover-min.css" rel="stylesheet">
 
-<!-- SweetAlert2 CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <!-- OpenLayers CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v6.15.0/ol.css" />
+
+  <!-- SweetAlert2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -70,8 +71,9 @@
   <link rel="stylesheet" href="./assets/css/scrollbar.css" />
   <link rel="stylesheet" href="./assets/css/cursor.css" />
 
-  
+
 </head>
+
 <body>
   <!-- ======= SideBar Button  ======= -->
   <i class="bi bi-list mobile-nav-toggle bg-danger p-3 text-light d-lg-none shadow"></i>
@@ -85,54 +87,39 @@
   <!-- End SideBar  -->
 
   <!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex flex-column justify-content-center align-items-center text-center">
-  <video autoplay muted loop playsinline id="hero-video">
-    <source src="./assets/vid/blackhole.webm" type="video/webm">
-  </video>
-  <div class="container text-white" data-aos="zoom-in" data-aos-delay="100">
- 
-   <div class="hero-text">
-    <h1 class="mb-2 fw-bold">Hello, My Name Is</h1>
-    <h1 class="myName fw-bold">MOHAMED LAAGUILI</h1>
-    <p class="fw-bolder typed-bg">
-      and I'am
-      <span class="typed fw-bolder"
-        data-typed-items="Web Designer and Developer, an IT Specialist, also a Freelancer"></span>
-      <br>at your service, just hit the call
-    </p>
-    <div class="social-links mb-3">
-      <a href="https://www.facebook.com/profile.php?id=100014521591779" class="facebook shadow " style="color: rgb(33, 100, 226)"
-        target="_blank">
-        <i class="bi-facebook"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/mohamedlaaguili2001/" class="linkedin shadow"
-        style="color: rgb(9, 88, 207)" target="_blank">
-        <i class="bi-linkedin"></i>
-      </a>
-      <a href="https://www.github.com/MOHAMED-LAAGUILI" class="github shadow" style="color: rgb(0, 0, 0)"
-        target="_blank">
-        <i class="bi-github"></i>
-      </a>
-      <a href="https://codepen.io/LAAGUILI-MOHAMED" class="codepen shadow" style="color: rgb(32, 32, 32);" target="_blank">
-        <i class="fa-brands fa-codepen"></i>
-            </a>
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center text-center">
+    <video autoplay muted loop playsinline id="hero-video">
+      <source src="./assets/vid/blackhole.webm" type="video/webm">
+    </video>
+    <div class="container text-white" data-aos="zoom-in" data-aos-delay="100">
+
+      <div class="hero-text">
+        <h1 class="mb-2 fw-bold">Hello, My Name Is</h1>
+        <h1 class="myName fw-bold">MOHAMED LAAGUILI</h1>
+        <p class="fw-bolder typed-bg">
+          and I'am
+          <span class="typed fw-bolder"
+            data-typed-items="Web Designer and Developer, an IT Specialist, also a Freelancer"></span>
+        </p>
+
+        <div class="social-links mb-3" id="social-links-container"></div>
+
+        <button class="hero-button" id="download-btn" role="button" aria-label="Download Resume">
+          <i class="bi bi-cloud-download-fill hero-icon-button"></i>
+          <span class="fs-4 fw-bold">Resume</span>
+        </button>
+
+        <a href="./assets/docs/CV-EN.pdf" id="cv-link" download style="display:none;"></a>
+      </div>
     </div>
-    <button class="hero-button" id="download-btn" role="button" aria-label="Download Resume">
-      <i class="bi bi-cloud-download-fill hero-icon-button"></i>
-      <span class="fs-4 fw-bold">Resume</span>
-    </button>
-    
-    <a href="./assets/docs/CV-EN.pdf" id="cv-link" download style="display:none;"></a>
-  </div>
-</div>
-</section>
-<!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
 
-<!-- ======= MAIN CONTENT ======= -->
-<div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+  <!-- ======= MAIN CONTENT ======= -->
+  <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
   <main id="main">
-    
+
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -152,15 +139,15 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="image-slider">
-             <!--
+              <!--
               <img src="assets/img/profile-img.jpeg" alt="LAAGUILI Image 1" class="slide-img active" />
               -->
               <img src="assets/img/Profile IMG Tooned.jpg" alt="LAAGUILI Image 2" class="slide-img floating" />
             </div>
           </div>
-          
-          
-          
+
+
+
 
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Infos</h3>
@@ -230,25 +217,27 @@
     </section>
     <!-- End achievement/Facts Section -->
 
-<!-- ======= Skills Section ======= -->
-<section id="skills" class="skills section-bg py-16">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title text-center mb-12">
-      <h2 class="text-4xl font-bold">Digital Skills</h2>
-      <img class="mx-auto rounded-full border-4 border-primary" src="/assets/img/lounge-man-working-on-web-design.gif" alt="Lounge Man Working on Web Design" width="220px">
-      <p class="text-lg text-gray-600 mb-4">Here’s an overview of my expertise in web development <br> and what I’m proficient in</p>
-    </div>
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg py-16">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center mb-12">
+          <h2 class="text-4xl font-bold">Digital Skills</h2>
+          <img class="mx-auto rounded-full border-4 border-primary"
+            src="/assets/img/lounge-man-working-on-web-design.gif" alt="Lounge Man Working on Web Design" width="220px">
+          <p class="text-lg text-gray-600 mb-4">Here’s an overview of my expertise in web development <br> and what I’m
+            proficient in</p>
+        </div>
 
-    <!-- Skills Container -->
-    <div id="skills-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-12 px-4">
-      <!-- Skill cards will be dynamically inserted here -->
-    </div>
-  </div>
-</section>
-<!-- End Skills Section -->
+        <!-- Skills Container -->
+        <div id="skills-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-12 px-4">
+          <!-- Skill cards will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+    <!-- End Skills Section -->
 
 
-<!-- End Skills Section -->
+    <!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
@@ -330,25 +319,25 @@
     </section>
     <!-- End Services Section -->
 
-<!-- Start of Portfolio Section -->
-<section id="portfolio" class="portfolio-section text-center py-5 bg-light">
-  <div class="container">
-    <!-- Section Title -->
-    <div class="section-title mb-5">
-      <h2 class="display-4 text-uppercase fw-bold">My Portfolio</h2>
-      <p class="text-muted">A showcase of my projects and achievements</p>
-    </div>
+    <!-- Start of Portfolio Section -->
+    <section id="portfolio" class="portfolio-section text-center py-5 bg-light">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="section-title mb-5">
+          <h2 class="display-4 text-uppercase fw-bold">My Portfolio</h2>
+          <p class="text-muted">A showcase of my projects and achievements</p>
+        </div>
 
-    <!-- Portfolio Items Grid -->
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5" id="portfolio-items">
-      <!-- Portfolio items will be inserted here dynamically -->
-    </div>
-  </div>
-  <span id="my-portfolio-button" >
-    <i class="bi bi-stack"></i> More projects soon ...
-  </span>
-</section>
-<!-- End of Portfolio Section -->
+        <!-- Portfolio Items Grid -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5" id="portfolio-items">
+          <!-- Portfolio items will be inserted here dynamically -->
+        </div>
+      </div>
+      <span id="my-portfolio-button">
+        <i class="bi bi-stack"></i> More projects soon ...
+      </span>
+    </section>
+    <!-- End of Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
@@ -361,7 +350,7 @@
           </p>
         </div>
       </div>
-    
+
       <!-- Swiper Container for the Testimonials -->
       <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
         <div class="swiper-wrapper" id="testimonial-list"></div> <!-- This will be filled dynamically -->
@@ -387,25 +376,25 @@
             <div class="col-md-6">
               <form id="my-form" action="https://formspree.io/f/xvgoekre" method="POST">
                 <div id="my-form-status"></div>
-              
+
                 <!-- Name Field -->
                 <div class="mb-3">
                   <label for="name" class="form-label">Nom:</label>
                   <input type="text" name="name" class="form-control" id="name" autocomplete="name" required />
                 </div>
-              
+
                 <!-- Email Field -->
                 <div class="mb-3">
                   <label for="email" class="form-label">Email:</label>
                   <input type="email" name="email" class="form-control" id="email" autocomplete="email" required />
                 </div>
-              
+
                 <!-- Message Field -->
                 <div class="mb-3">
                   <label for="message" class="form-label">Message:</label>
                   <textarea name="message" class="form-control" id="message" autocomplete="message" required></textarea>
                 </div>
-              
+
                 <!-- Submit Button -->
                 <div class="text-center">
                   <button id="my-form-button" type="submit" class="btn btn-primary">
@@ -413,14 +402,14 @@
                   </button>
                 </div>
               </form>
-              
-           
-              
-              
+
+
+
+
             </div>
           </div>
         </div>
-        
+
 
         <div class="row w-100 justify-content-center">
           <div class="col-lg-6 col-md-8">
@@ -451,57 +440,55 @@
     <!-- End Contact Section -->
 
 
-  
   </main>
-<!-- END MAIN CONTENT -->
+  <!-- END MAIN CONTENT -->
 
 
- <!-- ======= Footer ======= -->
-<footer id="footer" class="text-center text-light py-4 position-relative">
-  <!-- Video Background -->
-  <video autoplay muted loop playsinline id="footer-video" class="position-absolute w-100 h-100">
-    <source src="./assets/vid/encryption.webm" type="video/webm">
-    Your browser does not support the video tag.
-  </video>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="text-center text-light py-4 position-relative">
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline id="footer-video" class="position-absolute w-100 h-100">
+      <source src="./assets/vid/encryption.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
 
-  <!-- Content Overlay -->
-  <div class="container position-relative z-index-1">
-    <!-- Logo or Avatar -->
-    <img src="./assets/img/favicon.ico" class="rounded-circle mb-3 shadow floating" width="100" alt="Logo"
-      loading="lazy" />
+    <!-- Content Overlay -->
+    <div class="container position-relative z-index-1">
+      <!-- Logo or Avatar -->
+      <img src="./assets/img/favicon.ico" class="rounded-circle mb-3 shadow floating" width="100" alt="Logo"
+        loading="lazy" />
 
-    <!-- Name -->
-    <h3 class="fw-bold mb-2">LAAGUILI MOHAMED</h3>
+      <!-- Name -->
+      <h3 class="fw-bold mb-2">LAAGUILI MOHAMED</h3>
+      <!-- Year & Copyright -->
+      <div class="copyright mb-2">
+        &copy; <span id="year"></span> All rights reserved.
+      </div>
 
-    <!-- Year & Copyright -->
-    <div class="copyright mb-2">
-      &copy; <span id="year"></span> All rights reserved.
+      <!-- Credits Section -->
+      <div class="credits mb-3">
+        Designed and built with <span style="color: #881fdf" class="fs-5 fw-bolder">❤</span>
+      </div>
     </div>
-
-    <!-- Credits Section -->
-    <div class="credits mb-3">
-      Designed and built with <span style="color: #881fdf" class="fs-5 fw-bolder">❤</span>
-    </div>
-  </div>
-</footer>
-<!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
   <!-- preloader -->
   <div id="preloader"></div>
 
-    <!-- Cursor -->
-    <div>
-      <div id="cursor" class="cursor"></div>
-      <div id="cursor-ring" class="cursor-ring"></div>
-    </div>
+  <!-- Cursor -->
+  <div>
+    <div id="cursor" class="cursor"></div>
+    <div id="cursor-ring" class="cursor-ring"></div>
+  </div>
 
   <!-- Back to top btn -->
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center shadow p-4 bottom-10 start-0"
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center shadow p-8 bottom-10 start-0"
     style="margin-left: 30px;">
     <i class="fs-2 bi bi-arrow-up-short"></i>
   </a>
 
-  
+
   <div class="contact-icons">
     <!-- Phone Dialer link -->
     <div class="phone-icon">
@@ -509,54 +496,55 @@
         <i class="fa fa-phone-flip"></i>
       </a>
     </div>
-  
+
     <!-- WhatsApp link -->
     <div class="whatsapp-icon">
       <a href="https://wa.me/+212689770809" target="_blank" aria-label="Contact us on WhatsApp">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp icon">
       </a>
     </div>
-  </div>  
   </div>
-  
+
+
 
   <!-- Vendor JS Files -->
-  <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-  <script  src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-  <script  src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js"
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js"
     integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script  src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
-  <script  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script  src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
-  <script  src="./assets/js/purecounter_vanilla.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+  <script src="./assets/js/purecounter_vanilla.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/custom-cursor-js@1.0.0/dist/cursor.min.js"></script>
-<!-- SweetAlert2 JS -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- Template Main JS Files -->
-  <script  src="./assets/js/main.js"></script>
-  <script  src="./assets/js/nav.js"></script>
-  <script  src="./assets/js/about.js"></script>
-  <script  src="./assets/js/achivement.js"></script>
-  <script  src="./assets/js/digitalskills.js"></script>
-  <script  src="./assets/js/cv-resume.js"></script>
-  <script  src="./assets/js/services.js"></script>
-  <script  src="./assets/js/portfolio.js"></script>
-  <script  src="./assets/js/Testimonials.js"></script>
-  <script  src="./assets/js/ContactFormMessage.js"></script>
-  <script  src="./assets/js/SweetAlert.min.js"></script>
-  <script  src="./assets/js/AlertForm.js"></script>
-  <script  src="./assets/js/Footer.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/nav.js"></script>
   <!-- Particals js must be bellow the source: /particles.min.js and the main.js-->
-  <script  src="./assets/js/HeroParticals.js"></script>
+  <script src="./assets/js/Hero-Links.js"></script>
+  <script src="./assets/js/HeroParticals.js"></script>
+  <script src="./assets/js/about.js"></script>
+  <script src="./assets/js/achivement.js"></script>
+  <script src="./assets/js/digitalskills.js"></script>
+  <script src="./assets/js/cv-resume.js"></script>
+  <script src="./assets/js/services.js"></script>
+  <script src="./assets/js/portfolio.js"></script>
+  <script src="./assets/js/Testimonials.js"></script>
+  <script src="./assets/js/ContactFormMessage.js"></script>
+  <script src="./assets/js/SweetAlert.min.js"></script>
+  <script src="./assets/js/AlertForm.js"></script>
+  <script src="./assets/js/Footer.js"></script>
   <!-- cursor -->
-  <script  src="./assets/js/cursor.js"></script>
+  <script src="./assets/js/cursor.js"></script>
   <!-- Service Worker Caller for PWA -->
   <script>
     try {
@@ -586,7 +574,8 @@
       // Catch any unexpected errors that might occur in the entire script
       console.error('An unexpected error occurred during script execution:', error);
     }
-  </script>  
-  
+  </script>
+
 </body>
+
 </html>

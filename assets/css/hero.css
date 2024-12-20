@@ -55,7 +55,7 @@
   }
   
   #hero p span {
-    color: var(--primary-soft);
+    color: #ffa600;
     letter-spacing: 1px;
   }
   
@@ -113,11 +113,12 @@
 /*--------------------------------------------------------------
 # Social media
 --------------------------------------------------------------*/
-
 .facebook,
 .linkedin,
 .github,
-.codepen {
+.codepen,
+.youtube,
+.instagram {
   font-size: 35px !important;
   transition: 0.7s !important;
 }
@@ -127,7 +128,7 @@
   color: #ffffff !important;
   border-radius: 50px;
   transition: 0.7s;
-  padding: 4px;
+  padding: 7px;
 }
 
 .linkedin {
@@ -135,7 +136,7 @@
   color: #ffffff !important;
   border-radius: 4px;
   transition: 0.7s;
-  padding: 3px;
+  padding: 7px;
 }
 
 .github {
@@ -143,19 +144,36 @@
   color: #ffffff !important;
   border-radius: 50px;
   transition: 0.7s;
-  padding: 3px;
+  padding: 7px;
 }
 
 .codepen {
-  background-color: #ffffff; /* CodePen dark theme color */
+  background-color: #ffffff;
   color: #000000 !important;
   border-radius: 50px;
   transition: 0.7s;
-  padding: 3px;
+  padding: 7px ;
+
+}
+/* YouTube */
+.youtube {
+  background-color: #ffffff;
+  color: #f13232 !important;
+  border-radius: 20%;
+  transition: 0.3s ease;
+  padding: 7px;
 }
 
-
-
+/* Instagram Style: More realistic */
+.instagram {
+  background: linear-gradient(45deg, #f58529, #f77737, #d62976, #962fbf, #4c68d7); /* Instagram gradient */
+  background-size: 400% 400%; /* Smooth gradient transition */
+  color: #ffffff !important;
+  border-radius: 30%;
+  padding: 7px 9px;
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
 
 
 /*--------------------------------------------------------------
