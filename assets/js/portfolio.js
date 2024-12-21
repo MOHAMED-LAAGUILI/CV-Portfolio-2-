@@ -2,17 +2,17 @@
   const portfolioItems = [
     {
       image: "./assets/img/PortfolioProjects/MERN-Ecommerce-App.png",
-      title: "MERN Ecommerce App",
-      description: "Full-stack ecommerce site, responsive and complete",
-      link: "#",
-      demoLink: "Oops Unavailable Online",
+      title: "MERN E-commerce App",
+      description: "Full-stack e-commerce site, responsive and complete",
+      link: "#portfolio",
+      demoLink: "Unavailable Online",
     },
     {
       image: "./assets/img/PortfolioProjects/React-Express-ChatApp.png",
       title: "React Express ChatApp",
       description: "Real-time chat app with session support",
-      link: "#",
-      demoLink: "Oops Unavailable Online",
+      link: "#portfolio",
+      demoLink: "Unavailable Online",
     },
     {
       image: "/assets/img/PortfolioProjects/React-Portfolio.png",
@@ -23,15 +23,15 @@
     },
     {
       image: "/assets/img/PortfolioProjects/React-Redux-Ecommerce-App.png",
-      title: "React Redux Ecommerce",
-      description: "Enhanced ecommerce with Redux for state management",
+      title: "React Redux E-commerce",
+      description: "Enhanced e-commerce with Redux for state management",
       link: "https://react-redux-ecommerce-app-hvhb.vercel.app/",
       demoLink: "See Live Demo",
     },
     {
-      image: "/assets/img/PortfolioProjects/Next-Shadcn-AdminDashboard.png",
+      image: "/assets/img/PortfolioProjects/Next-ShadCn-AdminDashboard.png",
       title: "Next Dashboard",
-      description: "Admin Dashboard, built with Shadcn & Next",
+      description: "Admin Dashboard, built with ShadCn UI & Next",
       link: "https://next-shadcn-admin-dashboard-ochre.vercel.app/",
       demoLink: "See Live Demo",
     },
@@ -45,7 +45,7 @@
     {
       image: "/assets/img/PortfolioProjects/react-next-clerk-sanity-ecommerce-767896446.vercel.app.png",
       title: "Modern Responsive E-commerce Site",
-      description: "E-commerce made with react next clerck stripe and sanity",
+      description: "E-commerce made with react next clerk stripe and sanity",
       link: "https://react-next-clerk-sanity-ecommerce.vercel.app",
       demoLink: "See Live Demo",
     },

@@ -1,157 +1,144 @@
-:root { 
-  --primary: #7002ee;
-  --secondary: #4d01a5;
-  --primary-soft: #c174f5;
-  --bg-light: #f9f9f9;
-  --text-dark: #2d2d2d;
-  --text-light: #ffffff;
-  --hover-light: rgba(255, 255, 255, 0.1);
+:root {
+  --primary: #6a8caf;
+  --secondary: #f0f4f8;
+  --text: #333;
+  --text-light: #666;
+  --background: #ffffff;
+  --card-background: #f9fafb;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
 }
 
-/* Global Styling */
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--bg-light);
-  color: var(--text-dark);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--background);
   margin: 0;
+  padding: 0;
 }
 
-/* Section Container */
 .container {
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 2rem 0;
 }
 
-/* Skill Cards */
-.skill-card {
-  background-color: var(--text-light);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.section-title {
   text-align: center;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 3rem;
+}
+
+
+
+
+.section-title p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skills-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.skill-group {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px var(--shadow);
+  transition: var(--transition);
+}
+
+.skill-group:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px var(--shadow);
+}
+
+.group-title {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+.skills-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-card {
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* Ensure the content is vertically centered */
-  align-items: center; /* Ensure the content is horizontally centered */
-  height: 220px;
+  align-items: center;
+  background-color: var(--background);
+  border-radius: 6px;
+  padding: 0.75rem;
+  transition: var(--transition);
+  position: relative;
 }
 
-/* Hover Effect */
 .skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 
-/* Skill Logo Image */
 .skill-logo {
-  width: 60px; /* Adjusted size */
-  height: 60px; /* Adjusted size */
-  object-fit: contain;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.75rem;
 }
 
-/* Increase logo size on hover */
-.skill-card:hover .skill-logo {
-  transform: scale(1.2);
-  opacity: 0.8;
+.skill-name {
+  font-size: 1rem;
+  color: var(--text);
 }
 
-/* Tooltip for Description */
 .tooltip {
-  display: none;
   position: absolute;
-  bottom: 15px;
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--primary);
-  color: var(--text-light);
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  max-width: 220px;
+  color: var(--background);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  width: 200px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 10;
 }
 
 .skill-card:hover .tooltip {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  bottom: calc(100% + 10px);
 }
 
-/* Skill Name */
-.skill-name {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--text-dark);
-  margin-top: 12px;
-  text-transform: capitalize;
-}
-
-/* Placeholder Image for Missing Logos */
-.placeholder {
-  width: 60px;
-  height: 60px;
-  background-color: #e0e0e0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--primary);
-  border-radius: 10px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
-/* Hover Effect for Skill Cards */
-.skill-card:hover .skill-name {
-  color: var(--primary);
-}
-
-/* Section Title */
-h2 {
-  color: var(--primary);
-  font-size: 3.5rem;
-  font-weight: bold;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-/* Grid Layout for Skill Cards */
-#skills-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Default for extra small screens */
-  gap: 24px;
-}
-
-/* Small screens (sm - 640px and up) */
 @media (min-width: 640px) {
-  #skills-container {
-    grid-template-columns: repeat(3, 2fr); /* 2 columns on small screens */
+  .skills-list {
+      grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Medium screens (md - 768px and up) */
 @media (min-width: 768px) {
-  #skills-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  .skills-container {
+      grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Large screens (lg - 1024px and up) */
 @media (min-width: 1024px) {
-  #skills-container {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  .skills-container {
+      grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Extra large screens (xl - 1280px and up) */
 @media (min-width: 1280px) {
-  #skills-container {
-    grid-template-columns: repeat(5, 1fr); /* 5 columns on extra large screens */
+  .skills-container {
+      grid-template-columns: repeat(4, 1fr);
   }
 }

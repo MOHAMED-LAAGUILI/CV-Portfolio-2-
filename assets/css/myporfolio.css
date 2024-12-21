@@ -49,12 +49,15 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background: rgba(69, 80, 91, 0.8);
+    background: rgb(255, 255, 255) !important;
   }
-  
+  .bg-light{
+    background: rgb(255, 255, 255) !important;
+
+  }
   .portfolio .portfolio-wrap::before {
     content: "";
-    background: rgba(255, 255, 255, 0.7);
+    background: rgb(255, 255, 255);
     position: absolute;
     left: 30px;
     right: 30px;
@@ -187,7 +190,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(255, 255, 255);
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -220,7 +223,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(97, 4, 185, 0.7);
+    background-color: rgba(20, 20, 20, 0.651);
     opacity: 0;
     transition: opacity 0.4s ease;
   }
