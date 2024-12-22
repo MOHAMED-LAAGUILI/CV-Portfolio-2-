@@ -10,6 +10,9 @@
     { href: "#portfolio", icon: "bi bi-window-stack", label: "Portfolios", isImage: false },
     { href: "#testimonials", icon: "bx bx-comment", label: "Others Opinions", isImage: false },
     { href: "#contact", icon: "bi bi-send", label: "Contact Me", isImage: false },
+    { href: "#footer", icon: "bi bi-award", label: "Footer Credits", isImage: false },
+    { href: "404.html", icon: "bi bi-emoji-frown", label: "404 Sample", isImage: false },
+
   ];
 
   // Get the navigation menu element

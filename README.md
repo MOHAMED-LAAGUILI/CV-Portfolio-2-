@@ -13,20 +13,51 @@ https://laaguili-dev.app.genez.io
 - Contact form
 - Progressive Web App (PWA) functionality
 
-## Technologies Used
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5
-- Font Awesome
-- AOS (Animate On Scroll)
-- Swiper
-- Typed.js
-- AOS.js
-- Particles.js
-- GlightBox
-- PureCounter
-- FormsPree
+
+## Technologies & libraries Used
+- Basic Style & Structure code
+HTML5
+CSS3
+JS ES5/ES6
+
+- Font & icons scripts
+Google Font API
+Font Awesome 6.0.0
+Bootstrap Icons 1.5.0
+Box icons
+
+- Miscellaneous
+PWA
+Open Graph
+JavaScript graphics
+etc...
+
+- CDN
+Cloudflare
+Unpkg
+jsDelivr
+jQuery CDN
+cdnjs
+etc...
+
+- JavaScript libraries
+SweetAlert2
+Swiper
+Isotope
+SweetAlert
+Light box
+jQuery 3.6.0
+AOS 2.3.1
+particles.js
+cursor
+ThreeJS
+etc...
+
+
+- UI frameworks
+Animate.css 4.1.1
+Bootstrap 5.0.2
+
 
 ## Installation
 1. Clone the repository
@@ -50,8 +81,8 @@ Navigate through the different sections using the sidebar menu or by scrolling.
 This website is set up as a PWA, allowing for offline access and app-like experience on mobile devices.
 
 ## Contact
-- Email: mohamed.dev.2001@gmail.com | saidlergili@gmail.com
-- Phone: +212 6 89 77 08 09
+- Email: mohamed.dev.2001@gmail.com
+- Phone: (+212)6 89 77 08 09
 
 ## License
 All rights reserved.

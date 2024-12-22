@@ -1,0 +1,117 @@
+
+:root {
+    --primary: #7002ee;
+    --secondary: #4d01a5;
+    --primary-soft: #c174f5;
+    --white: white;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Background Canvas */
+  #starsCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+  }
+  
+  
+
+  /* 404 Page Styling */
+  .error-page {
+    text-align: center;
+    padding: 20px;
+    z-index: 10;
+    position: relative;
+  }
+
+  /* Animating 404 Digits */
+  .error-page h1 {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(80px, 10vw, 150px);
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+
+  .digit {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: fadeInScale 1.5s ease-in-out forwards;
+  }
+
+  .digit:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .digit:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .digit:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .error-page p {
+    font-size: clamp(16px, 2vw, 24px);
+    margin-bottom: 20px;
+    color: var(--white);
+  }
+
+  .error-page a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+  }
+
+  .error-page a:hover {
+    background-color: var(--secondary);
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 480px) {
+    .error-page h1 {
+      font-size: 80px;
+    }
+
+    .error-page p {
+      font-size: 14px;
+    }
+
+    .error-page a {
+      font-size: 14px;
+      padding: 8px 20px;
+    }
+  }
