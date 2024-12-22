@@ -1,6 +1,11 @@
 // Data arrays for education, experience, and certificates
 const educationData = [
   {
+    title: "Online Education",
+    year: "2023 - Present - Ksar El Kebir",
+    description: "Continuously learning diving deep into the Computer Engineering & development",
+  },
+  {
     title: "MIAGE Private School",
     year: "2021/2023 - Ksar El Kebir",
     description: "Computer Engineering Diploma in Software and Intelligent Systems",

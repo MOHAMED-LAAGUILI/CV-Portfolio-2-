@@ -70,8 +70,7 @@
   <link rel="stylesheet" href="./assets/css/footer.css" />
   <link rel="stylesheet" href="./assets/css/scrollbar.css" />
   <link rel="stylesheet" href="./assets/css/cursor.css" />
-
-
+  <link rel="stylesheet" href="./assets/css/i18next-tarnslator.css" />
 </head>
 
 <body>
@@ -80,7 +79,19 @@
 
   <!-- ======= SideBar  ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
+     
+
     <nav id="navbar" class="navbar nav-menu fw-bolder">
+        <!-- i18next Site Translator icons -->
+        <div class="language-switcher">
+          <label for="languageSwitcher" class="switcher-label">Site Language:</label>
+          <select id="languageSwitcher">
+            <option value="en">🇺🇸</option>
+            <option value="fr">🇫🇷</option>
+          </select>
+        </div>
+        
+        
       <ul id="nav-menu"></ul>
     </nav>
   </header>
@@ -94,19 +105,21 @@
     <div class="container text-white" data-aos="zoom-in" data-aos-delay="100">
 
       <div class="hero-text">
-        <h1 class="mb-2 fw-bold">Hello, My Name Is</h1>
-        <h1 class="myName fw-bold">MOHAMED LAAGUILI</h1>
-        <p class="fw-bolder typed-bg">
+        <h1 class="mb-2 fw-bold" data-i18n="hero1">Hello, My Name Is</h1>
+        <h1 class="myName fw-bold" data-i18n="hero2">MOHAMED LAAGUILI</h1>
+        <p class="fw-bolder typed-bg" data-i18n="hero3">
           and I'am
-          <span class="typed fw-bolder"
-            data-typed-items="Web Designer and Developer, an IT Specialist, also a Freelancer"></span>
         </p>
+        <p class="fw-bolder typed-bg" >
+          <span class="typed fw-bolder" 
+            data-typed-items="Web Designer and Developer, an IT Specialist, also a Freelancer"></span>
+          </p>
 
         <div class="social-links mb-3" id="social-links-container"></div>
 
         <button class="hero-button" id="download-btn" role="button" aria-label="Download Resume">
           <i class="bi bi-cloud-download-fill hero-icon-button"></i>
-          <span class="fs-4 fw-bold">Resume</span>
+          <span class="fs-4 fw-bold"  data-i18n="hero4">Resume</span>
         </button>
 
         <a href="./assets/docs/CV-EN.pdf" id="cv-link" download style="display:none;"></a>
@@ -116,8 +129,9 @@
   <!-- End Hero -->
 
 
-  <!-- ======= MAIN CONTENT ======= -->
   <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+  
+  <!-- ======= MAIN CONTENT ======= -->
   <main id="main">
 
 
@@ -125,8 +139,8 @@
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>About Me</h2>
-          <p>
+          <h2 data-i18n="about1">About Me</h2>
+          <p data-i18n="about2">
             Being a web developer is very difficult. It requires his line of work
             Many requirements for web developers. As a web developer, you will need to master different technical
             skills, be able to work with various software and show great attention to detail. But I can quickly adapt to
@@ -150,7 +164,7 @@
 
 
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Infos</h3>
+            <h3 data-i18n="about3">Infos</h3>
 
             <br />
             <br />
@@ -158,18 +172,18 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li>
+                  <li  >
                     <i class="bi bi-chevron-right"></i>
-                    <strong>Birth :</strong> <span>1 April 2001</span>
+                    <strong data-i18n="about4">Birth :</strong> <span>01 - april - 2001</span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i>
                     <strong>Phone :</strong>
-                    <span>+212 6 89 77 08 09</span>
+                    <span>(+212) 6 89 77 08 09</span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i>
-                    <strong>Residence :</strong> <span>Maroc (Ksar El Kebir | Tanger | Kenitra | Rabat)</span>
+                    <strong>Residence :</strong> <span>🇲🇦 | Maroc | Ksar El Kebir</span>
                   </li>
                 </ul>
               </div>
@@ -178,17 +192,17 @@
 
                   <li>
                     <i class="bi bi-chevron-right"></i>
-                    <strong>Degre :</strong> <span>BAC+2</span>
+                    <strong>Degree :</strong> <span>BAC+2</span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i>
                     <strong>E-mail :</strong>
-                    <span>mohamed.dev.2001@gmail.com | saidlergili@gmail.com</span>
+                    <span>mohamed.dev.2001@gmail.com</span>
                     <span></span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i>
-                    <strong>Work :</strong> <span>Available</span>
+                    <strong>Work :</strong> <span>Available Freelance or Contract</span>
                   </li>
                 </ul>
               </div>
@@ -235,14 +249,13 @@
 <!-- End Skills Section -->
 
 
-    <!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container" data-aos="fade-up">
         <!-- Section Title -->
         <div class="section-title text-center">
-          <h2>CV</h2>
+          <h2>Resume</h2>
           <img class="testimg mt-4 mb-4"
             src="/assets/img/dazzle-line-man-looks-at-the-resumes-of-candidates-for-a-vacancy.gif"
             alt="Resume Illustration" width="300px" />
@@ -253,7 +266,7 @@
           <!-- Left Column -->
           <div class="col-lg-6">
             <!-- Personal Info -->
-            <h3 class="resume-title">Resume</h3>
+
             <div class="resume-item pb-4">
               <h4>LAAGUILI MOHAMED</h4>
               <p>
@@ -266,14 +279,7 @@
                   NodeJs/ExpressJs ) frameworks
                 </em>
               </p>
-              <address>
-                <ul>
-                  <li>Rue RABAT Lot Sedraoui N° 26 KSAR EL KEBIR</li>
-                  <li>📞 (+212)6-89-77-08-09</li>
-                  <li>📧 <a href="mailto:saidlergili@gmail.com">saidlergili@gmail.com</a></li>
-                  <li>📧 <a href="mailto:mohamed.dev.2001@gmail.com">mohamed.dev.2001@gmail.com</a></li>
-                </ul>
-              </address>
+
             </div>
 
             <!-- Education Section -->
@@ -296,7 +302,13 @@
             <div id="certificates-section">
               <!-- Data will be inserted here -->
             </div>
-          </div>
+            <div class="alert alert-warning d-flex align-items-center shadow-sm rounded-3 p-3" role="alert">
+              <i class="bi bi-exclamation-triangle-fill me-2 text-warning"></i>
+              <span class="fw-bold">Note:</span>
+              <span class="ms-1">I stopped collecting certificates in 2022. Now, I focus more on acquiring knowledge and skills than a piece of paper.</span>
+            </div>
+            
+            
         </div>
       </div>
     </section>
@@ -323,7 +335,7 @@
         <!-- Section Title -->
         <div class="section-title mb-5">
           <h2 class="display-4 text-uppercase fw-bold">My Portfolio</h2>
-          <p class="text-muted">A showcase of my projects and achievements</p>
+          <p class="text-muted">A showcase of my top 10 projects</p>
         </div>
 
         <!-- Portfolio Items Grid -->
@@ -341,11 +353,11 @@
     <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Témoignages</h2>
+          <h2>Testimonials</h2>
           <img class="testimg" src="/assets/img/dazzle-line-blog-post-article.gif" alt="" width="200px">
           <p>
-            Voici un échantillon de ce que la plupart des gens, Prof disent de moi
-          </p>
+            Here is a sample of what most people, teachers, colleges say about me
+                    </p>
         </div>
       </div>
 
@@ -415,20 +427,19 @@
               <div class="address">
                 <i class="bi bi-geo-alt floating"></i>
                 <h4>Location:</h4>
-                <p>Rabat, Tanger, Kenitra, Ksar El kebir</p>
+                <p> 🇲🇦 | Maroc | Ksar El kebir</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope floating"></i>
                 <h4>Email:</h4>
-                <p>Saidlergili@gmail.com</p>
-                <p>mohamed.dev.2001@gmail.com</p>
+                <p> <a href="mailto:mohamed.dev.2001@gmail.com" target="_blank">mohamed.dev.2001@gmail.com</a> </p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone floating"></i>
                 <h4>Tél:</h4>
-                <p>+212-6-89-77-08-09</p>
+                <p>(+212) 6 89 77 08 09</p>
               </div>
             </div>
           </div>
@@ -486,7 +497,7 @@
     <i class="fs-2 bi bi-arrow-up-short"></i>
   </a>
 
-
+  <!-- contact icons -->
   <div class="contact-icons">
     <!-- Phone Dialer link -->
     <div class="phone-icon">
@@ -503,8 +514,7 @@
     </div>
   </div>
 
-
-
+ 
   <!-- Vendor JS Files -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
@@ -523,6 +533,9 @@
   <script src="https://cdn.jsdelivr.net/npm/custom-cursor-js@1.0.0/dist/cursor.min.js"></script>
   <!-- SweetAlert2 JS -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- i18next  Site Translator -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.0/i18next.min.js"></script>
+  <script src="./assets/js/i18next-site-translator.js"></script>
 
   <!-- Template Main JS Files -->
   <script src="./assets/js/main.js"></script>

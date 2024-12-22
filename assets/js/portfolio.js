@@ -29,7 +29,7 @@
       demoLink: "See Live Demo",
     },
     {
-      image: "/assets/img/PortfolioProjects/Next-ShadCn-AdminDashboard.png",
+      image: "/assets/img/PortfolioProjects/Next-Shadcn-AdminDashboard.png",
       title: "Next Dashboard",
       description: "Admin Dashboard, built with ShadCn UI & Next",
       link: "https://next-shadcn-admin-dashboard-ochre.vercel.app/",
