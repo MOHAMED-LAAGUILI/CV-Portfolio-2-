@@ -58,7 +58,22 @@ etc...
 Animate.css 4.1.1
 Bootstrap 5.0.2
 
-
+- SEO
+https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=fr
+https://www.google.nl/intl/nl/add_url.html
+https://gist.github.com/whitingx/3840905
+https://webcode.tools/
+https://search.google.com/search-console/welcome
+https://www.xml-sitemaps.com/
+https://maximumseotools.com/
+https://maximumseotools.com/domain/laaguili.epizy.com
+https://nitropack.io/demo/error
+https://github.com/joshbuchea/HEAD
+https://validator.w3.org/
+https://autoprefixer.github.io/
+https://www.linkedin.com/posts/mohamed-reda-83037524a_%D9%84%D9%88-%D8%A7%D9%86%D8%AA-front-end-%D9%85%D9%8A%D9%86%D9%81%D8%B9%D8%B4-%D9%85%D8%AA%D9%83%D9%88%D9%86%D8%B4-%D8%B9%D8%A7%D8%B1%D9%81-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85-activity-7249081074788487169-WuCN/?utm_source=share&utm_medium=member_android
+https://www.imgboost.com/
+https://search.google.com/search-console/welcome?utm_source=about-page
 ## Installation
 1. Clone the repository
 2. Open `index.html` in your browser

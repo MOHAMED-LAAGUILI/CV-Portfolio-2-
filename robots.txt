@@ -1,5 +1,6 @@
 User-agent: *
-Disallow: /private/
-Disallow: /temp/
+Allow: /
+Allow: /assets/
+Allow: /404.html
 
 Sitemap: https://laaguili-dev.app.genez.io/sitemap.xml
