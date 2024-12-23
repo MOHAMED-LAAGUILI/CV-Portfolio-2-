@@ -95,6 +95,7 @@ Navigate through the different sections using the sidebar menu or by scrolling.
 7. **Portfolio**: Showcase of projects
 8. **Testimonials**: Feedback from clients and colleagues
 9. **Contact**: Contact form and personal contact information
+10. **404 sample**: 404 for redirect handle page with amazing three js use case
 
 ## Progressive Web App
 This website is set up as a PWA, allowing for offline access and app-like experience on mobile devices.
