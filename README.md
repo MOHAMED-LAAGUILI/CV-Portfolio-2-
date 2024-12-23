@@ -4,7 +4,9 @@
 This project is a personal portfolio website, a Full Stack Web Developer. The website showcases my skills, achievements, projects, and provides contact information.
 
 ## Live View
-https://laaguili-dev.app.genez.io
+https://laaguili-dev.app.genez.io/
+
+https://laaguili-dev.app.genez.io/404.html
 
 ## Features
 - Responsive design
@@ -74,6 +76,8 @@ https://autoprefixer.github.io/
 https://www.linkedin.com/posts/mohamed-reda-83037524a_%D9%84%D9%88-%D8%A7%D9%86%D8%AA-front-end-%D9%85%D9%8A%D9%86%D9%81%D8%B9%D8%B4-%D9%85%D8%AA%D9%83%D9%88%D9%86%D8%B4-%D8%B9%D8%A7%D8%B1%D9%81-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85-activity-7249081074788487169-WuCN/?utm_source=share&utm_medium=member_android
 https://www.imgboost.com/
 https://search.google.com/search-console/welcome?utm_source=about-page
+
+
 ## Installation
 1. Clone the repository
 2. Open `index.html` in your browser
