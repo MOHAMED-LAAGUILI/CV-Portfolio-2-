@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Define valid routes
+  // Define valid routes (ensure they're consistently formatted)
   const validRoutes = [
       '#home', 
       '#about', 
@@ -10,15 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
       '#resume', 
       '#portfolio', 
       '#testimonials',
-      "#footer"
+      "#footer",
+      "/",
+      "/index.html",
+      "/404.html"
   ];
 
-  // Get the current hash from the URL
-  const currentRoute = window.location.hash;
+  // Get the current hash from the URL and normalize case
+  const currentRoute = window.location.hash.toLowerCase();
 
   // Check if the current route is invalid and not empty
   if (!validRoutes.includes(currentRoute) && currentRoute !== '') {
       // Redirect to 404.html if the route is invalid
-      window.location.href = '404.html';
+      window.location.href = '/404.html';  // Full path for consistency
   }
 });

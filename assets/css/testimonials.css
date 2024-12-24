@@ -1,8 +1,9 @@
-:root{
-  --primary:#7002ee;
-  --secondary:#4d01a5;
-  --primary-soft:#c174f5;
+:root {
+  --primary: #7002ee;
+  --secondary: #4d01a5;
+  --primary-soft: #c174f5;
 }
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -41,7 +42,7 @@
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color:  var(--primary);
+  color: var(--primary);
   font-size: 26px;
 }
 
@@ -64,8 +65,9 @@
 }
 
 .testimonials .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 30px; /* Margin to space out pagination from testimonials */
   position: relative;
+  text-align: center; /* Center the pagination bullets */
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
@@ -73,11 +75,13 @@
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid  var(--primary);
+  border: 1px solid var(--primary);
+  display: inline-block; /* Ensure bullets are inline */
+  margin: 0 5px; /* Add spacing between bullets */
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color:  var(--primary);
+  background-color: var(--primary);
 }
 
 @media (min-width: 992px) {
@@ -89,6 +93,7 @@
 /* Center the slider and content */
 .testimonials-slider {
   display: flex;
+  flex-direction: column; /* Stack items vertically */
   justify-content: center;
   align-items: center;
   width: 100%;

@@ -1,12 +1,10 @@
-:root{
-  --primary:#7002ee;
-  --secondary:#4d01a5;
-  --primary-soft:#c174f5;
+:root {
+  --primary: #7002ee;
+  --secondary: #4d01a5;
+  --primary-soft: #c174f5;
 }
 
-
-
-
+/* Full-screen overlay */
 #preloader {
   position: fixed;
   top: 0;
@@ -14,28 +12,30 @@
   right: 0;
   bottom: 0;
   z-index: 9999;
-  background: #ffffff;
+  background-color:  white ;
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(10px); /* Adds glassmorphism effect */
 }
 
-#preloader:before {
-  content: "";
+/* Preloader animation */
+.loader {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 8px solid var(--primary);
-  border-right-color: transparent;
-  animation: spin-dots 1.2s linear infinite;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: spin 1.5s ease-in-out infinite;
 }
 
-@keyframes spin-dots {
+/* Keyframes for spin animation */
+@keyframes spin {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-

@@ -15,6 +15,7 @@
 /* Custom cursor */
 .cursor {
   position: absolute;
+  z-index: 9;
   width: var(--cursor-size);
   height: var(--cursor-size);
   border-radius: 50%;
@@ -27,6 +28,7 @@
 /* Cursor outer ring for layering effect */
 .cursor-ring {
   position: absolute;
+  z-index: 9;
   width: var(--cursor-ring-size);
   height: var(--cursor-ring-size);
   border: 2px solid var(--cursor-ring-color);
@@ -48,11 +50,10 @@
 }
 
 /* Cursor hover target scaling effect */
-.hover-target {
-  cursor: pointer; /* Make it clear to the user that the element is interactive */
-}
 
-/* Cursor color for when hovering inside the hero section */
+
+/* Cursor color for when hovering inside the hero section 
+*/
 .hero {
-  cursor: none; /* Hides the default cursor */
+  cursor: none; 
 }

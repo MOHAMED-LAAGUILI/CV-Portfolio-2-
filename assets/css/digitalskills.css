@@ -2,9 +2,11 @@
   --primary: #6a8caf;
   --secondary: #f0f4f8;
   --text: #333;
-  --text-light: #666;
+  --text-secondary: #666;
   --background: #ffffff;
+  --background-dark: #1c1c1c;
   --card-background: #f9fafb;
+  --card-background-dark: #2a2a2a;
   --shadow: rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
 }
@@ -30,12 +32,9 @@ body {
   margin-bottom: 3rem;
 }
 
-
-
-
 .section-title p {
   font-size: 1.1rem;
-  color: var(--text-light);
+  color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -43,6 +42,7 @@ body {
 .skills-container {
   display: grid;
   gap: 2rem;
+  grid-template-columns: repeat(1, 1fr); /* Default for mobile */
 }
 
 .skill-group {
@@ -69,6 +69,7 @@ body {
 .skills-list {
   display: grid;
   gap: 1rem;
+  grid-template-columns: 1fr; /* Default for mobile */
 }
 
 .skill-card {
@@ -77,12 +78,13 @@ body {
   background-color: var(--background);
   border-radius: 6px;
   padding: 0.75rem;
-  transition: var(--transition);
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .skill-logo {
@@ -101,44 +103,44 @@ body {
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--primary);
-  color: var(--background);
-  padding: 0.5rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
   visibility: hidden;
-  transition: var(--transition);
+  opacity: 0;
   width: 200px;
   text-align: center;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
 .skill-card:hover .tooltip {
-  opacity: 1;
   visibility: visible;
+  opacity: 1;
   bottom: calc(100% + 10px);
 }
 
+/* Responsive Grid Adjustments */
 @media (min-width: 640px) {
   .skills-list {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 768px) {
   .skills-container {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .skills-container {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1280px) {
   .skills-container {
-      grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }

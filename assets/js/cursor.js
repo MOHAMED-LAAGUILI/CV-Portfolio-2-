@@ -2,6 +2,7 @@ const cursor = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursor-ring');
 const body = document.querySelector('body');
 const heroSection = document.querySelector('.hero');
+
 let cursorFlareTimeout;
 
 // Check localStorage for cursor color preference
