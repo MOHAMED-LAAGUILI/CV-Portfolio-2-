@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Define valid routes (ensure they're consistently formatted)
   const validRoutes = [
-      '#home', 
+   
+      '#hero', 
       '#about', 
       '#services', 
       '#contact', 
@@ -11,6 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
       '#portfolio', 
       '#testimonials',
       "#footer",
+      '/index.html#hero', 
+      '/index.html#about', 
+      '/index.html#services', 
+      '/index.html#contact', 
+      '/index.html#achievements', 
+      '/index.html#skills', 
+      '/index.html#resume', 
+      '/index.html#portfolio', 
+      '/index.html#testimonials',
+      "/index.html#footer",
       "/",
       "/index.html",
       "/404.html"
