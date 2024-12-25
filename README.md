@@ -14,6 +14,10 @@ https://laaguili-dev.app.genez.io/404.html
 - Sections for About, Skills, Resume, Services, Portfolio, and Testimonials
 - Contact form
 - Progressive Web App (PWA) functionality
+- google Verification
+- sitemap
+- robots
+- manifest
 
 
 ## Technologies & libraries Used
@@ -53,12 +57,13 @@ AOS 2.3.1
 particles.js
 cursor
 ThreeJS
+Animate.css 4.1.1
 etc...
 
 
-- UI frameworks
-Animate.css 4.1.1
+- UI frameworks and style
 Bootstrap 5.0.2
+External style CSS3
 
 - SEO
 https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=fr
@@ -80,7 +85,8 @@ https://search.google.com/search-console/welcome?utm_source=about-page
 
 ## Installation
 1. Clone the repository
-2. Open `index.html` in your browser
+2. Open `index.html` in your browser for main page
+3. Open `404.html` in your browser for an interesting 404 page
 
 ## Usage
 Navigate through the different sections using the sidebar menu or by scrolling.
