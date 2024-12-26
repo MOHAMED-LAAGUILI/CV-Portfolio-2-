@@ -13,15 +13,22 @@
 }
 
 /* Custom cursor */
+/*--------------------------------------------------------------
+# Site cursor
+--------------------------------------------------------------*/
+
+
+   
 .cursor {
   position: absolute;
   z-index: 9;
+  background-color: var(--cursor-color, #ffffff); /* Use variable with default */
   width: var(--cursor-size);
   height: var(--cursor-size);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: transform 0.2s ease, background-color var(--transition-duration) ease;
+  transition: transform 0.2s ease, background-color 0.3s ease; /* Added background-color transition */
   box-shadow: 0 0 20px var(--cursor-shadow);
 }
 

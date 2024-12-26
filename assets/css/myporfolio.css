@@ -263,3 +263,11 @@
     border-radius: 5px; /* Rounded corners */
     background-color:white; 
   }
+  .btn-outline-light {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  

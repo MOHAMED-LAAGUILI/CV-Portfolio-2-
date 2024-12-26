@@ -2,13 +2,14 @@ const cursor = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursor-ring');
 const body = document.querySelector('body');
 const heroSection = document.querySelector('.hero');
+const footerSection = document.querySelector('#footer'); // Select the footer element
 
 let cursorFlareTimeout;
 
 // Check localStorage for cursor color preference
-let cursorColor = localStorage.getItem('cursorColor') || '#eee'; // Default to purple if not found
+let cursorColor = localStorage.getItem('cursorColor') || '#7002ee'; // Default to purple if not found
 let ringColor = localStorage.getItem('cursorRingColor') || 'rgb(255, 255, 255)';
-let flareColor = localStorage.getItem('cursorFlareColor') || 'rgba(255, 255, 255, 0.7)';
+let flareColor = localStorage.getItem('cursorFlareColor') || '#ffffff';
 
 // Apply stored or default colors
 updateCursorColors(cursorColor, ringColor, flareColor);
@@ -27,28 +28,28 @@ document.addEventListener('mousemove', (e) => {
   // Create the flare effect at the cursor position
   createCursorFlare(cursorX, cursorY);
 
-  // Check if the cursor is inside or outside the hero section
-  if (heroSection && isCursorInHero(e)) {
-    // Set colors to white when inside the hero section
-    updateCursorColors('#eee', 'rgb(255, 255, 255)', 'rgba(255, 255, 255, 0.7)');
-    saveCursorColors('#eee', '', 'rgba(255, 255, 255, 0.7)');
+  // Check if the cursor is inside the hero or footer section
+  if ((heroSection && isCursorInSection(e, heroSection)) || (footerSection && isCursorInSection(e, footerSection))) {
+    // Set colors to white when inside the hero or footer section
+    updateCursorColors('#ffffff', 'rgb(255, 255, 255)', 'rgba(255, 255, 255, 0.7)');
+    saveCursorColors('#ffffff', '', 'rgba(255, 255, 255, 0.7)');
   } else {
-    updateCursorColors('#fff', 'rgb(110, 27, 204)', 'rgba(112, 2, 238, 0.7)');
-    saveCursorColors('#fff', 'rgb(110, 27, 204)', 'rgba(112, 2, 238, 0.7)');
-    // Set colors to purple when outside the hero section
+    // Set colors to purple when outside the hero and footer sections
+    updateCursorColors('#7002ee', 'rgb(110, 27, 204)', 'rgba(112, 2, 238, 0.7)');
+    saveCursorColors('#7002ee', 'rgb(110, 27, 204)', 'rgba(112, 2, 238, 0.7)');
   }
 });
 
-// Function to check if the cursor is inside the hero section
-function isCursorInHero(event) {
-  if (!heroSection) return false; // Early exit if heroSection doesn't exist
+// Function to check if the cursor is inside a specific section
+function isCursorInSection(event, section) {
+  if (!section) return false; // Early exit if the section doesn't exist
 
-  const heroRect = heroSection.getBoundingClientRect();
+  const rect = section.getBoundingClientRect();
   return (
-    event.clientX >= heroRect.left &&
-    event.clientX <= heroRect.right &&
-    event.clientY >= heroRect.top &&
-    event.clientY <= heroRect.bottom
+    event.clientX >= rect.left &&
+    event.clientX <= rect.right &&
+    event.clientY >= rect.top &&
+    event.clientY <= rect.bottom
   );
 }
 
@@ -93,13 +94,13 @@ const hoverElements = document.querySelectorAll('.hover-target');
 hoverElements.forEach((el) => {
   el.addEventListener('mouseenter', () => {
     cursor.style.transform = 'scale(2)';
-    cursor.style.backgroundColor = '#4d01a5';  // Change color
+    cursor.style.backgroundColor = '#4d01a5'; // Change color
     cursorRing.style.transform = 'scale(2)';
   });
 
   el.addEventListener('mouseleave', () => {
     cursor.style.transform = 'scale(1)';
-    cursor.style.backgroundColor = 'white';  // Reset color to white
+    cursor.style.backgroundColor = 'white'; // Reset color to white
     cursorRing.style.transform = 'scale(1)';
   });
 });
