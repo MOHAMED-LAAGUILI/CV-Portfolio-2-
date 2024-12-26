@@ -47,6 +47,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to redirect to the 404 page
   function redirectTo404() {
-    window.location.href = "/404.html"; // Ensure you have a 404.html file
+    function redirectTo404() {
+      var isDevelopment = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
+      if (isDevelopment) {
+        // Redirect to local 404 page in development environment
+        window.location.href = 'http://127.0.0.1:5500/404.html';
+      } else {
+        // Redirect to production 404 page in production environment
+        window.location.href = 'https://laaguili-dev.app.genez.io/404.html';
+      }
+    }
   }
 });
