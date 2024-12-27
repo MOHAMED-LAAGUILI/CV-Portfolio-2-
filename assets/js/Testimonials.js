@@ -57,14 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const testimonialList = document.getElementById('testimonial-list');
 
-  // Function to truncate text and add Show More option
-  function truncateText(text, limit) {
-    if (text.length > limit) {
-      const truncatedText = text.substring(0, limit) + '...';
-      return `${truncatedText} <span class="show-more" style="color: var(--primary); cursor: pointer;">Show More</span>`;
-    }
-    return text;
-  }
+
 
   // Generate and append testimonial items dynamically
   testimonials.forEach(({ name, job, image, text }) => {
@@ -77,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h4>${job}</h4>
         <p>
           <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          <span class="testimonial-text">${truncateText(text, 150)}</span>
+          <span class="testimonial-text">${text}</span>
           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
         </p>
       </div>

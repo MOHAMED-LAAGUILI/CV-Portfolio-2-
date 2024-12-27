@@ -1,14 +1,6 @@
 
   const portfolioItems = [
     {
-      image: "./assets/img/PortfolioProjects/info-sphere.app.genez.io.png",
-      title: "info-sphere",
-      description: "a small side task website that can be installed in phone or desktop shows some device important infos such memory, wifi, core etc..",
-      link: "https://info-sphere.app.genez.io/",
-      demoLink: "<i class='bi bi-eye'></i>",
-      githubLink: "https://github.com/MOHAMED-LAAGUILI/InfoSphere",
-    },
-    {
       image: "./assets/img/PortfolioProjects/MERN-Ecommerce-App.png",
       title: "MERN E-commerce App",
       description: "Full-stack e-commerce site, responsive and complete",

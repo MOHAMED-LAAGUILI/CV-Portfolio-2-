@@ -49,9 +49,7 @@ etc...
 - JavaScript libraries
 SweetAlert2
 Swiper
-Isotope
 SweetAlert
-Light box
 jQuery 3.6.0
 AOS 2.3.1
 particles.js

@@ -1,38 +1,40 @@
 :root {
-  /* Define color and size variables */
-  --cursor-size: 24px;
-  --cursor-ring-size: 50px;
+  --cursor-size: 40px; /* Increase cursor size */
+  --cursor-ring-size: 60px; /* Adjust ring size if needed */
   --flare-size: 12px;
-  --cursor-color: #7002ee; /* Default color for the cursor (purple) */
-  --cursor-ring-color: rgba(119, 0, 255, 0.4); /* Default ring color */
-  --flare-color: rgba(112, 2, 238, 0.7); /* Default flare color */
+  --cursor-color: #7002ee; 
+  --cursor-ring-color: rgba(119, 0, 255, 0.4);
+  --flare-color: rgba(112, 2, 238, 0.7);
   --cursor-shadow: rgba(112, 2, 238, 0.5);
   --transition-duration: 0.3s;
   --flare-transition-duration: 0.3s;
   --flare-opacity-duration: 0.3s;
 }
 
-/* Custom cursor */
-/*--------------------------------------------------------------
-# Site cursor
---------------------------------------------------------------*/
-
-
-   
 .cursor {
   position: absolute;
   z-index: 9;
-  background-color: var(--cursor-color, #ffffff); /* Use variable with default */
+  background-color: var(--cursor-color, #ffffff);
   width: var(--cursor-size);
   height: var(--cursor-size);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: transform 0.2s ease, background-color 0.3s ease; /* Added background-color transition */
+  transition: transform 0.2s ease, background-color 0.3s ease;
   box-shadow: 0 0 20px var(--cursor-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevents the image from overflowing the cursor */
 }
 
-/* Cursor outer ring for layering effect */
+#cursor-logo {
+  width: 80%;  /* Adjust logo size */
+  height: 80%; /* Keep logo proportionate to the cursor */
+  object-fit: contain;
+}
+
+/* Cursor outer ring */
 .cursor-ring {
   position: absolute;
   z-index: 9;
@@ -45,7 +47,7 @@
   transition: transform 0.2s ease, border var(--transition-duration) ease;
 }
 
-/* Short tail flare effect */
+/* Optional: Flare effect */
 .cursor-flare {
   position: absolute;
   width: var(--flare-size);
@@ -53,14 +55,9 @@
   background-color: var(--flare-color);
   border-radius: 50%;
   pointer-events: none;
-  transition: transform 0.1s ease, opacity var(--flare-opacity-duration) ease, width var(--flare-transition-duration) ease, height var(--flare-transition-duration) ease;
+  transition: transform 0.1s ease, opacity var(--flare-opacity-duration) ease;
 }
 
-/* Cursor hover target scaling effect */
-
-
-/* Cursor color for when hovering inside the hero section 
-*/
 .hero {
-  cursor: none; 
+  cursor: none;
 }

@@ -7,7 +7,7 @@
 # Scroll-Bar
 --------------------------------------------------------------*/
 ::-webkit-scrollbar {
-    width: 10px; /* Reduced width for a thinner scrollbar */
+    width: 6px; /* Reduced width for a thinner scrollbar */
     height: 10px; /* Reduced height for horizontal scrollbar */
   }
   
