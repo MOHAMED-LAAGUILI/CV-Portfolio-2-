@@ -13,7 +13,7 @@
       title: "MERN E-commerce App",
       description: "Full-stack e-commerce site, responsive and complete",
       link: "#portfolio",
-      demoLink: "Unavailable Online",
+      demoLink: "Soon",
       githubLink: "https://github.com/MOHAMED-LAAGUILI/MERN-Ecommerce-App",
 
     },
@@ -22,7 +22,7 @@
       title: "React Express ChatApp",
       description: "Real-time chat app with session support",
       link: "#portfolio",
-      demoLink: "Unavailable Online",
+      demoLink: "Soon",
       githubLink: "https://github.com/MOHAMED-LAAGUILI/React-Express-ChatApp",
     },
     {

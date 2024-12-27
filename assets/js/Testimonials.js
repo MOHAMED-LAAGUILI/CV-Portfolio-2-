@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: "Soufiane",
-      job: "Teacher",
+      job: "IT Teacher",
       image: "assets/img/testimonials/prof-soufiane.png",
       text: `Dear Mohamed, 👨‍🏫 You have always stood out, 
       not just for your academic excellence but for your 

@@ -32,3 +32,18 @@
   opacity: 1;
   transform: rotateY(0); /* Bring the active image forward */
 }
+
+
+.section-title {
+  text-align: center; /* Center align the content */
+  padding: 20px; /* Add spacing around the section */
+  margin-left: 70px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Align items vertically */
+}
+
+

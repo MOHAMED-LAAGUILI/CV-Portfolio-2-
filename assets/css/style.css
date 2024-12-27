@@ -486,3 +486,17 @@ section {
   font-size: larger;
 }
 
+
+.arrow-image {
+  width: 100px; /* Set consistent size */
+  margin-top: 40px;
+  height: auto; /* Maintain aspect ratio */
+  transform: rotate(260deg); /* Rotate the arrow */
+  display: block; /* Ensure it behaves like a block-level element for alignment */
+}
+
+.blob-image { 
+ width: 70px;
+padding-bottom: 20px;
+}
+

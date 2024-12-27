@@ -23,16 +23,11 @@
 <meta property="og:type" content="portfolio" />
 
 <!-- Favicon -->
-<link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+<link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
 <link rel="apple-touch-icon" href="./assets/img/favicon.png" />
 
 <!-- Link to the Manifest file -->
 <link rel="manifest" href="./manifest.json">
-   
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
-  <link rel="apple-touch-icon" href="./assets/img/favicon.png" />
-  
 
     <!-- CSS & Icons Libraries -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
@@ -187,22 +182,30 @@
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2 data-i18n="about1">About Me</h2>
-          <p data-i18n="about2">
+          <div class="title-container">
+            <img src="./assets/img/blob.gif" alt="Blob" class="blob-image" loading="lazy">
+            <h2 data-i18n="about1">About Me</h2>
+            <img src="./assets/img/arrow.png" alt="Arrow" class="arrow-image" loading="lazy">
+          </div>
+          <p id="paragraph" data-i18n="about2">
             Being a web developer is very difficult. It requires his line of work
             Many requirements for web developers. As a web developer, you will need to master different technical
             skills, be able to work with various software and show great attention to detail. But I can quickly adapt to
             any work environment. I have no problem working in a different field. I have a little work addiction due to
-            my hard work but I am open to a long term contract to benefit both sides.
+            my hard work but I am open to a long-term contract to benefit both sides.
           </p>
+        
         </div>
+        
+        
+       
 
 
         <div class="row">
           <div class="col-lg-4">
             <div class="image-slider">
               <!--
-              <img src="assets/img/profile-img.jpeg" alt="LAAGUILI Mohamed Image 1" class="slide-img active" />
+              <img src="assets/img/profile-img.jpeg" alt="LAAGUILI Mohamed Image 1" class="slide-img active" loading="lazy"/>
               -->
               <img src="/assets/img/Profile-IMG-Tooned.jpg" alt="LAAGUILI Mohamed Image 2" class="slide-img floating" loading="lazy"/>
             </div>
@@ -214,6 +217,7 @@
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3 data-i18n="about3">Infos</h3>
 
+            
             <br />
             <br />
 
@@ -265,8 +269,13 @@
     <section id="achievements" class="facts">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Achievements</h2>
-          <img class="testimg" src="/assets/img/bouncy-cup-with-laurel-branches-and-stars.gif" alt="Achievements Logo"
+
+          <div class="title-container">
+            <img src="./assets/img/blob.gif" alt="Blob" class="blob-image" loading="lazy">
+            <h2>Achievements</h2>
+            <img src="./assets/img/arrow.png" alt="Arrow" class="arrow-image" loading="lazy">
+          </div>
+          <img class="testimg" src="./assets/img/achivements.gif" alt="Achievements Logo"
             width="200px" loading="lazy" />
           <div class="main-title position-relative">Here's a sample of what I've done so far</div>
         </div>
@@ -282,9 +291,11 @@
 <section id="skills" class="skills section-bg py-16">
   <div class="container" data-aos="fade-up">
     <div class="section-title text-center mb-12">
-      <h2 class="text-4xl font-bold">Digital Skills</h2>
-      <img class="mx-auto rounded-full border-4 border-primary" loading="lazy"  src="/assets/img/lounge-man-working-on-web-design.gif" alt="Lounge Man Working on Web Design" width="220px">
-      <p class="text-lg text-gray-600 mb-4">Here’s an overview of my expertise in web development <br> and what I’m proficient in</p>
+      <h2 class="text-4xl font-bold">
+        <img src="./assets/img/blob.gif" alt="Blob" class="blob-image" loading="lazy">
+        Digital Skills
+      </h2>
+        <p class="text-lg text-gray-600 mb-4">Here’s an overview of my expertise in web development <br> and what I’m proficient in</p>
     </div>
 
     <!-- Skills Container -->
@@ -302,11 +313,12 @@
       <div class="container" data-aos="fade-up">
         <!-- Section Title -->
         <div class="section-title text-center">
-          <h2>Resume</h2>
-          <img class="testimg mt-4 mb-4"
-            src="/assets/img/dazzle-line-man-looks-at-the-resumes-of-candidates-for-a-vacancy.gif"
-            alt="Resume Illustration" width="300px" loading="lazy" />
-        </div>
+
+          <h2>      
+          <img src="./assets/img/blob.gif" alt="Blob" class="blob-image" loading="lazy">
+            Resume
+          </h2>
+           </div>
 
         <!-- Main Content -->
         <div class="row">
@@ -365,7 +377,10 @@
     <section id="services" class="services py-5 bg-light">
       <div class="container" data-aos="fade-up">
         <div class="section-title text-center mb-4">
-          <h2 class="fw-bold">What I Offer?</h2>
+          <h2 class="fw-bold">
+            <img src="./assets/img/blob.gif" alt="Blob" class="blob-image" loading="lazy">
+            What I Offer?
+          </h2>
           <p class="text-muted">Explore the range of services I provide to help bring your project to life.</p>
         </div>
 
@@ -381,7 +396,10 @@
       <div class="container">
         <!-- Section Title -->
         <div class="section-title mb-5">
-          <h2 class="display-4 text-uppercase fw-bold">My Portfolio</h2>
+          <h2 class="display-4 text-uppercase fw-bold">
+            <img src="./assets/img/blob.gif" alt="Blob" class="blob-image" loading="lazy">
+            My Portfolio
+          </h2>
           <p class="text-muted">A showcase of my top 10 projects</p>
         </div>
 
@@ -400,9 +418,11 @@
 <section id="testimonials" class="testimonials section-bg">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
-      <h2>Testimonials</h2>
-      <img class="testimg" src="/assets/img/dazzle-line-blog-post-article.gif" 
-           alt="Testimonials logo" loading="lazy" width="200px">
+      <h2>
+        <img src="./assets/img/blob.gif" alt="Blob" class="blob-image" loading="lazy">
+        Testimonials
+      </h2>
+     
       <p>Here is a sample of what most people, teachers, and colleagues say about me.</p>
     </div>
   </div>
@@ -421,9 +441,10 @@
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Contact</h2>
-          <img class="testimg" src="/assets/img/sammy-line-service-support-3.gif" alt="contact logo" loading="lazy" width="300px">
-
+          <h2>
+            <img src="./assets/img/blob.gif" alt="Blob" class="blob-image" loading="lazy">
+            Contact
+          </h2>
 
           <p>Available all the time don't hesitate to reach</p>
         </div>
