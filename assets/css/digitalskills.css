@@ -1,5 +1,5 @@
 :root {
-  --primary: #6a8caf;
+  --primary: #5a37da;
   --secondary: #f0f4f8;
   --text: #333;
   --text-secondary: #666;
@@ -29,11 +29,11 @@ body {
 
 .section-title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .section-title p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
@@ -41,27 +41,28 @@ body {
 
 .skills-container {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(1, 1fr); /* Default for mobile */
+  gap: 1.5rem;
+  grid-template-columns: 1fr; /* Default: single column */
+  padding: 1rem;
 }
 
 .skill-group {
   background-color: var(--card-background);
   border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px var(--shadow);
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px var(--shadow);
   transition: var(--transition);
 }
 
 .skill-group:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px var(--shadow);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px var(--shadow);
 }
 
 .group-title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--primary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   border-bottom: 2px solid var(--primary);
   padding-bottom: 0.5rem;
 }
@@ -69,12 +70,13 @@ body {
 .skills-list {
   display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr; /* Default for mobile */
+  grid-template-columns: repeat(2, 1fr); /* Default: 2 skills per row */
 }
 
 .skill-card {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   background-color: var(--background);
   border-radius: 6px;
   padding: 0.75rem;
@@ -90,11 +92,11 @@ body {
 .skill-logo {
   width: 30px;
   height: 30px;
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
 }
 
 .skill-name {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--text);
 }
 
@@ -109,7 +111,7 @@ body {
   border-radius: 5px;
   visibility: hidden;
   opacity: 0;
-  width: 200px;
+  width: 180px;
   text-align: center;
   transition: visibility 0s, opacity 0.3s ease-in-out;
 }
@@ -121,26 +123,35 @@ body {
 }
 
 /* Responsive Grid Adjustments */
+@media (min-width: 480px) {
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr); /* Two skills per row on small screens */
+  }
+}
+
 @media (min-width: 640px) {
   .skills-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Three skills per row on medium screens */
   }
 }
 
 @media (min-width: 768px) {
   .skills-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two skill groups per row */
+  }
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr); /* Four skills per row on medium screens */
   }
 }
 
 @media (min-width: 1024px) {
   .skills-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Three skill groups per row */
   }
 }
 
 @media (min-width: 1280px) {
   .skills-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Four skill groups per row */
   }
 }
