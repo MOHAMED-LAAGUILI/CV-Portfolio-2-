@@ -1,6 +1,10 @@
+# Allow all user agents to access the entire site
 User-agent: *
 Allow: /
-Disallow: /assets/
+
+# Explicitly allow access to the main page and 404 page
+Allow: /index.html
 Allow: /404.html
 
+# Provide the URL to the sitemap for better indexing
 Sitemap: https://laaguili-dev.app.genez.io/sitemap.xml

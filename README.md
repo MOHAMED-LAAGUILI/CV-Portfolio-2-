@@ -1,12 +1,14 @@
-# MOHAMED LAAGUILI | Web Developer Portfolio
+# MOHAMED LAAGUILI | Full Stack Web Developer Portfolio
 
 ## Description
-This project is a personal portfolio website, a Full Stack Web Developer. The website showcases my skills, achievements, projects, and provides contact information.
+This project is a personal portfolio website showcasing my skills and achievements as a Full Stack Web Developer. The website highlights my expertise, projects, and provides contact information.
+
+The project is under continuous development, with monthly updates that introduce new and exciting features. With the help of AI, I continuously enhance the website’s functionality. My core expertise includes HTML, CSS, JavaScript, and beyond.
+
 
 ## Live View
 https://laaguili-dev.app.genez.io/
 
-https://laaguili-dev.app.genez.io/404.html
 
 ## Features
 - Responsive design
@@ -99,7 +101,7 @@ Navigate through the different sections using the sidebar menu or by scrolling.
 7. **Portfolio**: Showcase of projects
 8. **Testimonials**: Feedback from clients and colleagues
 9. **Contact**: Contact form and personal contact information
-10. **404 sample**: 404 for redirect handle page with amazing three js use case
+10. **404 sample**: 404 for redirect handle page with amazing three.js bg
 
 ## Progressive Web App
 This website is set up as a PWA, allowing for offline access and app-like experience on mobile devices.
@@ -109,8 +111,8 @@ This website is set up as a PWA, allowing for offline access and app-like experi
 - Phone: (+212)6 89 77 08 09
 
 ## License
-All rights reserved.
+All rights reserved. This project is licensed under the MIT License.
+
 
 ---
-
-Designed and built with ❤️ by MOHAMED LAAGUILI
+Designed and built with ❤

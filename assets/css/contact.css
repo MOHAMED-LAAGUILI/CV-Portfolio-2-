@@ -1,17 +1,18 @@
-:root{
-  --primary:#7002ee;
-  --secondary:#4d01a5;
-  --primary-soft:#c174f5;
+:root {
+  --primary: #7002ee;
+  --secondary: #4d01a5;
+  --primary-soft: #c174f5;
 }
+
 /*--------------------------------------------------------------
-# Contact
+# Contact Section
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
   background: #fff;
-
 }
 
+/* Info icon styling */
 .contact .info i {
   font-size: 20px;
   color: var(--primary);
@@ -26,6 +27,7 @@
   transition: all 0.3s ease-in-out;
 }
 
+/* Info heading styling */
 .contact .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
@@ -34,6 +36,7 @@
   color: #45505b;
 }
 
+/* Info paragraph styling */
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
@@ -41,6 +44,7 @@
   color: #728394;
 }
 
+/* Email, phone, and address styling */
 .contact .info .email,
 .contact .info .phone {
   margin-top: 40px;
@@ -49,9 +53,57 @@
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background:  var(--primary);
+  background: var(--primary);
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Form Control Styles
+--------------------------------------------------------------*/
+
+/* General form control styling */
+.form-control {
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s ease;
+  outline: none;
+}
+
+/* Focus state styling */
+.form-control:focus {
+  border-color: #7002ee;
+  box-shadow: 0 0 5px rgba(112, 2, 238, 0.5);
+  outline-offset: 2px;
+}
+
+/* Disabled input styling */
+.form-control:disabled {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+  color: #888;
+}
+
+
+/* Hover state styling */
+.form-control:hover {
+  border-color: #4d01a5;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .form-control {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Form Styles
+--------------------------------------------------------------*/
 
 .contact .php-email-form {
   width: 100%;
@@ -62,31 +114,29 @@
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
+/* Error and success message styling */
+.contact .php-email-form .error-message,
+.contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
   padding: 15px;
   font-weight: 600;
+  text-align: center;
 }
 
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
+.contact .php-email-form .error-message {
+  color: #fff;
+  background: #ed3c0d;
 }
 
 .contact .php-email-form .sent-message {
-  display: none;
   color: #fff;
   background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
 }
 
+/* Loading state styling */
 .contact .php-email-form .loading {
   display: none;
-  background:  var(--primary);
+  background: var(--primary);
   text-align: center;
   padding: 15px;
 }
@@ -100,10 +150,10 @@
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
 
+/* Input and textarea styling */
 .contact .php-email-form input,
 .contact .php-email-form textarea {
   border-radius: 4px;
@@ -119,8 +169,9 @@
   padding: 10px 12px;
 }
 
+/* Submit button styling */
 .contact .php-email-form button[type=submit] {
-  background:  var(--primary);
+  background: var(--primary);
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -128,22 +179,26 @@
   border-radius: 50px;
 }
 
-.contact  .php-email-form button[type=submit]:hover {
-  background:  var(--primary);
+.contact .php-email-form button[type=submit]:hover {
+  background: var(--primary);
 }
+
+/*--------------------------------------------------------------
+# Custom Button
+--------------------------------------------------------------*/
+
 #my-form-button {
   display: inline-block;
   padding: 10px 20px;
   font-size: 15px;
-  box-shadow: #000000 2px 2px;
+  box-shadow: #000 2px 2px;
   font-weight: 600;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
-  border: 1px solid white; /* Semi-transparent border */
-  border-radius: 5px; /* Rounded corners */
-  background-color: var(--primary); /* Transparent background */
-  backdrop-filter: blur(10px); /* Apply blur to the background */
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: var(--primary);
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease-in-out;
   margin-bottom: 50px;
 }
@@ -151,31 +206,20 @@
 #my-form-button:hover {
   box-shadow: #8705dd 2px 2px;
   font-weight: 600;
-  color: #000000;
+  color: #000;
   text-decoration: none;
-  border: 1px solid rgb(0, 0, 0); /* Semi-transparent border */
-  border-radius: 5px; /* Rounded corners */
-  background-color:white; 
+  border: 1px solid #000;
+  background-color: white;
 }
 
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
+/*--------------------------------------------------------------
+# Keyframes for Loading Animation
+--------------------------------------------------------------*/
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
-
-

@@ -1,0 +1,38 @@
+# Node.js / npm-related files (if using npm for tools like build systems)
+node_modules/
+
+# Dependency directories
+bower_components/
+
+# Build output (dist, build, etc.)
+dist/
+build/
+
+# Logs
+*.log
+
+# OS files (macOS, Linux, Windows)
+.DS_Store
+Thumbs.db
+
+# IDE and editor specific files (VSCode, Sublime, etc.)
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Generated files
+*.map
+*.swp
+*.bak
+
+# Temporary files
+*.tmp
+*.temp
+
+# Specific to static site generators (if applicable)
+public/
+cache/
+
+# Optional: if you are using a CI/CD tool (e.g., Jenkins, Travis)
+*.yml
+*.yaml
