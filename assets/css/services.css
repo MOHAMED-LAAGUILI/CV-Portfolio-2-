@@ -69,7 +69,7 @@
 }
 
 .services .icon-box:hover .icon,
-.services .icon-box:hover h4 a,
+.services .icon-box:hover h4,
 .services .icon-box:hover p {
   color: #fff;
 }

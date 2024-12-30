@@ -17,7 +17,7 @@ const renderServices = () => {
         <div class="icon">
           <i class="bx ${service.icon}"></i>
         </div>
-        <h4><a href="#">${service.title}</a></h4>
+        <h4>${service.title}</h4>
         <p>${service.description}</p>
       </div>
     `;

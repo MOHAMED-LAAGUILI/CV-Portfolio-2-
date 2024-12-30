@@ -4,7 +4,7 @@ const form = document.getElementById("my-form");
 const successMsg = `
   <div class="alert alert-success alert-dismissible d-flex align-items-center fade show">
     <i class="bi bi-send-check"></i>
-    <strong class="mx-2">Thanks!</strong>your message delivered.
+    <strong class="mx-2">Thanks!</strong>Message has been delivered.
     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
   </div>`;
 
