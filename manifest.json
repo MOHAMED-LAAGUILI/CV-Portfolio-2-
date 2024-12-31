@@ -1,14 +1,22 @@
 {
     "name":"LAAGUILI MOHAMED",
-    "short_name":"Mohamed Dev",
+    "short_name":"Mohamed Dev v3",
     "description":"Full Stack Web Developer",
     "start_url":"/",
     "display":"standalone",
     "background_color":"#F9F9F9",
     "theme_color":"#7002ee",
     "scope": ".",
+    "lang": "en", 
     "icons":[
-      { "src": "/assets/img/192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-      { "src": "/assets/img/512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+      { "src": "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/192x192", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+      { "src": "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    ],
+    "splash_pages": [
+        {
+            "src": "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/1200x800",
+            "sizes": "1200x800",
+            "type": "image/png"
+        }
     ]
 }

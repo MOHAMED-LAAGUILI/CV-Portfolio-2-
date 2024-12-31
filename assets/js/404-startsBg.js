@@ -109,53 +109,103 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
   
-    // Main Animation Loop
-    function animate() {
-        requestAnimationFrame(animate);
-  
-        // Update particles positions with velocities
-        layers.forEach(layer => {
-            const positionsArray = layer.geometry.attributes.position.array;
-            const velocitiesArray = layer.geometry.attributes.velocity.array;
-  
-            for (let i = 0; i < particleCount; i++) {
-                positionsArray[i * 3] += velocitiesArray[i * 3] * layer.speedFactor;
-                positionsArray[i * 3 + 1] += velocitiesArray[i * 3 + 1] * layer.speedFactor;
-                positionsArray[i * 3 + 2] += velocitiesArray[i * 3 + 2] * layer.speedFactor;
-  
-                // Reset particle position if it goes off-screen (loop effect)
-                if (positionsArray[i * 3] > 1000) positionsArray[i * 3] = -1000;
-                if (positionsArray[i * 3 + 1] > 1000) positionsArray[i * 3 + 1] = -1000;
-                if (positionsArray[i * 3 + 2] > 1000) positionsArray[i * 3 + 2] = -1000;
+ // Define color palette (array of hex colors)
+const colorPalette = ["#ff0000", "#00ff00", "#0000ff", "#ff00ff", "#00ffff", "#ffff00"];
+
+function animate() {
+    requestAnimationFrame(animate);
+
+    layers.forEach(layer => {
+        const positionsArray = layer.geometry.attributes.position.array;
+        const velocitiesArray = layer.geometry.attributes.velocity.array;
+        const colorsArray = layer.geometry.attributes.color.array;
+
+        for (let i = 0; i < particleCount; i++) {
+            // Extract current position
+            const x = positionsArray[i * 3];
+            const y = positionsArray[i * 3 + 1];
+            const z = positionsArray[i * 3 + 2];
+
+            // Calculate distance to center
+            const distance = Math.sqrt(x ** 2 + y ** 2 + z ** 2);
+
+            // Spiral motion (rotational + radial convergence)
+            const angle = 0.002 * layer.speedFactor; // Rotation speed
+            const cosAngle = Math.cos(angle);
+            const sinAngle = Math.sin(angle);
+
+            const radialSpeed = -0.2 * (2000 - distance) / 2000; // Radial convergence
+            const newX = cosAngle * x - sinAngle * y + radialSpeed * x / distance;
+            const newY = sinAngle * x + cosAngle * y + radialSpeed * y / distance;
+            const newZ = z + radialSpeed * z / distance;
+
+            // Update positions
+            positionsArray[i * 3] = newX;
+            positionsArray[i * 3 + 1] = newY;
+            positionsArray[i * 3 + 2] = newZ;
+
+            // Use colors from the palette
+            const color = new THREE.Color(colorPalette[i % colorPalette.length]);
+            colorsArray[i * 3] = color.r;
+            colorsArray[i * 3 + 1] = color.g;
+            colorsArray[i * 3 + 2] = color.b;
+
+            // Dynamic size based on distance or user interaction
+            layer.material.size = Math.max(0.5, 3 * (distance / 2000));
+
+            // Fade out stars near the center
+            if (distance < 50) {
+                positionsArray[i * 3] = (Math.random() - 0.5) * 2000;
+                positionsArray[i * 3 + 1] = (Math.random() - 0.5) * 2000;
+                positionsArray[i * 3 + 2] = (Math.random() - 0.5) * 2000;
+
+                // Assign random color from the palette
+                const randomColor = new THREE.Color(colorPalette[Math.floor(Math.random() * colorPalette.length)]);
+                colorsArray[i * 3] = randomColor.r;
+                colorsArray[i * 3 + 1] = randomColor.g;
+                colorsArray[i * 3 + 2] = randomColor.b;
             }
-  
-            layer.geometry.attributes.position.needsUpdate = true;
-        });
-  
-        // Update nebula rotation for subtle movement
-        nebula.rotation.x += 0.0001;
-        nebula.rotation.y += 0.0001;
-  
-        // Add mouse interaction for camera movement
-        camera.position.x += (mouseX * 50 - camera.position.x) * 0.05;
-        camera.position.y += (-mouseY * 50 - camera.position.y) * 0.05;
-  
-        // Rotate the scene for added effect
-        scene.rotation.x += 0.0002;
-        scene.rotation.y += 0.0002;
-  
-        // Update flickering effect every few frames
-        if (Math.random() < 0.1) {
-            updateStarFlickering();
         }
-  
-        // Update star colors every few frames for a dynamic effect
-        if (Math.random() < 0.1) {
-            updateStarColors();
+
+        layer.geometry.attributes.position.needsUpdate = true;
+        layer.geometry.attributes.color.needsUpdate = true;
+    });
+
+    // Add interactivity: Repel particles when mouse is near
+    layers.forEach(layer => {
+        const positionsArray = layer.geometry.attributes.position.array;
+
+        for (let i = 0; i < particleCount; i++) {
+            const x = positionsArray[i * 3];
+            const y = positionsArray[i * 3 + 1];
+
+            // Distance from mouse to particle
+            const dx = mouseX * 50 - x;
+            const dy = mouseY * 50 - y;
+            const distance = Math.sqrt(dx ** 2 + dy ** 2);
+
+            // Apply repelling force
+            if (distance < 100) {
+                positionsArray[i * 3] += dx * 0.05;
+                positionsArray[i * 3 + 1] += dy * 0.05;
+            }
         }
-  
-        renderer.render(scene, camera);
-    }
+
+        layer.geometry.attributes.position.needsUpdate = true;
+    });
+
+    // Update nebula rotation for subtle movement
+    nebula.rotation.x += 0.0002;
+    nebula.rotation.y += 0.0002;
+
+    // Rotate the scene for added effect
+    scene.rotation.x += 0.0004;
+    scene.rotation.y += 0.0004;
+
+    renderer.render(scene, camera);
+}
+
+    
   
     animate();
   

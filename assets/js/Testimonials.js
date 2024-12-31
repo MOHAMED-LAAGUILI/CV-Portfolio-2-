@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: "Khaoula El Fels",
       job: "Bachelor in Computer Science Development",
-      image: "assets/img/testimonials/Khaoula el fels.jpeg",
+      image: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Testimoniales/Khaoula-el-fels",
+      
       text: `Wow, Mohamed! 🎉 Huge congratulations to you! 
       You’re such a brilliantly innovative and endlessly 
       creative person—always full of bright ideas and determination. 
@@ -14,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: "Ayman El Hasani Rousi",
       job: "Computer Science Developer",
-      image: "assets/img/testimonials/AymanRouusi.png",
+      image: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Testimoniales/AymanRouusi",
       text: `Hey Mohamed! 🎉Working alongside you has been nothing 
       short of inspiring. Your ideas are like sparks,
        igniting solutions and creativity in every project we’ve tackled together.
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: "Laila Mlaiji",
       job: "Director, MIAGE Institution of IT",
-      image: "assets/img/testimonials/laila-mlaiji.png",
+      image: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Testimoniales/laila-mlaiji",
       text: `Dear Mohamed, 🌟 It has been an absolute honor 
       watching you grow into such a talented and driven individual.
        Your journey is a testament to your hard work, innovation,
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: "Soufiane",
       job: "IT Teacher",
-      image: "assets/img/testimonials/prof-soufiane.png",
+      image: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Testimoniales/prof-soufiane",
       text: `Dear Mohamed, 👨‍🏫 You have always stood out, 
       not just for your academic excellence but for your 
       unquenchable thirst for knowledge and innovation. 
