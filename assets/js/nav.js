@@ -1,7 +1,7 @@
 
   // Define navigation items
   const navItems = [
-    { href: "#hero", icon: "https://res.cloudinary.com/djmafhmnw/image/upload/v1735661824/Portfolio/ax5uqtvn3sawiezyapo1.png", label: "Home", isImage: true },
+    { href: "#hero", icon: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512", label: "Home", isImage: true },
     { href: "#about", icon: "bx bx-user", label: "About Me", isImage: false },
     { href: "#achievements", icon: "bi bi-trophy", label: "Achievements", isImage: false },
     { href: "#skills", icon: "bi bi-stack", label: "Skills", isImage: false },
