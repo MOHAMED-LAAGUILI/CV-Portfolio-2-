@@ -1,7 +1,7 @@
 {
-    "name":"LAAGUILI MOHAMED",
-    "short_name":"Mohamed Dev v3",
-    "description":"Full Stack Web Developer",
+    "name":"MohamedLAAGUILI ",
+    "short_name":"Mohamed Web Dev v3.1",
+    "description":"Crafting seamless web experiences as a Full Stack Web Developer. Specializing in Node.js, ExpressJS, React, and Mongo/Postgres, I turn ideas into robust, scalable, and user-centric applications. Let's build something extraordinary together!",
     "start_url":"/",
     "display":"standalone",
     "background_color":"#F9F9F9",
@@ -14,8 +14,8 @@
     ],
     "splash_pages": [
         {
-            "src": "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/1200x800",
-            "sizes": "1200x800",
+            "src": "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ]
