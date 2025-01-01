@@ -6,7 +6,6 @@ self.addEventListener("install", function (event) {
     caches.open(staticCacheName).then(function (cache) {
       const resourcesToCache = [
         './', // Cache the root (index.html) or other pages you want
-        './assets/img/favicon.png', // Example: your favicon
         './assets/css/style.css', // Example: your main CSS file
         './assets/js/main.js', // Example: your main JS file
 

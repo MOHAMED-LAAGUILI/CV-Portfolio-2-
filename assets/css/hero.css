@@ -55,20 +55,17 @@
   }
   
   #hero p span {
-    color: #ffa600;
+    color: #ffe4fb;
     letter-spacing: 1px;
   }
   
-  #hero .social-links {
-    margin-top: 30px;
-  }
-  
+
   #hero .social-links a {
     font-size: 24px;
     display: inline-block;
     color: #45505b;
     line-height: 1;
-    margin-right: 20px;
+    margin: 15px;
     transition: 0.3s;
   }
 
@@ -128,7 +125,7 @@
   color: #ffffff !important;
   border-radius: 50px;
   transition: 0.7s;
-  padding: 7px;
+  padding: 3px;
 }
 
 .linkedin {
@@ -136,7 +133,7 @@
   color: #ffffff !important;
   border-radius: 4px;
   transition: 0.7s;
-  padding: 7px;
+  padding: 3px;
 }
 
 .github {
@@ -144,7 +141,7 @@
   color: #ffffff !important;
   border-radius: 50px;
   transition: 0.7s;
-  padding: 7px;
+  padding: 3px;
 }
 
 .codepen {
@@ -179,10 +176,6 @@
 /*--------------------------------------------------------------
 # Hero Name GRADIENT
 --------------------------------------------------------------*/
-.b::first-letter {
-    font-weight: 200px !important;
-    font-family: "Sofia", sans-serif !important;
-  }
   
   .myName {
     background: linear-gradient(to right,

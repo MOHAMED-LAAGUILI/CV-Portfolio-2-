@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     hero2: "MOHAMED LAAGUILI",
                     hero3: "and I am",
                     hero4: "Resume",
-                    about1: "About Me",
+                    about1: "About",
                     about2: `Being a web developer is very difficult. It requires many skills and attention to detail. I quickly adapt to new environments and am open to long-term contracts.`,
                     about3: "Infos",
                     about4: "Birth",

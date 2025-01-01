@@ -40,7 +40,7 @@ h6 {
   opacity: 0;
   right: 30px !important;
   bottom: 30px !important;
-  z-index: 996;
+  z-index: 1000;
   background:var(--primary) ;
   width: 50px !important;
   height: 50px !important;

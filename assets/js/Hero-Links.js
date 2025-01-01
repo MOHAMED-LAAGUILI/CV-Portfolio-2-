@@ -17,22 +17,7 @@ const socialLinks = [
       className: "github shadow",
       iconClass: "bi-github",
       target: "_blank",
-    },
-    {
-      href: "#hero",
-      className: "codepen shadow",
-      iconClass: "fa-brands fa-codepen",
-    },
-    {
-      href: "#hero",
-      className: "youtube shadow",
-      iconClass: "fa-brands fa-youtube",
-    },
-    {
-      href: "#hero",
-      className: "instagram shadow",
-      iconClass: "fa-brands fa-instagram",
-    },
+    }
   ];
   
   const renderSocialLinks = (links, containerId) => {

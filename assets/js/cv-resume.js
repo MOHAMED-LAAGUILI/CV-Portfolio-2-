@@ -93,15 +93,15 @@ const certificatesData = [
   {
     title: "SQL Fundamentals",
     url: "https://olympus.mygreatlearning.com",
-    logo: "https://tse4.mm.bing.net/th?id=OIP.4RdAsBAdR_hzO9cYT32TUwAAAA&pid=Api&P=0&h=180" // Add image path here
+    logo: "https://d9jmtjs5r4cgq.cloudfront.net/images/branding/greatlearning-brand-v1-2.svg" // Add image path here
   },
   {
-    title: "Prix D'excellence – Best Project (MIAGE)",
+    title: "Best Final Year Project #1 (MIAGE)",
     url: "https://groupemiage.net",
     logo: "https://groupemiage.net/wp-content/uploads/2017/03/New-MIAGE-Logo-VSimple.png" // Add image path here
   },
   {
-    title: "Prix D'excellence – Top Candidate (MIAGE)",
+    title: "#1 Top Candidate 2021-2023 (MIAGE)",
     url: "https://groupemiage.net",
     logo: "https://groupemiage.net/wp-content/uploads/2017/03/New-MIAGE-Logo-VSimple.png" // Add image path here
   },
