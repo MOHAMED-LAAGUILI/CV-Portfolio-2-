@@ -2,6 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Array of testimonials
   const testimonials = [
     {
+      name: "Mounssif BOUHLAOUI",
+      job: "Lead Software Engineer",
+      image: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Testimoniales/Mounssif-BOUHLAOUI",
+      text: `im 31 years old, i saw many people, i know gold
+       people when i saw them or there work and creativity,
+        KEEP GOING BRO! THERE AMAZING OPPORTUNITIES in your way,
+         just keep pushing ❤️`
+    },
+    {
       name: "Khaoula El Fels",
       job: "Bachelor in Computer Science Development",
       image: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Testimoniales/Khaoula-el-fels",
