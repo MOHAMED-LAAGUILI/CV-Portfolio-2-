@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
        AMAZING OPPORTUNITIES in your way, just keep pushing ❤`,
        socialLinks: {
         linkedin: "https://linkedin.com/in/mounssif-bouhlaoui",
-        twitter: "https://twitter.com/mounssif",
       }
     },
     {
@@ -20,48 +19,36 @@ document.addEventListener('DOMContentLoaded', () => {
       
       text: `Wow, Mohamed! 🎉 Huge congratulations to you! 
       You’re such a brilliantly innovative and endlessly 
-      creative person—always full of bright ideas and determination. 
-      The sky’s the limit for someone as talented as you! 🌟 Keep up the
+      creative person—always full of bright ideas and determination.🌟 Keep up the
        amazing work and continue to inspire everyone around you! ...`,
        socialLinks: {
-        linkedin: "https://linkedin.com/in/",
-        twitter: "https://twitter.com/",
+       
       }
     },
     {
-      name: "Ayman El Hasani Rousi",
-      job: "Computer Science Developer",
+      name: "Ayman Rossi El Hassani",
+      job: "Computer Science Engineer",
       image: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Testimoniales/AymanRouusi",
       text: `Hey Mohamed! 🎉Working alongside you has been nothing 
       short of inspiring. Your ideas are like sparks,
        igniting solutions and creativity in every project we’ve tackled together.
         💡🔥 Beyond your skills, it’s your kindness and collaborative spirit that 
-        truly make you shine. As you embark on your career journey, remember that 
-        the best is yet to come! The sky isn’t the limit for someone like you—it’s
-         just the beginning. 🚀 Cheers to your success and all the milestones you’re
-          about to conquer!`,
+        truly make you shine. As you embark on your career journey`,
           socialLinks: {
-            linkedin: "https://linkedin.com/in/",
-            twitter: "https://twitter.com/",
+            linkedin: "https://www.linkedin.com/in/ayman-rossi-el-hassani-9b6714210/",
           }
     },
     {
-      name: "Laila Mlaiji",
-      job: "Director, MIAGE Institution of IT",
+      name: "laila MLAIJI",
+      job: "Director at MIAGE Institution of IT",
       image: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Testimoniales/laila-mlaiji",
       text: `Dear Mohamed, 🌟 It has been an absolute honor 
       watching you grow into such a talented and driven individual.
        Your journey is a testament to your hard work, innovation,
         and the sheer determination to reach great heights. 
-        As you step into the next phase of your career, remember 
-        that the world is your canvas, and you are the artist. 
-        Keep painting it with your brilliance and creativity! 
-        🎨✨ The entire school is proud of you, and I wish
-         you the greatest success ahead. Your achievements
-          will always inspire future generations!`,
+        As you step into the next phase of your career,`,
           socialLinks: {
-            linkedin: "https://linkedin.com/in/",
-            twitter: "https://twitter.com/",
+            linkedin: "https://www.linkedin.com/in/laila-mlaiji-b8551615b/",
           }
     },
     {
@@ -72,14 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
       not just for your academic excellence but for your 
       unquenchable thirst for knowledge and innovation. 
       Your passion, coupled with your humility and dedication, 
-      has made teaching you a truly rewarding experience. 
-      🌱🚀 As you soar into your career, remember to embrace every
-       challenge as an opportunity to shine even brighter. 
-       You’ve made us proud, and I am confident you will continue to leave 
-       a mark wherever you go. Wishing you immense success in everything you pursue!`,
+      has made teaching you a truly rewarding experience. `,
        socialLinks: {
-        linkedin: "https://linkedin.com/in/",
-        twitter: "https://twitter.com/",
+       
       }
     },
   ];
@@ -87,9 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const testimonialList = document.getElementById('testimonial-list');
 
 
-
   // Generate and append testimonial items dynamically
-  testimonials.forEach(({ name, job, image, text }) => {
+  testimonials.forEach(({ name, job, image, text, socialLinks = {} }) => {
     const testimonialItem = document.createElement('div');
     testimonialItem.classList.add('swiper-slide');
     testimonialItem.innerHTML = `
@@ -103,14 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
         </p>
         <div class="social-links">
-          ${socialLinks.linkedin ? `<a href="${socialLinks.linkedin}" target="_blank"><i class="bi bi-linkedin"></i></a>` : ""}
-          ${socialLinks.twitter ? `<a href="${socialLinks.twitter}" target="_blank"><i class="bi bi-twitter"></i></a>` : ""}
-          ${socialLinks.github ? `<a href="${socialLinks.github}" target="_blank"><i class="bi bi-github"></i></a>` : ""}
+          ${socialLinks.linkedin ? `<a href="${socialLinks.linkedin}" target="_blank"><i class="bi bi-linkedin"></i></a>` : ''}
+          ${socialLinks.twitter ? `<a href="${socialLinks.twitter}" target="_blank"><i class="bi bi-twitter"></i></a>` : ''}
         </div>
       </div>
     `;
-
-    // Attach the Show More functionality to each testimonial individually
+  
+    // Attach Show More functionality to each testimonial individually
     const showMoreLink = testimonialItem.querySelector('.show-more');
     if (showMoreLink) {
       showMoreLink.addEventListener('click', () => {
@@ -119,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         testimonialItem.querySelector('.testimonial-text').innerHTML = `
           ${fullText} <span class="show-less" style="color: var(--primary); cursor: pointer;">Show Less</span>
         `;
-
+  
         // Add Show Less functionality
         const showLessLink = testimonialItem.querySelector('.show-less');
         showLessLink.addEventListener('click', () => {
@@ -128,10 +108,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     }
-
+  
     testimonialList.appendChild(testimonialItem);
   });
-
+  
   // Initialize Swiper
   new Swiper('.testimonials-slider', {
     slidesPerView: 1,

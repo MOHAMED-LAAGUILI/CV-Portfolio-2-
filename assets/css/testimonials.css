@@ -84,6 +84,24 @@
   background-color: var(--primary);
 }
 
+
+.testimonial-item .social-links {
+  margin-top: 15px;
+}
+
+.testimonial-item .social-links a {
+  margin: 0 8px;
+  color: #8726f7;
+  font-size: 40px;
+  transition: color 0.3s;
+}
+
+.testimonial-item .social-links a:hover {
+  color: var(--secondary);
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 100%;
@@ -121,17 +139,3 @@
 }
 
 
-.testimonial-item .social-links {
-  margin-top: 15px;
-}
-
-.testimonial-item .social-links a {
-  margin: 0 8px;
-  color: var(--primary);
-  font-size: 20px;
-  transition: color 0.3s;
-}
-
-.testimonial-item .social-links a:hover {
-  color: var(--secondary);
-}
