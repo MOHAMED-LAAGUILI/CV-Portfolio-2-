@@ -119,3 +119,19 @@
     padding: 0 40px;
   }
 }
+
+
+.testimonial-item .social-links {
+  margin-top: 15px;
+}
+
+.testimonial-item .social-links a {
+  margin: 0 8px;
+  color: var(--primary);
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.testimonial-item .social-links a:hover {
+  color: var(--secondary);
+}

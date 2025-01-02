@@ -5,10 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
       name: "Mounssif BOUHLAOUI",
       job: "Lead Software Engineer",
       image: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Testimoniales/Mounssif-BOUHLAOUI",
-      text: `im 31 years old, i saw many people, i know gold
-       people when i saw them or there work and creativity,
-        KEEP GOING BRO! THERE AMAZING OPPORTUNITIES in your way,
-         just keep pushing ❤️`
+      text: `I'm 31 years old, I saw many people, I know gold people when I
+       see them or their work and creativity. KEEP GOING BRO! THERE ARE 
+       AMAZING OPPORTUNITIES in your way, just keep pushing ❤`,
+       socialLinks: {
+        linkedin: "https://linkedin.com/in/mounssif-bouhlaoui",
+        twitter: "https://twitter.com/mounssif",
+      }
     },
     {
       name: "Khaoula El Fels",
@@ -19,7 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
       You’re such a brilliantly innovative and endlessly 
       creative person—always full of bright ideas and determination. 
       The sky’s the limit for someone as talented as you! 🌟 Keep up the
-       amazing work and continue to inspire everyone around you! ...`
+       amazing work and continue to inspire everyone around you! ...`,
+       socialLinks: {
+        linkedin: "https://linkedin.com/in/",
+        twitter: "https://twitter.com/",
+      }
     },
     {
       name: "Ayman El Hasani Rousi",
@@ -32,7 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
         truly make you shine. As you embark on your career journey, remember that 
         the best is yet to come! The sky isn’t the limit for someone like you—it’s
          just the beginning. 🚀 Cheers to your success and all the milestones you’re
-          about to conquer!`
+          about to conquer!`,
+          socialLinks: {
+            linkedin: "https://linkedin.com/in/",
+            twitter: "https://twitter.com/",
+          }
     },
     {
       name: "Laila Mlaiji",
@@ -47,7 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
         Keep painting it with your brilliance and creativity! 
         🎨✨ The entire school is proud of you, and I wish
          you the greatest success ahead. Your achievements
-          will always inspire future generations!`
+          will always inspire future generations!`,
+          socialLinks: {
+            linkedin: "https://linkedin.com/in/",
+            twitter: "https://twitter.com/",
+          }
     },
     {
       name: "Soufiane",
@@ -61,7 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
       🌱🚀 As you soar into your career, remember to embrace every
        challenge as an opportunity to shine even brighter. 
        You’ve made us proud, and I am confident you will continue to leave 
-       a mark wherever you go. Wishing you immense success in everything you pursue!`
+       a mark wherever you go. Wishing you immense success in everything you pursue!`,
+       socialLinks: {
+        linkedin: "https://linkedin.com/in/",
+        twitter: "https://twitter.com/",
+      }
     },
   ];
 
@@ -74,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const testimonialItem = document.createElement('div');
     testimonialItem.classList.add('swiper-slide');
     testimonialItem.innerHTML = `
-      <div class="testimonial-item">
+       <div class="testimonial-item">
         <img src="${image}" class="testimonial-img floating mb-3 shadow" alt="${name}" loading="lazy" />
         <h3>${name}</h3>
         <h4>${job}</h4>
@@ -83,6 +102,11 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="testimonial-text">${text}</span>
           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
         </p>
+        <div class="social-links">
+          ${socialLinks.linkedin ? `<a href="${socialLinks.linkedin}" target="_blank"><i class="bi bi-linkedin"></i></a>` : ""}
+          ${socialLinks.twitter ? `<a href="${socialLinks.twitter}" target="_blank"><i class="bi bi-twitter"></i></a>` : ""}
+          ${socialLinks.github ? `<a href="${socialLinks.github}" target="_blank"><i class="bi bi-github"></i></a>` : ""}
+        </div>
       </div>
     `;
 
