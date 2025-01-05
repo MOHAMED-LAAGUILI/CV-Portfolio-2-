@@ -95,7 +95,8 @@ The site is configured as a Progressive Web App, providing offline capabilities 
 Cloudinary is used for enhanced image optimization, ensuring fast load times and high-quality visuals. The site also supports lazy loading for images.
 
 ## Contact Information
-- Email: mohamed.dev.2001@gmail.com
+- Business Email: mohamed.dev.2001@gmail.com
+- Personal Email: saidlergili@gmail.com
 - Phone: (+212) 6 89 77 08 09
 
 ## License
