@@ -203,6 +203,8 @@ skillGroups.forEach((group) => {
     const skillLogo = document.createElement("img");
     skillLogo.src = skill.logo;
     skillLogo.alt = `${skill.name} logo`;
+    skillLogo.loading = `lazy`;
+    skillLogo.title = `${skill.name} logo`;
     skillLogo.classList.add("skill-logo");
 
     const skillName = document.createElement("div");

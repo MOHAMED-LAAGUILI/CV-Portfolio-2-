@@ -77,7 +77,7 @@
       
       portfolioItem.innerHTML = `
           <div class="portfolio-item shadow rounded-4 overflow-hidden">
-              <img src="${item.image}" alt="${item.title}" class="img-fluid">
+              <img src="${item.image}" alt="${item.title}" class="img-fluid" loading="lazy" title="${item.title}">
               <div class="overlay d-flex flex-column align-items-center justify-content-center text-center p-3">
                   <h3 class="text-light">${item.title}</h3>
                   <p class="text-light mb-3">${item.description}</p>

@@ -9,9 +9,7 @@
     { href: "#services", icon: "bx bx-crosshair", label: "Services", isImage: false },
     { href: "#portfolio", icon: "bi bi-window-stack", label: "Projects", isImage: false },
     { href: "#testimonials", icon: "bx bx-comment", label: "Testimonials", isImage: false },
-    { href: "#contact", icon: "bi bi-send", label: "Contact", isImage: false },
-    { href: "404.html", icon: "bi bi-emoji-frown", label: "404 page", isImage: false },
-
+    { href: "#contact", icon: "bi bi-send", label: "Contact", isImage: false }
   ];
 
   // Get the navigation menu element

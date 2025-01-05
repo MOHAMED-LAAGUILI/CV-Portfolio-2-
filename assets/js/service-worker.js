@@ -46,36 +46,25 @@ self.addEventListener("install", function (event) {
   );
 });
 
-// Fetch event to handle requests
 self.addEventListener("fetch", function (event) {
-  console.log('Fetching:', event.request.url);
+  if (event.request.url.startsWith('chrome-extension://')) {
+    // Ignore chrome-extension:// requests
+    return;
+  }
 
   event.respondWith(
     caches.match(event.request).then(function (cachedResponse) {
       if (cachedResponse) {
-        console.log('Cache hit:', event.request.url);
-        return cachedResponse; // Serve from cache
+        return cachedResponse;
       }
-
-      console.log('Cache miss:', event.request.url);
       return fetch(event.request).then(function (networkResponse) {
-        // Add the X-Content-Type-Options header
-        const newHeaders = new Headers(networkResponse.headers);
-        newHeaders.set('X-Content-Type-Options', 'nosniff');
-
-        // Cache the new content for future requests
         return caches.open(staticCacheName).then(function (cache) {
           cache.put(event.request, networkResponse.clone());
-          return new Response(networkResponse.body, {
-            status: networkResponse.status,
-            statusText: networkResponse.statusText,
-            headers: newHeaders
-          });
+          return networkResponse;
         });
-      }).catch(function () {
-        // Provide fallback for offline scenarios
-        return caches.match("/index.html");
       });
+    }).catch(function () {
+      return caches.match("/index.html");
     })
   );
 });
