@@ -1,44 +1,83 @@
-const btn = document.getElementById("download-btn");
-const cvLink = document.getElementById("cv-link");
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadBtn = document.getElementById("download-btn");
+    const resumeModal = document.getElementById("resumeModal");
+    const confirmationModal = document.getElementById("confirmationModal");
+    const closeButtons = document.getElementsByClassName("close");
 
-btn.addEventListener("click", function () {
-    Swal.fire({
-        title: "Choose Language",
-        text: "Please select your preferred language:",
-        showCancelButton: true,
-        showDenyButton: true,
-        confirmButtonText: "English",
-        denyButtonText: "Français",
-        cancelButtonText: "Cancel",
-        customClass: {
-            popup: "glass-popup", // Custom class for glass effect
-        },
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire({
-                title: "Success!",
-                text: "Resume in English will start downloading...",
-                icon: "success",
-                customClass: { popup: "glass-popup" },
-            });
-            cvLink.href = "./assets/docs/CV-EN.pdf";
-            cvLink.click();
-        } else if (result.isDenied) {
-            Swal.fire({
-                title: "Success!",
-                text: "CV en français va commencer à télécharger...",
-                icon: "success",
-                customClass: { popup: "glass-popup" },
-            });
-            cvLink.href = "./assets/docs/CV-FR.pdf";
-            cvLink.click();
-        } else {
-            Swal.fire({
-                title: "Download Cancelled",
-                text: "Resume won't be downloaded.",
-                icon: "error",
-                customClass: { popup: "glass-popup" },
-            });
+    let currentDownloadUrl = '';
+    let currentDownloadFilename = '';
+
+    function openModal(modal) {
+        modal.style.display = "block";
+        document.body.classList.add("modal-open"); // Prevent body scroll
+    }
+
+    function closeModal(modal) {
+        modal.style.display = "none";
+        document.body.classList.remove("modal-open"); // Allow body scroll
+    }
+
+    function closeAllModals() {
+        closeModal(resumeModal);
+        closeModal(confirmationModal);
+    }
+
+    downloadBtn.onclick = function() {
+        openModal(resumeModal);
+    }
+
+    for (let closeButton of closeButtons) {
+        closeButton.onclick = function() {
+            closeAllModals();
         }
+    }
+
+    window.onclick = function(event) {
+        if (event.target == resumeModal || event.target == confirmationModal) {
+            closeAllModals();
+        }
+    }
+
+    function viewResume(url) {
+        window.open(url, "_blank");
+    }
+
+    function downloadResume(url, filename) {
+        currentDownloadUrl = url;
+        currentDownloadFilename = filename;
+        closeModal(resumeModal);
+        openModal(confirmationModal);
+    }
+
+    function confirmDownload() {
+        const link = document.createElement('a');
+        link.href = currentDownloadUrl;
+        link.download = currentDownloadFilename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        closeAllModals();
+    }
+
+    document.getElementById("view-en").addEventListener("click", function() {
+        viewResume("./assets/docs/CV-EN.pdf");
+    });
+
+    document.getElementById("download-en").addEventListener("click", function() {
+        downloadResume("./assets/docs/CV-EN.pdf", "CV-EN.pdf");
+    });
+
+    document.getElementById("view-fr").addEventListener("click", function() {
+        viewResume("./assets/docs/CV-FR.pdf");
+    });
+
+    document.getElementById("download-fr").addEventListener("click", function() {
+        downloadResume("./assets/docs/CV-FR.pdf", "CV-FR.pdf");
+    });
+
+    document.getElementById("confirmDownload").addEventListener("click", confirmDownload);
+
+    document.getElementById("cancelDownload").addEventListener("click", function() {
+        closeAllModals();
     });
 });

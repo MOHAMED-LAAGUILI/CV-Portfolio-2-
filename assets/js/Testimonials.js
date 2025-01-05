@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const testimonials = [
     {
       name: "Mounssif BOUHLAOUI",
-      job: "Lead Software Engineer",
+      job: "Lead Software Engineer at ALX Morocco",
       image: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Testimoniales/Mounssif-BOUHLAOUI",
       text: `I'm 31 years old, I saw many people, I know gold people when I
        see them or their work and creativity. KEEP GOING BRO! THERE ARE 
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: "Soufiane",
-      job: "IT Teacher",
+      job: "IT Teacher at MIAGE Institution of IT",
       image: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Testimoniales/prof-soufiane",
       text: `Dear Mohamed, 👨‍🏫 You have always stood out, 
       not just for your academic excellence but for your 
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     testimonialItem.classList.add('swiper-slide');
     testimonialItem.innerHTML = `
        <div class="testimonial-item">
-        <img src="${image}" class="testimonial-img floating mb-3 shadow" alt="${name}" loading="lazy" />
+        <img src="${image}" class="testimonial-img floating mb-3 shadow" alt="${name}" loading="lazy" title="image of ${name} as ${job}" />
         <h3>${name}</h3>
         <h4>${job}</h4>
         <p>

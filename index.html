@@ -23,9 +23,9 @@
   <!-- Performance (HTML Caching) -->
   <meta http-equiv="Cache-Control" content="max-age=86400, public">
   <meta http-equiv="Expires" content="Fri, 10 Aug 2025 20:00:00 GMT">
-  <meta name="revisit-after" content="7 days" /> 
-  <meta name="generator" content="https://genezio.com/" /> 
-    
+  <meta name="revisit-after" content="7 days" />
+  <meta name="generator" content="https://genezio.com/" />
+
   <!-- Search Engine Bots -->
   <meta name="robots" content="index, follow" />
   <meta name="googlebot" content="index, follow" />
@@ -59,7 +59,7 @@
     content="Crafting seamless web experiences as a Full Stack Web Developer. Specializing in Node.js, ExpressJS, React, and Mongo/Postgres, I turn ideas into robust, scalable, and user-centric applications. Let's build something extraordinary together!" />
   <meta name="twitter:image"
     content="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512" />
-    <meta name="twitter:creator" content="@MohamedLaaguili" />
+  <meta name="twitter:creator" content="@MohamedLaaguili" />
 
   <!-- Favicon -->
   <link rel="icon" href="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/favicon.ico"
@@ -110,8 +110,8 @@
   <link rel="stylesheet" href="./assets/css/cursor.css" />
   <link rel="stylesheet" href="./assets/css/i18next-tarnslator.css" />
 
-<!-- Schema Markup for Person -->
-<script type="application/ld+json">
+  <!-- Schema Markup for Person -->
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -159,8 +159,8 @@
   }
 </script>
 
-<!-- Schema Markup for WebPage (Portfolio) -->
-<script type="application/ld+json">
+  <!-- Schema Markup for WebPage (Portfolio) -->
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -208,7 +208,7 @@
 
       <div class="hero-text">
         <h2 class="mb-2 fw-bold" data-i18n="hero1">Hello, My Name Is</h2>
-        <h1 class="myName fw-bold" data-i18n="hero2">MOHAMED LAAGUILI</h1>
+        <h1 class="fw-bold" data-i18n="hero2">MOHAMED LAAGUILI</h1>
         <p class="fw-bolder typed-bg" data-i18n="hero3">
           and I'am
         </p>
@@ -219,12 +219,50 @@
 
         <div class="social-links" id="social-links-container"></div>
 
-        <button class="hero-button" id="download-btn" role="button" aria-label="Download Resume">
+        <button class="hero-button" id="download-btn" role="button" aria-label="View or Download Resume">
           <i class="bi bi-cloud-download-fill hero-icon-button"></i>
           <span class="fs-4 fw-bold" data-i18n="hero4">Resume</span>
         </button>
 
-        <a href="./assets/docs/CV-EN.pdf" id="cv-link" download style="display:none;"></a>
+        <div id="resumeModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Choose Resume Option</h2>
+            <div class="resume-options">
+              <div class="resume-option">
+                <h3>🇺🇸 English</h3>
+                <button id="view-en" class="btn">
+                  <i class="bi bi-eye"></i>
+                </button>
+                <button id="download-en" class="btn">
+                  <i class="bi bi-cloud-download-fill"></i>
+                </button>
+              </div>
+              <div class="resume-option">
+                <h3>🇫🇷 French</h3>
+                <button id="view-fr" class="btn">
+                  <i class="bi bi-eye"></i>
+                </button>
+                <button id="download-fr" class="btn">
+                  <i class="bi bi-cloud-download-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="confirmationModal" class="modal">
+          <div class="modal-content">
+            <h2>Confirm Download</h2>
+            <p>Are you sure you want to download the resume?</p>
+            <div class="confirmation-buttons">
+              <button id="confirmDownload" class="btn btn-confirm">Yes, Download</button>
+              <button id="cancelDownload" class="btn btn-cancel">Cancel</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -242,10 +280,10 @@
         <div class="section-title">
           <div class="title-container">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy">
+              class="blob-image" loading="lazy" title="blob gif">
             <h2 data-i18n="about1">About</h2>
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/arrow" alt="Arrow"
-              class="arrow-image" loading="lazy">
+              class="arrow-image" loading="lazy" title="arrow">
           </div>
           <p id="paragraph" data-i18n="about2">
 
@@ -261,10 +299,11 @@
           <div class="col-lg-4">
             <div class="image-slider">
               <!--
-              <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Profile-IMG" alt="LAAGUILI Mohamed Image 1" class="slide-img active" loading="lazy"/>
+              <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Profile-IMG" alt="LAAGUILI Mohamed Image 1" 
+              class="slide-img active" loading="lazy" title="Profile-IMG"/>
               -->
               <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Profile-IMG-Tooned"
-                alt="LAAGUILI Mohamed Image 2" class="slide-img floating" loading="lazy" />
+                alt="LAAGUILI Mohamed Image 2" class="slide-img floating" loading="lazy" title="Profile-IMG-Tooned" />
             </div>
           </div>
 
@@ -327,14 +366,14 @@
         <div class="section-title">
           <div class="title-container">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy">
+              class="blob-image" loading="lazy" title="blob gif">
             <h2>Achievements</h2>
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/arrow" alt="Arrow"
-              class="arrow-image" loading="lazy">
+              class="arrow-image" loading="lazy" title="arrow">
           </div>
           <img class="testimg"
             src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/achivements"
-            alt="Achievements Logo" width="200px" loading="lazy" />
+            alt="Achievements Logo" width="200px" loading="lazy" title="achievements" />
           <div class="main-title position-relative">Here's a sample of what I've done so far</div>
         </div>
 
@@ -351,7 +390,7 @@
         <div class="section-title text-center mb-12">
           <h2 class="text-4xl font-bold">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy">
+              class="blob-image" loading="lazy" title="blob gif">
             Digital Skills
           </h2>
           <p class="text-lg text-gray-600 mb-4">Here’s an overview of my expertise in web development <br> and what I’m
@@ -373,7 +412,7 @@
         <div class="section-title text-center mb-10">
           <h2 class="text-3xl font-bold">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy">
+              class="blob-image" loading="lazy" title="blob gif">
             Resume
           </h2>
         </div>
@@ -404,7 +443,7 @@
           <!-- Right Column -->
           <div class="lg:col-span-1">
             <!-- Experience -->
-            <h3 class="resume-title text-xl font-semibold mt-8">Experience</h3>
+            <h3 class="resume-title text-xl font-semibold mt-8">Experiences</h3>
             <div id="experience-section">
               <!-- Data will be inserted here -->
             </div>
@@ -418,8 +457,12 @@
             <div class="alert alert-warning bg-yellow-200 p-4 rounded-lg mt-6">
               <i class="bi bi-exclamation-triangle-fill text-yellow-500 mr-3"></i>
               <span class="font-bold">Note:</span>
-              <span class="ml-1">I have stopped collecting certificates in 2022. Now, I focus more on acquiring
-                knowledge and skills than getting or buying a piece of paper.</span>
+              <span class="ml-1">
+                Since 2022, I've shifted my focus from collecting certificates to truly mastering
+                new skills and acquiring real knowledge. For me, it's about growth and understanding, not just adding
+                paper to a collection.
+              </span>
+
             </div>
           </div>
         </div>
@@ -434,7 +477,7 @@
         <div class="section-title text-center mb-4">
           <h2 class="fw-bold">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy">
+              class="blob-image" loading="lazy" title="blob gif">
             Services
           </h2>
           <p class="text-muted">Explore the range of services I provide to help bring your project to life.</p>
@@ -454,7 +497,7 @@
         <div class="section-title mb-5">
           <h2 class="display-4 text-uppercase fw-bold">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy">
+              class="blob-image" loading="lazy" title="blob gif">
             My Portfolio
           </h2>
           <p class="text-muted">A showcase of my top 10 projects</p>
@@ -477,7 +520,7 @@
         <div class="section-title">
           <h2>
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy">
+              class="blob-image" loading="lazy" title="blob gif">
             Testimonials
           </h2>
 
@@ -595,7 +638,7 @@
     <div class="container position-relative z-index-1">
       <!-- Logo or Avatar -->
       <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512"
-        class="rounded-circle mb-3 shadow floating" width="100" alt="Logo" loading="lazy" />
+        class="rounded-circle mb-3 shadow floating" width="100" alt="Logo" loading="lazy" title="Logo" />
 
       <!-- Name -->
       <h3 class="fw-bold mb-2">LAAGUILI MOHAMED</h3>
@@ -617,7 +660,7 @@
     <div class="loader">
       <div class="inner-loader"></div> <!-- Inner spinning circle -->
       <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512"
-        alt="preloader Logo" class="preloader-logo" />
+        alt="preloader Logo" class="preloader-logo" title="logo" />
     </div>
   </div>
 
@@ -625,7 +668,7 @@
   <div>
     <div id="cursor" class="cursor">
       <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512" alt="Cursor Logo"
-        id="cursor-logo" loading="lazy" />
+        id="cursor-logo" loading="lazy" title="logo" />
     </div>
     <div id="cursor-ring" class="cursor-ring"></div>
   </div>
@@ -641,7 +684,7 @@
     <!-- Phone Dialer link -->
     <div class="phone-icon">
       <a href="tel:+212689770809" class="cell-phone">
-        <i class="fa fa-phone-flip"></i>
+        <i class="bi bi-phone"></i>
       </a>
     </div>
 
@@ -649,7 +692,7 @@
     <div class="whatsapp-icon">
       <a href="https://wa.me/+212689770809" target="_blank" aria-label="Contact us on WhatsApp">
         <img src="https://res.cloudinary.com/djmafhmnw/image/upload/v1735663109/Portfolio/whatsapp.svg"
-          alt="WhatsApp icon" loading="lazy">
+          alt="WhatsApp icon" loading="lazy" title="whatsapp logo">
       </a>
     </div>
   </div>

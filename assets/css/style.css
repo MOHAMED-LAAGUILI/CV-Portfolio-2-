@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 :root{
   --primary:#7002ee;
   --secondary:#4d01a5;
@@ -8,7 +17,6 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
   color: #000000;
 }
 
@@ -151,12 +159,6 @@ padding-bottom: 20px;
   }
 }
 
-.floating-img {
-  transform: translateX(-15px);
-}
-
-
-
 /*--------------------------------------------------------------
 # WhatsApp live button contact
 --------------------------------------------------------------*/
@@ -208,8 +210,8 @@ padding-bottom: 20px;
 .whatsapp-icon::after {
   content: "Whatsapp +212689770809";
   position: absolute;
-  bottom: 70px;
-  right: 10px;
+  bottom: 5px;
+  right: 70px;
   background-color: #25D366;
   color: #fff;
   padding: 5px 10px;
@@ -232,12 +234,10 @@ padding-bottom: 20px;
   position: fixed;
   bottom: 20px;  /* Adjust position for phone icon */
   right: 22px;   /* Fixed on the right side */
-  background: linear-gradient(135deg, #0a50e9, #0a50e9); /* Elegant gradient */
   border-radius: 50%;   /* Ensure it's perfectly round */
   padding: 15px;
   width: 60px;    /* Set a specific width */
   height: 60px;   /* Set a specific height */
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);  /* Softer shadow for depth */
   cursor: pointer;
   z-index: 1000;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
@@ -250,14 +250,11 @@ padding-bottom: 20px;
 /* Hover effect for the Phone icon */
 .phone-icon:hover {
   transform: scale(1.1) rotate(15deg);  /* Slight tilt for elegance */
-  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.5);  /* Stronger shadow on hover */
   opacity: 0.9;  /* Slight opacity change on hover */
-  background-color: #0052D4; /* Change background color on hover */
 }
 
 /* Focus state for accessibility */
 .phone-icon:focus {
-  outline: 3px solid rgba(0, 123, 255, 0.5); /* Blue focus outline for better accessibility */
   transform: scale(1.05); /* Slight zoom effect when focused */
 }
 
@@ -265,8 +262,8 @@ padding-bottom: 20px;
 .phone-icon::after {
   content: "Call me +212689770809";
   position: absolute;
-  bottom: 50px;
-  right: 10px;
+  bottom: 5px;
+  right: 60px;
   background-color: #0a50e9;
   color: #fff;
   padding: 5px 10px;
@@ -285,10 +282,10 @@ padding-bottom: 20px;
 .cell-phone {
   background-color: #0a50e9;
   color: #ffffff !important;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: .7s;
   padding: 3px;
-  font-size: larger;
+  font-size: 40px;
 }
 
 

@@ -22,7 +22,11 @@
     const li = document.createElement("li");
     li.innerHTML = `
       <a href="${item.href}" class="nav-link scrollto">
-        ${item.isImage ? `<img src="${item.icon}" class="rounded-pill floating-img" width="48px" alt="${item.label}" />` : `<i class="${item.icon}"></i>`}
+        ${item.isImage ?
+           `<img src="${item.icon}" class="rounded-pill floating-img" width="48px" 
+           alt="${item.label}" loading="lazy" title="logo" style="transform: translateX(-15px);" />` 
+          :
+           `<i class="${item.icon}"></i>`}
         <span>${item.label}</span>
       </a>
     `;

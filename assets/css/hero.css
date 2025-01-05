@@ -112,10 +112,7 @@
 --------------------------------------------------------------*/
 .facebook,
 .linkedin,
-.github,
-.codepen,
-.youtube,
-.instagram {
+.github {
   font-size: 35px !important;
   transition: 0.7s !important;
 }
@@ -144,49 +141,11 @@
   padding: 3px;
 }
 
-.codepen {
-  background-color: #ffffff;
-  color: #000000 !important;
-  border-radius: 50px;
-  transition: 0.7s;
-  padding: 7px ;
-
-}
-/* YouTube */
-.youtube {
-  background-color: #ffffff;
-  color: #f13232 !important;
-  border-radius: 20%;
-  transition: 0.3s ease;
-  padding: 7px;
-}
-
-/* Instagram Style: More realistic */
-.instagram {
-  background: linear-gradient(45deg, #f58529, #f77737, #d62976, #962fbf, #4c68d7); /* Instagram gradient */
-  background-size: 400% 400%; /* Smooth gradient transition */
-  color: #ffffff !important;
-  border-radius: 30%;
-  padding: 7px 9px;
-  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-}
 
 
 /*--------------------------------------------------------------
 # Hero Name GRADIENT
 --------------------------------------------------------------*/
-  
-  .myName {
-    background: linear-gradient(to right,
-    #ffffff 20%, #ffffff 40%);
-    background-size: 200% auto;
-    color: #ffffff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
   
   
 /* Hero Section Button Styling */
@@ -216,40 +175,122 @@
  
     transform: scale(1.05); /* Slightly scale up the button */
   }
-  
-  
-
-
-/*--------------------------------------------------------------
-# Download button alert 
+ /*--------------------------------------------------------------
+# Modal Styles 
 --------------------------------------------------------------*/
-.glass-popup {
-  background: rgba(187, 93, 250, 0.116); /* Semi-transparent white */
-  backdrop-filter: blur(10px); /* Blur effect */
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow */
-  color: #fff; /* Text color for contrast */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  overflow: hidden;
+
 }
 
-.glass-popup .swal2-title {
-  color: #fff; /* Title color */
+.modal-content {
+  background: rgba(187, 93, 250, 0.1);
+  backdrop-filter: blur(12px);
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
 }
 
-.glass-popup .swal2-html-container {
-  color: #ddd; /* Text color */
+
+.close {
+  color: #6d27df;
+  background-color: rgb(255, 251, 251);
+  padding: 0px 13px; /* Added more padding for a better clickable area */
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 0px; /* Adjusted the top position for better alignment */
+  right: 0px; /* Adjusted the right position for better spacing */
+  transition: all 0.3s ease; /* Added smooth transition for hover effect */
 }
 
-.glass-popup .swal2-confirm,
-.glass-popup .swal2-deny,
-.glass-popup .swal2-cancel {
-  background-color: rgba(0, 0, 0, 0.3); /* Glass button */
-  color: #ffffff;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+.close:hover {
+  background-color: #6d27df; /* Changed background color on hover */
+  color: white; /* White text on hover for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added a subtle shadow effect */
 }
 
-.glass-popup .swal2-confirm:hover,
-.glass-popup .swal2-deny:hover,
-.glass-popup .swal2-cancel:hover {
-  background-color: rgba(255, 255, 255, 0.5); /* Bright hover */
+.close:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+
+
+.resume-options {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping when needed */
+  justify-content: space-evenly; /* Spreads out buttons evenly */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.resume-option {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  color: #fff;
+}
+
+.btn {
+  width: 48%; /* Set button width to make it smaller and fit in a row */
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin: 5px 0;
+}
+
+.btn i {
+  font-size: 18px; /* Reduce icon size for better fitting */
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .resume-option {
+    width: 45%; /* Buttons will sit side-by-side on larger screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    width: 100%; /* Make buttons take full width on smaller screens */
+    font-size: 16px;
+  }
+
+  .resume-option {
+    max-width: 100%; /* Allow full width on mobile */
+  }
+}
+
+
+/* Prevent body scroll when modal is active */
+body.modal-open {
+  overflow: hidden;
 }
