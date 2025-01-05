@@ -16,8 +16,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
+html, body {
   color: #000000;
+  overflow-x:hidden;  /* Hide the overflow, preventing scrolling */
 }
 
 a {
