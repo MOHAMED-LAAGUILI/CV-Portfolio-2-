@@ -224,44 +224,7 @@
           <span class="fs-4 fw-bold" data-i18n="hero4">Resume</span>
         </button>
 
-        <div id="resumeModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Choose Resume Option</h2>
-            <div class="resume-options">
-              <div class="resume-option">
-                <h3>🇺🇸 English</h3>
-                <button id="view-en" class="btn">
-                  <i class="bi bi-eye"></i>
-                </button>
-                <button id="download-en" class="btn">
-                  <i class="bi bi-cloud-download-fill"></i>
-                </button>
-              </div>
-              <div class="resume-option">
-                <h3>🇫🇷 French</h3>
-                <button id="view-fr" class="btn">
-                  <i class="bi bi-eye"></i>
-                </button>
-                <button id="download-fr" class="btn">
-                  <i class="bi bi-cloud-download-fill"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div id="confirmationModal" class="modal">
-          <div class="modal-content">
-            <h2>Confirm Download</h2>
-            <p>Are you sure you want to download the resume?</p>
-            <div class="confirmation-buttons">
-              <button id="confirmDownload" class="btn btn-confirm">Yes, Download</button>
-              <button id="cancelDownload" class="btn btn-cancel">Cancel</button>
-            </div>
-          </div>
-        </div>
+        <a id="cv-link" download style="display: none;"></a>
 
       </div>
     </div>
@@ -368,8 +331,6 @@
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
               class="blob-image" loading="lazy" title="blob gif">
             <h2>Achievements</h2>
-            <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/arrow" alt="Arrow"
-              class="arrow-image" loading="lazy" title="arrow">
           </div>
           <img class="testimg"
             src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/achivements"
