@@ -1,6 +1,6 @@
 {
-    "name":"MohamedLAAGUILI ",
-    "short_name":"Mohamed Web Dev v3.1",
+    "name":"Mohamed LAAGUILI ",
+    "short_name":"Moha Web Dev v3",
     "description":"Crafting seamless web experiences as a Full Stack Web Developer. Specializing in Node.js, ExpressJS, React, and Mongo/Postgres, I turn ideas into robust, scalable, and user-centric applications. Let's connect & build something extraordinary together!",
     "start_url":"/",
     "display":"standalone",
@@ -8,6 +8,12 @@
     "theme_color":"#7002ee",
     "scope": ".",
     "lang": "en", 
+    "version": "3.0.0", 
+    "orientation": "portrait",
+    "display_override": ["standalone", "fullscreen"],
+    "prefer_related_applications": false,
+    "related_applications": [],
+    "dir": "ltr",
     "icons":[
       { "src": "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/192x192", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
       { "src": "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
@@ -19,4 +25,5 @@
             "type": "image/png"
         }
     ]
+   
 }

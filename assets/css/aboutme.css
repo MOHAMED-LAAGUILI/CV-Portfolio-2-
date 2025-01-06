@@ -9,16 +9,16 @@
 .image-slider {
   position: relative;
   width: 100%;
-  height: 650px; /* Fixed height for container */
+  height: 730px; /* Fixed height for container */
   perspective: 1000px; /* Depth effect */
   overflow: hidden;
-  background: var(--primary); /* Optional placeholder background */
 }
 
 .slide-img {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 20px;
   width: 100%;
   height: 100%; /* Match container height */
   object-fit: cover; /* Ensure images fill the container */

@@ -75,7 +75,7 @@
     href="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/48x48" />
   <link rel="icon" type="image/png" sizes="192x192"
     href="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/192x192" />
-  <link rel="mask-icon" href="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/favicon.png"
+  <link rel="mask-icon" href="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/192x192"
     color="#7002EE" />
   <meta name="msapplication-TileColor" content="#7002EE" />
   <meta name="msapplication-TileImage"
@@ -107,7 +107,6 @@
   <link rel="stylesheet" href="./assets/css/footer.css" />
   <link rel="stylesheet" href="./assets/css/scrollbar.css" />
   <link rel="stylesheet" href="./assets/css/cursor.css" />
-  <link rel="stylesheet" href="./assets/css/i18next-tarnslator.css" />
 
   <!-- Schema Markup for Person -->
   <script type="application/ld+json">
@@ -182,15 +181,6 @@
 
 
     <nav id="navbar" class="navbar nav-menu fw-bolder">
-      <!-- i18next Site Translator icons -->
-      <div class="language-switcher">
-        <label for="languageSwitcher" class="switcher-label">Language:</label>
-        <select id="languageSwitcher">
-          <option value="en">🇺🇸</option>
-          <option value="fr">🇫🇷</option>
-        </select>
-      </div>
-
 
       <ul id="nav-menu"></ul>
     </nav>
@@ -206,9 +196,9 @@
     <div class="container text-white" data-aos="zoom-in" data-aos-delay="100">
 
       <div class="hero-text">
-        <h2 class="mb-2 fw-bold" data-i18n="hero1">Hello, My Name Is</h2>
-        <h1 class="fw-bold" data-i18n="hero2">MOHAMED LAAGUILI</h1>
-        <p class="fw-bolder typed-bg" data-i18n="hero3">
+        <h2 class="mb-2 fw-bold">Hello, My Name Is</h2>
+        <h1 class="fw-bold">MOHAMED LAAGUILI</h1>
+        <p class="fw-bolder typed-bg">
           and I'am
         </p>
         <p class="fw-bolder typed-bg">
@@ -220,7 +210,7 @@
 
         <button class="hero-button" id="download-btn" role="button" aria-label="View or Download Resume">
           <i class="bi bi-cloud-download-fill hero-icon-button"></i>
-          <span class="fs-4 fw-bold" data-i18n="hero4">Resume</span>
+          <span class="fs-4 fw-bold">Resume</span>
         </button>
 
         <a id="cv-link" download style="display: none;"></a>
@@ -243,13 +233,11 @@
           <div class="title-container">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
               class="blob-image" loading="lazy" title="blob gif">
-            <h2 data-i18n="about1">About</h2>
+            <h2>About</h2>
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/arrow" alt="Arrow"
               class="arrow-image" loading="lazy" title="arrow">
           </div>
-          <p id="paragraph" data-i18n="about2">
 
-          </p>
 
         </div>
 
@@ -271,7 +259,7 @@
 
 
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3 data-i18n="about3">Infos</h3>
+            <h3>Infos</h3>
 
 
             <br />
@@ -282,7 +270,7 @@
                 <div>
                   <p>
                     <i class="bi bi-chevron-right"></i>
-                    <strong data-i18n="about4">Birth :</strong> <span>01 - april - 2001</span>
+                    <strong>Birth :</strong> <span>01 - april - 2001</span>
                   </p>
                   <p>
                     <i class="bi bi-chevron-right"></i>
@@ -312,9 +300,21 @@
                     <i class="bi bi-chevron-right"></i>
                     <strong>Work Status:</strong> <span>Available Freelance or Contract</span>
                   </p>
-
                 </div>
               </div>
+              <p>
+                As a versatile Full-Stack Developer, I bring over a year
+                of hands-on experience in both front-end and back-end
+                development. My expertise lies in crafting dynamic and responsive
+                front-end applications using JavaScript and ReactJS, complemented
+                by building scalable and efficient back-end solutions with Node.js
+                and Express.js. Web development demands a diverse skill set
+                and meticulous attention to detail, challenges I embrace
+                wholeheartedly. I thrive in adapting to new environments,
+                continuously learning, and refining my craft. Open to long-term
+                collaborations, I am committed to delivering impactful solutions
+                and contributing to the success of every project I undertake.
+              </p>
             </div>
           </div>
         </div>
@@ -381,20 +381,13 @@
         <div class="grid lg:grid-cols-2 gap-8">
           <!-- Left Column -->
           <div class="lg:col-span-1">
-            <!-- Personal Info -->
-            <div class="resume-item pb-4">
-              <h4 class="text-xl font-semibold">LAAGUILI MOHAMED</h4>
-              <p class="text-gray-600 mt-2">
-                <em>
-                  As a versatile Full-Stack Developer, I bring over a year of hands-on experience in both
-                  front-end and back-end development. My expertise spans JavaScript and ReactJS for creating
-                  dynamic, responsive front-end applications, as well as Node.js and Express.js for building
-                  scalable and efficient back-end solutions. </em>
-              </p>
-            </div>
 
             <!-- Education Section -->
-            <h3 class="resume-title text-xl font-semibold mt-8">Education</h3>
+            <h3 class="resume-title text-xl font-semibold mt-8">
+              <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
+                loading="lazy" title="blob gif" width="35px" height="35px">
+              Education
+            </h3>
             <div id="education-section">
               <!-- Data will be inserted here -->
             </div>
@@ -403,13 +396,17 @@
           <!-- Right Column -->
           <div class="lg:col-span-1">
             <!-- Experience -->
-            <h3 class="resume-title text-xl font-semibold mt-8">Experiences</h3>
+            <h3 class="resume-title text-xl font-semibold mt-8"><img
+                src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
+                loading="lazy" title="blob gif" width="35px" height="35px">Experiences</h3>
             <div id="experience-section">
               <!-- Data will be inserted here -->
             </div>
 
             <!-- Certificates -->
-            <h3 class="resume-title text-xl font-semibold mt-8">Certificates | Awards</h3>
+            <h3 class="resume-title text-xl font-semibold mt-8"><img
+                src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
+                loading="lazy" title="blob gif" width="35px" height="35px">Certificates | Awards</h3>
             <div id="certificates-section">
               <!-- Data will be inserted here -->
             </div>
@@ -523,16 +520,16 @@
                   <input type="text" name="name" class="form-control" id="name" autocomplete="name" required />
                 </div>
 
-         <!-- Email Field -->
-<div class="mb-3">
-  <label for="email" class="form-label">E-mail:</label>
-  <input type="email" name="email" class="form-control" id="email"  autocomplete="email" required />
-</div>
+                <!-- Email Field -->
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail:</label>
+                  <input type="email" name="email" class="form-control" id="email" autocomplete="email" required />
+                </div>
 
                 <!-- Message Field -->
                 <div class="mb-3">
                   <label for="message" class="form-label">Message:</label>
-                  <textarea name="message" class="form-control" id="message"  autocomplete="message"  required></textarea>
+                  <textarea name="message" class="form-control" id="message" autocomplete="message" required></textarea>
                 </div>
 
                 <!-- Submit Button -->
@@ -567,7 +564,7 @@
                 <i class="bi bi-phone floating"></i>
                 <h4>Phone:</h4>
                 <p>
-                  <a href="tel:+212689770809"> (+212) 6 89 77 08 09</a> 
+                  <a href="tel:+212689770809"> (+212) 6 89 77 08 09</a>
                 </p>
               </div>
             </div>
@@ -580,37 +577,38 @@
   </main>
   <!-- END MAIN CONTENT -->
 
-<!-- ======= Footer ======= -->
-<footer id="footer" class="footer text-center text-light py-5 position-relative">
-  <!-- Video Background -->
-  <video autoplay muted loop playsinline id="footer-video" class="position-absolute w-100 h-100">
-    <source src="https://res.cloudinary.com/djmafhmnw/video/upload/f_auto:video,q_auto/v1/Portfolio/spacehole" type="video/webm">
-    Your browser does not support the video tag.
-  </video>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer text-center text-light py-5 position-relative">
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline id="footer-video" class="position-absolute w-100 h-100">
+      <source src="https://res.cloudinary.com/djmafhmnw/video/upload/f_auto:video,q_auto/v1/Portfolio/spacehole"
+        type="video/webm">
+      Your browser does not support the video tag.
+    </video>
 
-  <!-- Content Overlay -->
-  <div class="container position-relative z-index-1">
-    <!-- Logo or Avatar -->
-    <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512"
-      class="rounded-circle mb-4 shadow floating" width="120" alt="Logo" loading="lazy" title="Logo" />
+    <!-- Content Overlay -->
+    <div class="container position-relative z-index-1">
+      <!-- Logo or Avatar -->
+      <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512"
+        class="rounded-circle mb-4 shadow floating" width="120" alt="Logo" loading="lazy" title="Logo" />
 
-    <!-- Name -->
-    <h3 class="fw-bold text-shadow mb-3">LAAGUILI MOHAMED</h3>
-    
-    <!-- Year & Copyright -->
-    <div class="copyright mb-3">
-      &copy; 2020-<span id="year"></span> All rights reserved.
+      <!-- Name -->
+      <h3 class="fw-bold text-shadow mb-3">LAAGUILI MOHAMED</h3>
+
+      <!-- Year & Copyright -->
+      <div class="copyright mb-3">
+        &copy; 2020-<span id="year"></span> All rights reserved.
+      </div>
+
+      <!-- Credits Section -->
+      <div class="credits mb-4">
+        Designed and built with <span class="fs-5 fw-bolder" style="color: #ffffff;">❤</span>
+      </div>
+
+
     </div>
-
-    <!-- Credits Section -->
-    <div class="credits mb-4">
-      Designed and built with <span class="fs-5 fw-bolder" style="color: #ffffff;">❤</span>
-    </div>
-
-   
-  </div>
-</footer>
-<!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
 
   <!-- Preloader with Logo -->
@@ -645,10 +643,9 @@
         <i class="bi bi-phone"></i>
       </a>
     </div>
-
     <!-- WhatsApp link -->
     <div class="whatsapp-icon">
-      <a href="https://web.whatsapp.com/send/?phone=%2B212689770809&text&type=phone_number" target="_blank" aria-label="Contact us on WhatsApp">
+      <a href="https://wa.me/212689770809" target="_blank" aria-label="Contact us on WhatsApp">
         <img src="https://res.cloudinary.com/djmafhmnw/image/upload/v1735663109/Portfolio/whatsapp.svg"
           alt="WhatsApp icon" loading="lazy" title="whatsapp logo">
       </a>
@@ -674,8 +671,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
   <!-- SweetAlert2 JS -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <!-- i18next  Site Translator -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.0/i18next.min.js"></script>
 
   <!-- Template Main JS Files -->
   <script src="./assets/js/main.js"></script>
@@ -692,8 +687,6 @@
   <script src="./assets/js/ContactFormMessage.js"></script>
   <script src="./assets/js/AlertForm.js"></script>
   <script src="./assets/js/Footer.js"></script>
-  <!-- i18next  Site Translator -->
-  <script src="./assets/js/i18next-site-translator.js"></script>
   <!-- cursor -->
   <script src="./assets/js/cursor.js"></script>
 

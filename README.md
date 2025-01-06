@@ -16,13 +16,13 @@ The project is continuously evolving, with regular updates every 2-3 months, inc
 - Contact form
 - Progressive Web App (PWA) functionality
 - SEO optimization (Meta tags, Google verification, sitemap, robots.txt, manifest, etc.)
-- Cloudinary CDN integration for optimized image storage and enhancement
+- Cloudinary CDN integration for optimized image & Video storage and enhancement
 
 ## Technologies & Libraries Used
 - **Basic Code & Structure**:  
   - HTML5  
   - CSS3  
-  - JavaScript (ES5/ES6)
+  - JavaScript (ES7+)
 
 - **Fonts**:  
   - Google Fonts API
@@ -41,7 +41,7 @@ The project is continuously evolving, with regular updates every 2-3 months, inc
   - Cloudflare  
   - Unpkg  
   - jsDelivr  
-  - jQuery CDN  
+  - jQuery  
   - cdnjs  
   - Cloudinary
 
@@ -87,6 +87,7 @@ Navigate through the various sections of the site by using the sidebar menu or s
 8. **Testimonials**: Client and colleague feedback
 9. **Contact**: A contact form and personal contact information
 10. **404 Page**: A custom 404 page with a Three.js background
+9. **Footer**: A custom Footer 
 
 ## Progressive Web App (PWA)
 The site is configured as a Progressive Web App, providing offline capabilities and an app-like experience on mobile devices.
