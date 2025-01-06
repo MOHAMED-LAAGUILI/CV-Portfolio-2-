@@ -166,9 +166,16 @@
 }
 
 .contact .php-email-form textarea {
-  padding: 10px 12px;
+   
+    padding: 10px 12px !important;
+   
 }
 
+textarea{
+  width: 100% !important;         /* Ensure the width is set to 100% of its container */
+  resize: none !important;        /* Disable resizing */
+  box-sizing: border-box !important; 
+}
 /* Submit button styling */
 .contact .php-email-form button[type=submit] {
   background: var(--primary);

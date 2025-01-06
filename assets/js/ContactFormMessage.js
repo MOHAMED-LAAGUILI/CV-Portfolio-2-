@@ -4,14 +4,14 @@ const form = document.getElementById("my-form");
 const successMsg = `
   <div class="alert alert-success alert-dismissible d-flex align-items-center fade show">
     <i class="bi bi-send-check"></i>
-    <strong class="mx-2">Thanks!</strong>Message has been delivered.
+    <strong class="mx-2">Thanks!</strong>Message has been delivered 😃
     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
   </div>`;
 
 const errMsg = `
   <div class="alert alert-danger alert-dismissible d-flex align-items-center fade show">
     <i class="bi bi-x-circle-fill"></i>
-    <strong class="mx-2">Error!</strong> Oops! Message failed to deliver due to an unstable connection.
+    <strong class="mx-2">Error!</strong> Oops! Message failed to deliver due to an unstable connection 🥲
     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
   </div>`;
 
@@ -41,7 +41,7 @@ async function handleSubmit(event) {
             (error) => `
             <div class="alert alert-danger alert-dismissible d-flex align-items-center fade show">
               <i class="bi bi-x-circle-fill"></i>
-              <strong class="mx-2">Error!</strong> ${error.message} 
+              <strong class="mx-2">Error!</strong> ${error.message} 🥲
               <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             </div>`
           )
