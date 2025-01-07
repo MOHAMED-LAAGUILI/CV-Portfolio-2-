@@ -25,10 +25,9 @@ The project is continuously evolving, with regular updates every 2-3 months, inc
   - JavaScript (ES7+)
 
 - **Fonts**:  
-  - Google Fonts API
+  - Google Fonts API (Montserrat, Sans Serif)
 
 - **Icons**:  
-  - Font Awesome 6.0.0  
   - Bootstrap Icons 1.5.0  
   - Box Icons
 
@@ -46,14 +45,13 @@ The project is continuously evolving, with regular updates every 2-3 months, inc
   - Cloudinary
 
 - **JavaScript Libraries**:  
-  - SweetAlert, SweetAlert2  
+  - SweetAlert2 (swal)
   - Swiper  
-  - jQuery 3.6.0  
-  - AOS 2.3.1  
+  - Bootstrap jQuery Bundle  
+  - AOS  
   - Particles.js  
   - Cursor  
   - Three.js  
-  - Animate.css 4.1.1
 
 - **UI Frameworks & Styles**:  
   - Bootstrap 5.0.2  
@@ -67,6 +65,8 @@ The project is continuously evolving, with regular updates every 2-3 months, inc
   - [Nitropack](https://nitropack.io/demo/error)  
   - [W3C Validator](https://validator.w3.org/)  
   - [Autoprefixer](https://autoprefixer.github.io/)
+  - [Css&JS Minifier](https://www.minifier.org/)
+
 
 ## Installation
 1. Clone the repository to your local machine.
@@ -101,7 +101,7 @@ Cloudinary is used for enhanced image optimization, ensuring fast load times and
 - Phone: (+212) 6 89 77 08 09
 
 ## License
-2020 All rights reserved. This project is licensed under the MIT License.
+since 2020  All rights reserved. This project is licensed under the MIT License.
 
 ---
 Designed and built with ❤️.
