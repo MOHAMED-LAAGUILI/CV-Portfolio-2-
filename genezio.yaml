@@ -22,7 +22,7 @@ frontend:
         - path: "*.ico"
           headers:
               Cache-Control: "max-age=2592000, public"
-               - path: "*.jpeg"
+        - path: "*.jpeg"
           headers:
               Cache-Control: "max-age=2592000, public"
         - path: "*.gif"
@@ -93,7 +93,7 @@ frontend:
                   geolocation=(),
                   microphone=(),
                   camera=()
-                  
+
 name: laaguili-dev
 region: us-east-1
 yamlVersion: 2
