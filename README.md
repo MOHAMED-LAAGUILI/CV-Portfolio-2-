@@ -1,25 +1,27 @@
 # MOHAMED LAAGUILI | Full Stack Web Developer Portfolio
 
 ## Description
-This is my personal portfolio website, designed to showcase my skills, achievements, and projects as a Full Stack Web Developer. It highlights my expertise in web development and provides an overview of the services I offer, along with easy access to my contact information.
+Welcome to my personal portfolio website! It showcases my skills, achievements, and projects as a Full Stack Web Developer. This site highlights my technical expertise and offers an overview of the services I provide. It also provides easy access to my contact details.
 
 ## Notice
-The project is continuously evolving, with regular updates every 2-3 months, incorporating new technologies and features. Leveraging AI, I enhance the website's functionality and ensure it stays up-to-date. My core skills include HTML5, CSS3, JavaScript (ES6+), and more.
+This project is continuously evolving, with updates every 2-3 months to incorporate new technologies and features. Using AI, I enhance the website's functionality, ensuring it remains cutting-edge. My core skills include HTML5, CSS3, JavaScript (ES6+), and more.
 
 ## Live View
 [View the live portfolio](https://laaguili-dev.app.genez.io/)
 
 ## Features
-- Fully responsive design
+- Fully responsive design for all devices
 - Interactive UI with a custom cursor
 - Sections: About, Skills, Resume, Services, Portfolio, Testimonials
-- Contact form
+- Contact form for inquiries
 - Progressive Web App (PWA) functionality
 - SEO optimization (Meta tags, Google verification, sitemap, robots.txt, manifest, etc.)
-- Cloudinary CDN integration for optimized image & Video storage and enhancement
+- Cloudinary CDN integration for optimized image & video storage
+- Cookie consent management (compliant with rules & agreements)
+- LICENSE for the project
 
 ## Technologies & Libraries Used
-- **Basic Code & Structure**:  
+- **Core Technologies**:  
   - HTML5  
   - CSS3  
   - JavaScript (ES7+)
@@ -31,10 +33,10 @@ The project is continuously evolving, with regular updates every 2-3 months, inc
   - Bootstrap Icons 1.5.0  
   - Box Icons
 
-- **Miscellaneous**:  
+- **Additional Features**:  
   - PWA  
-  - JavaScript graphics  
-  - Lazy loading
+  - JavaScript-based graphics  
+  - Lazy loading for fast performance
 
 - **CDNs**:  
   - Cloudflare  
@@ -44,14 +46,15 @@ The project is continuously evolving, with regular updates every 2-3 months, inc
   - cdnjs  
   - Cloudinary
 
-- **JavaScript Libraries**:  
-  - SweetAlert2 (swal)
+- **JavaScript/CSS Libraries**:  
+  - SweetAlert2 (swal)  
   - Swiper  
   - Bootstrap jQuery Bundle  
   - AOS  
   - Particles.js  
-  - Cursor  
+  - Custom Cursor  
   - Three.js  
+  - cookieConsent
 
 - **UI Frameworks & Styles**:  
   - Bootstrap 5.0.2  
@@ -64,9 +67,8 @@ The project is continuously evolving, with regular updates every 2-3 months, inc
   - [XML Sitemaps](https://www.xml-sitemaps.com/)  
   - [Nitropack](https://nitropack.io/demo/error)  
   - [W3C Validator](https://validator.w3.org/)  
-  - [Autoprefixer](https://autoprefixer.github.io/)
-  - [Css&JS Minifier](https://www.minifier.org/)
-
+  - [Autoprefixer](https://autoprefixer.github.io/)  
+  - [CSS & JS Minifier](https://www.minifier.org/)
 
 ## Installation
 1. Clone the repository to your local machine.
@@ -87,7 +89,7 @@ Navigate through the various sections of the site by using the sidebar menu or s
 8. **Testimonials**: Client and colleague feedback
 9. **Contact**: A contact form and personal contact information
 10. **404 Page**: A custom 404 page with a Three.js background
-9. **Footer**: A custom Footer 
+11. **Footer**: A custom Footer
 
 ## Progressive Web App (PWA)
 The site is configured as a Progressive Web App, providing offline capabilities and an app-like experience on mobile devices.
@@ -101,7 +103,8 @@ Cloudinary is used for enhanced image optimization, ensuring fast load times and
 - Phone: (+212) 6 89 77 08 09
 
 ## License
-since 2020  All rights reserved. This project is licensed under the MIT License.
+Since 2020, all rights reserved. This project is licensed under the MIT License.
 
 ---
+
 Designed and built with ❤️.
