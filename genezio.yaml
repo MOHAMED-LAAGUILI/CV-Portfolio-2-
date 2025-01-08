@@ -40,7 +40,7 @@ frontend:
         - path: "*.webm"
           headers:
               Cache-Control: "max-age=2592000, public"
-                      - path: "*.ogv"
+        - path: "*.ogv"
           headers:
               Cache-Control: "max-age=2592000, public"
         - path: "*.mov"
