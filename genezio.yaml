@@ -5,6 +5,76 @@ frontend:
         build: ""
         deploy: ""
     subdomain: laaguili-dev
+    headers:
+        # Caching headers
+        - path: "*.html"
+          headers:
+              Cache-Control: "max-age=86400, public"
+        - path: "*.css"
+          headers:
+              Cache-Control: "max-age=604800, public"
+        - path: "*.js"
+          headers:
+              Cache-Control: "max-age=604800, public"
+        - path: "*.png"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.ico"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+               - path: "*.jpeg"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.gif"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.svg"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.webp"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.mp4"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.webm"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+                      - path: "*.ogv"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.mov"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.wmv"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.avi"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.flv"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.mkv"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.jpg"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+        - path: "*.pdf"
+          headers:
+              Cache-Control: "max-age=2592000, public"
+
+        # Security headers
+        - path: "/*"
+          headers:
+              X-Content-Type-Options: "nosniff"
+              X-XSS-Protection: "1; mode=block"
+              Referrer-Policy: "no-referrer-when-downgrade"
+              Strict-Transport-Security: "max-age=31536000; includeSubDomains"
+              Content-Security-Policy: "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self';"
+              X-Powered-By: "Mohamed Web Dev v3.1"
+              Permissions-Policy: "geolocation=(), microphone=(), camera=()"
 name: laaguili-dev
 region: us-east-1
 yamlVersion: 2
