@@ -94,6 +94,11 @@ frontend:
                   microphone=(),
                   camera=()
 
+# Custom error page for 404
+    error_pages:
+        - error_code: 404
+          path: "/404.html"
+          
 name: laaguili-dev
 region: us-east-1
 yamlVersion: 2
