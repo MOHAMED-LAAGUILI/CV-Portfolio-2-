@@ -31,7 +31,6 @@ This project is continuously evolving, with updates every 2-3 months to incorpor
 
 - **Icons**:  
   - Bootstrap Icons 1.5.0  
-  - Box Icons
 
 - **Additional Features**:  
   - PWA  
