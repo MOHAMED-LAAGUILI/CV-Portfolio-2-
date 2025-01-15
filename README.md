@@ -45,14 +45,17 @@ This project is continuously evolving, with updates every 2-3 months to incorpor
   - cdnjs  
   - Cloudinary
 
-- **JavaScript/CSS Libraries**:  
+- **JS/CSS Libraries**:  
   - SweetAlert2 (swal)  
   - Swiper  
   - Bootstrap jQuery Bundle  
   - AOS  
-  - Particles.js  
+  - Particles 
+  - typed
+  - purecounter_vanilla
   - Custom Cursor  
-  - Three.js  
+  - Three 
+  - OrbitControls
   - cookieConsent
 
 - **UI Frameworks & Styles**:  
@@ -68,6 +71,7 @@ This project is continuously evolving, with updates every 2-3 months to incorpor
   - [W3C Validator](https://validator.w3.org/)  
   - [Autoprefixer](https://autoprefixer.github.io/)  
   - [CSS & JS Minifier](https://www.minifier.org/)
+  - ....etc
 
 ## Installation
 1. Clone the repository to your local machine.
@@ -99,7 +103,11 @@ Cloudinary is used for enhanced image optimization, ensuring fast load times and
 ## Contact Information
 - Business Email: mohamed.dev.2001@gmail.com
 - Personal Email: saidlergili@gmail.com
-- Phone: (+212) 6 89 77 08 09
+- Phone: (+212)689770809
+  - [linkedin](https://www.linkedin.com/in/mohamedlaaguili2001/)
+  - [github](https://www.github.com/MOHAMED-LAAGUILI)
+  - [facebook](https://www.facebook.com/profile.php?id=100014521591779)
+  - [discord](https://discordapp.com/users/1316675038598139936)
 
 ## License
 Since 2020, all rights reserved. This project is licensed under the MIT License.

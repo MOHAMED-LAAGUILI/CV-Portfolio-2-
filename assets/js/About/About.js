@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelectorAll(".image-slider .slide-img");let t=0;0!==e.length&&(e[t].classList.add("active"),setInterval((()=>{e[t].classList.remove("active"),t=(t+1)%e.length,e[t].classList.add("active")}),2e3))}));
