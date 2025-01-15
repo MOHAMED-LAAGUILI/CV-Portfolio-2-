@@ -52,7 +52,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-Powered-By" content="Mohamed Web Dev v3.1" />
 
-  <!-- Open Graph Meta for Social Media (Whatsapp, Facebook ,etc...) -->
+  <!-- Open Graph Meta for Social Media -->
   <meta property="og:title" content="MOHAMED LAAGUILI | Full Stack Web Developer" />
   <meta property="og:description"
     content="Crafting seamless web experiences with Node.js, ExpressJS, React, Mongo/Postgres. Let's build something extraordinary together!" />
@@ -74,6 +74,7 @@
   <meta name="twitter:image"
     content="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512" />
   <meta name="twitter:creator" content="@MohamedLaaguili" />
+
 
   <!-- Favicons -->
   <link rel="icon" href="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/192x192"
@@ -99,50 +100,38 @@
   <!--  Dark / LIGHT SWITCH -->
   <link id="dark-theme-style" rel="stylesheet" />
 
-  <!-- Vendor CSS CDN -->
-  <!-- AOS Scroll Animation  -->
+  <!-- CSS CDN -->
+  <!-- Scroll Animation  -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <!-- Bootstrap Icons -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.css"
     integrity="sha512-qKRrPbwf0yKAsKZGGfiNjmd66a7GtkLhLqTqH9boYbDPgUQmDw0mGXfC3HlkbEFEw3HjNmSaS9SR/d07ZXOUVw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--  Cookies -->
+  <!-- Include CookieConsent Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css">
 
-  <!-- Template Main CSS Files -->
-  <!-- Generale CSS -->
-  <link rel="stylesheet" href="./assets/css/Main.css" />
-  <link rel="stylesheet" href="./assets/css/Preloader.css" />
-  <link rel="stylesheet" href="./assets/css/Cookies.css" />
-  <link rel="stylesheet" href="./assets/css/Cursor.css" />
-  <link rel="stylesheet" href="./assets/css/ScrollBar.css" />
-  <!-- Nav -->
-  <link rel="stylesheet" href="./assets/css/Nav/Nav.css" />
-  <!-- Hero -->
-  <link rel="stylesheet" href="./assets/css/Hero/Hero.css" />
-  <!-- About -->
-  <link rel="stylesheet" href="./assets/css/About/About.css" />
-  <!-- Achievements -->
-  <link rel="stylesheet" href="./assets/css/Achievements/Achievements.css" />
-  <!-- Skills -->
-  <link rel="stylesheet" href="./assets/css/Skills/Skills.css" />
-  <!-- Resume -->
-  <link rel="stylesheet" href="./assets/css/Resume/Resume.css" />
-  <!-- Portfolio -->
-  <link rel="stylesheet" href="./assets/css/Portfolio/Portfolio.css" />
-  <!-- Services -->
-  <link rel="stylesheet" href="./assets/css/Services/Services.css" />
-  <!-- Testimonials -->
-  <link rel="stylesheet" href="./assets/css/Testimonials/Testimonials.css" />
-  <!-- Contact -->
-  <link rel="stylesheet" href="./assets/css/Contact/Contact.css" />
-  <!-- Footer -->
-  <link rel="stylesheet" href="./assets/css/Footer/Footer.css" />
+  <!-- Template Main CSS styles -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/nav.css" />
+  <link rel="stylesheet" href="./assets/css/hero.css" />
+  <link rel="stylesheet" href="./assets/css/aboutme.css" />
+  <link rel="stylesheet" href="./assets/css/Achivements.css" />
+  <link rel="stylesheet" href="./assets/css/digitalskills.css" />
+  <link rel="stylesheet" href="./assets/css/Resume.css" />
+  <link rel="stylesheet" href="./assets/css/contact.css" />
+  <link rel="stylesheet" href="./assets/css/porfolio.css" />
+  <link rel="stylesheet" href="./assets/css/preloader.css" />
+  <link rel="stylesheet" href="./assets/css/services.css" />
+  <link rel="stylesheet" href="./assets/css/testimonials.css" />
+  <link rel="stylesheet" href="./assets/css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/scrollbar.css" />
+  <link rel="stylesheet" href="./assets/css/cursor.css" />
+  <link rel="stylesheet" href="./assets/css/cookieConsent.css" />
 
   <!-- Schema Markup for Person -->
   <script type="application/ld+json">
@@ -160,7 +149,6 @@
       "https://www.linkedin.com/in/mohamedlaaguili2001/",
       "https://www.github.com/MOHAMED-LAAGUILI",
       "https://www.facebook.com/profile.php?id=100014521591779"
-      "https://discordapp.com/users/1316675038598139936"
     ],
     "worksFor": {
       "@type": "Organization",
@@ -230,22 +218,20 @@
     <div class="container text-white" data-aos="zoom-in" data-aos-delay="100">
 
       <div class="hero-text">
-        <h2 class="mb-2 fw-bold">
-          <span class="typed hello" data-typed-items="Hello,Bonjour,مرحبا"></span>, My Name Is
-        </h2>
+        <h2 class="mb-2 fw-bold">HI, My Name Is</h2>
         <h1 class="fw-bold">Mohamed LAAGUILI</h1>
         <p class="fw-bolder typed-bg">
-          and I am a
+          and I'm
         </p>
         <p class="fw-bolder">
-          <span class="typed roles fw-bolder"
-            data-typed-items="Front-End Web Developer,Back-End Web Developer,UI/UX Web Designer,DevOps Engineer,Android/IOS Apps Developer"></span>
+          <span class="typed fw-bolder" data-typed-items="Front-End Web Developer,Back-End Web Developer,
+          UI/UX Web Designer"></span>
         </p>
 
         <div class="social-links" id="social-links-container"></div>
 
         <button class="hero-button" id="download-btn" role="button" aria-label="View or Download Resume">
-          <i class="bi bi-download hero-icon-button"></i>
+          <i class="bi bi-cloud-download-fill hero-icon-button"></i>
           <span class="fs-4 fw-bold">Resume</span>
         </button>
 
@@ -268,10 +254,10 @@
         <div class="section-title">
           <div class="title-container">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy" title="blob gif" aria-label="blob gif">
+              class="blob-image" loading="lazy" title="blob gif">
             <h2>About</h2>
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/arrow" alt="Arrow"
-              class="arrow-image" loading="lazy" title="arrow" aria-label="arrow">
+              class="arrow-image" loading="lazy" title="arrow">
           </div>
         </div>
         <div class="row">
@@ -279,18 +265,17 @@
             <div class="image-slider">
               <!--
               <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Profile-IMG" alt="LAAGUILI Mohamed Image 1" 
-              class="slide-img active" loading="lazy" title="Profile-IMG" aria-label="Profile-IMG"/>
+              class="slide-img active" loading="lazy" title="Profile-IMG"/>
               -->
               <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Profile-IMG-Tooned"
-                alt="LAAGUILI Mohamed Image 2" class="slide-img floating" loading="lazy" title="Profile-IMG-Tooned"
-                aria-label="Profile-IMG-Tooned" />
+                alt="LAAGUILI Mohamed Image 2" class="slide-img floating" loading="lazy" title="Profile-IMG-Tooned" />
             </div>
           </div>
 
 
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3><img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-                loading="lazy" title="blob gif" width="30px" height="30px" aria-label="Blob">Infos :</h3>
+                loading="lazy" title="blob gif" width="30px" height="30px">Infos :</h3>
             <br />
             <div class="row">
               <div class="col-lg-6">
@@ -330,7 +315,7 @@
                 </div>
               </div>
               <h3><img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob"
-                  alt="Blob" loading="lazy" title="blob gif" width="30px" height="30px" aria-label="Blob">Bio :</h3>
+                  alt="Blob" loading="lazy" title="blob gif" width="30px" height="30px">Bio :</h3>
               <br />
               <p>
                 As a Full-Stack Developer with years of experience,
@@ -354,12 +339,12 @@
         <div class="section-title">
           <div class="title-container">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy" title="blob gif" aria-label="Blob gif">
+              class="blob-image" loading="lazy" title="blob gif">
             <h2>Achievements</h2>
           </div>
           <img class="testimg"
             src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/achivements"
-            alt="Achievements Logo" width="200px" loading="lazy" title="achievements" aria-label="achievements" />
+            alt="Achievements Logo" width="200px" loading="lazy" title="achievements" />
           <div class="main-title position-relative">Here's a sample of what I've done so far</div>
         </div>
 
@@ -376,7 +361,7 @@
         <div class="section-title text-center mb-12">
           <h2 class="text-4xl font-bold">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy" title="blob gif" aria-label="blob gif">
+              class="blob-image" loading="lazy" title="blob gif">
             Digital Skills
           </h2>
           <p class="text-lg text-gray-600 mb-4">Here’s an overview of my expertise in web development <br> and what I’m
@@ -398,7 +383,7 @@
         <div class="section-title text-center mb-10">
           <h2 class="text-3xl font-bold">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy" title="blob gif" aria-label="blob gif">
+              class="blob-image" loading="lazy" title="blob gif">
             Resume
           </h2>
         </div>
@@ -411,7 +396,7 @@
             <!-- Education Section -->
             <h3 class="resume-title text-xl font-semibold mt-8">
               <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-                loading="lazy" title="blob gif" width="35px" height="35px" aria-label="blob gif">
+                loading="lazy" title="blob gif" width="35px" height="35px">
               Education
             </h3>
             <div id="education-section">
@@ -424,7 +409,7 @@
             <!-- Experience -->
             <h3 class="resume-title text-xl font-semibold mt-8"><img
                 src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-                loading="lazy" title="blob gif" width="35px" height="35px" aria-label="blob gif">Experiences</h3>
+                loading="lazy" title="blob gif" width="35px" height="35px">Experiences</h3>
             <div id="experience-section">
               <!-- Data will be inserted here -->
             </div>
@@ -432,8 +417,7 @@
             <!-- Certificates -->
             <h3 class="resume-title text-xl font-semibold mt-8"><img
                 src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-                loading="lazy" title="blob gif" width="35px" height="35px" aria-label="blob gif">Certificates | Awards
-            </h3>
+                loading="lazy" title="blob gif" width="35px" height="35px">Certificates | Awards</h3>
             <div id="certificates-section">
               <!-- Data will be inserted here -->
             </div>
@@ -460,7 +444,7 @@
         <div class="section-title text-center mb-4">
           <h2 class="fw-bold">
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy" title="blob gif" aria-label="blob gif">
+              class="blob-image" loading="lazy" title="blob gif">
             Services
           </h2>
           <p class="text-muted">Explore the range of services I provide to help bring your project to life.</p>
@@ -484,7 +468,7 @@
         <div class="section-title">
           <h2>
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy" title="blob gif" aria-label="blob gif">
+              class="blob-image" loading="lazy" title="blob gif">
             Testimonials
           </h2>
 
@@ -507,7 +491,7 @@
         <div class="section-title">
           <h2>
             <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy" aria-label="blob gif">
+              class="blob-image" loading="lazy">
             Contact
           </h2>
 
@@ -599,8 +583,7 @@
     <div class="container position-relative z-index-1">
       <!-- Logo or Avatar -->
       <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512"
-        class="rounded-circle mb-4 shadow floating" width="120" alt="Logo" loading="lazy" title="Logo"
-        aria-label="logo" />
+        class="rounded-circle mb-4 shadow floating" width="120" alt="Logo" loading="lazy" title="Logo" />
       <!-- Name -->
       <h3 class="fw-bold text-shadow mb-3">LAAGUILI MOHAMED</h3>
 
@@ -623,7 +606,7 @@
     <div class="loader">
       <div class="inner-loader"></div> <!-- Inner spinning circle -->
       <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512"
-        alt="preloader Logo" class="preloader-logo" title="logo" aria-label="logo" />
+        alt="preloader Logo" class="preloader-logo" title="logo" />
     </div>
   </div>
 
@@ -631,7 +614,7 @@
   <div>
     <div id="cursor" class="cursor">
       <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512" alt="Cursor Logo"
-        id="cursor-logo" loading="lazy" title="logo" aria-label="logo" />
+        id="cursor-logo" loading="lazy" title="logo" />
     </div>
     <div id="cursor-ring" class="cursor-ring"></div>
   </div>
@@ -652,69 +635,55 @@
     </div>
     <!-- WhatsApp link -->
     <div class="whatsapp-icon">
-      <a href="https://wa.me/212689770809" target="_blank" class="whatsapp">
-        <i class="bi bi-whatsapp"></i>
+      <a href="https://wa.me/212689770809" target="_blank" aria-label="Contact us on WhatsApp">
+        <img src="https://res.cloudinary.com/djmafhmnw/image/upload/v1735663109/Portfolio/whatsapp.svg"
+          alt="WhatsApp icon" loading="lazy" title="whatsapp logo">
       </a>
     </div>
   </div>
 
-
-  <!-- Vendor JS CDN -->
+  <!-- Vendor JS Files -->
   <!-- Swiper  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js"
     integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Typed Text-->
+  <!-- Typed Text JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
-  <!-- AOS Animation -->
+  <!-- AOS Animation JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Bootstrap Bundle -->
+  <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <!-- particles JS -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <!-- Pure counter -->
+  <!-- Pure counter JS -->
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-  <!-- SweetAlert2 -->
+  <!-- SweetAlert2 JS -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <!-- Site Cookies -->
+  <!-- Include CookieConsent JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
 
   <!-- Template Main JS Files -->
-  <!-- Generale JS -->
-  <script src="./assets/js/Main.js"></script>
-  <script src="./assets/js/Cookies.js"></script>
-  <script src="./assets/js/Cursor.js"></script>
-  <!-- Nav -->
-  <script src="./assets/js/Nav/NavMain.js"></script>
-  <script src="./assets/js/Nav/NavItems.js"></script>
-
-  <!-- Hero -->
-  <script src="./assets/js/Hero/HeroParticals.js"></script>
-  <script src="./assets/js/Hero/HeroLinks.js"></script>
-  <script src="./assets/js/Hero/HeroTyped.js"></script>
-  <script src="./assets/js/Hero/HeroAlert.js"></script>
-  <!-- About -->
-  <script src="./assets/js/About/About.js"></script>
-  <!-- Achievement -->
-  <script src="./assets/js/Achievements/Achievement.js"></script>
-  <!-- Skills -->
-  <script src="./assets/js/Skills/Skills.js"></script>
-  <!-- Resume -->
-  <script src="./assets/js/Resume/Resume.js"></script>
-  <!-- Services -->
-  <script src="./assets/js/Services/Services.js"></script>
-  <!-- Portfolio -->
-  <script src="./assets/js/Portfolio/Portfolio.js"></script>
-  <!-- Testimonials -->
-  <script src="./assets/js/Testimonials/Testimonials.js"></script>
-  <!-- Contact -->
-  <script src="./assets/js/Contact/Contact.js"></script>
-  <!-- Footer -->
-  <script src="./assets/js/Footer/Footer.js"></script>
-
-  <!-- Service Worker for PWA -->
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/nav.js"></script>
+  <script src="./assets/js/Hero-Links.js"></script>
+  <script src="./assets/js/HeroParticals.js"></script>
+  <script src="./assets/js/about.js"></script>
+  <script src="./assets/js/achivement.js"></script>
+  <script src="./assets/js/digitalskills.js"></script>
+  <script src="./assets/js/cv-resume.js"></script>
+  <script src="./assets/js/services.js"></script>
+  <script src="./assets/js/portfolio.js"></script>
+  <script src="./assets/js/Testimonials.js"></script>
+  <script src="./assets/js/ContactFormMessage.js"></script>
+  <script src="./assets/js/AlertForm.js"></script>
+  <script src="./assets/js/Footer.js"></script>
+  <!-- cursor -->
+  <script src="./assets/js/cursor.js"></script>
+  <!-- Include CookieConsent JS -->
+  <script src="./assets/js/cookieConsent.js"></script>
+  <!-- Service Worker Caller for PWA -->
   <script>
     try {
       // Check if Service Worker is supported by the browser
@@ -722,7 +691,7 @@
         window.addEventListener('load', () => {
           try {
             // Attempt to register the service worker
-            navigator.serviceWorker.register('./assets/js/PWA/ServiceWorker.js')
+            navigator.serviceWorker.register('./assets/js/service-worker.js')
               .then(registration => {
                 console.log('Service Worker registered successfully:', registration);
               })
@@ -730,18 +699,18 @@
                 // Handle failure during service worker registration
                 console.error('Service Worker registration failed:', err);
               });
-          } catch (e) {
+          } catch (registrationError) {
             // Handle any errors that happen during the service worker registration process
-            console.error('Error during service worker registration:', e);
+            console.error('Error during service worker registration:', registrationError);
           }
         });
       } else {
         // Service Worker is not supported
         console.error('Service Worker not supported in this browser.');
       }
-    } catch (e) {
+    } catch (error) {
       // Catch any unexpected errors that might occur in the entire script
-      console.error('An unexpected error occurred during script execution:', e);
+      console.error('An unexpected error occurred during script execution:', error);
     }
   </script>
 </body>
