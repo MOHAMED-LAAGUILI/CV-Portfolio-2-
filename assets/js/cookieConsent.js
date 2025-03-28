@@ -1,1 +1,0 @@
-window.addEventListener("load",(function(){window.cookieconsent.initialise({palette:{popup:{background:"rgba(0, 0, 0, 0.6)"},button:{background:"#7002ee",text:"#eee"}},theme:"classic",content:{message:"We use cookies to ensure you get the best experience on our website.",dismiss:"Got it!",link:"Learn more",href:"#"}})}));
