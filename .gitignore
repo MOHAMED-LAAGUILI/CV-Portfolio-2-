@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Build and output directories
+build/
+dist/
+public/
+
+# Environment variables
+.env
+
+# macOS system files
+.DS_Store
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Ignore minified files
+*.min.js
+
+# Ignore ESLint cache
+.eslintcache
+
+# Ignore coverage folder
+coverage/
+
+# Ignore test output
+*.test.js
+
+# Ignore other IDE specific files
+.vscode/
+.idea/
