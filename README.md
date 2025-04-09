@@ -52,11 +52,9 @@ This project is continuously evolving, with updates every 2-3 months to incorpor
   - AOS  
   - Particles 
   - typed
-  - purecounter_vanilla
   - Custom Cursor  
   - Three 
   - OrbitControls
-  - cookieConsent
 
 - **UI Frameworks & Styles**:  
   - Bootstrap 5.0.2  
@@ -84,15 +82,13 @@ Navigate through the various sections of the site by using the sidebar menu or s
 ## Sections Overview
 1. **Hero**: Introduction with animated text
 2. **About**: Personal bio and brief introduction
-3. **Achievements**: Professional highlights and accomplishments
-4. **Skills**: A detailed overview of my technical skills
-5. **Resume**: Educational background and work experience
-6. **Services**: The services I offer as a web developer
-7. **Portfolio**: A showcase of selected projects
-8. **Testimonials**: Client and colleague feedback
-9. **Contact**: A contact form and personal contact information
-10. **404 Page**: A custom 404 page with a Three.js background
-11. **Footer**: A custom Footer
+3. **Skills**: A detailed overview of my technical skills
+4. **Resume**: Educational background and work experience
+5. **Services**: The services I offer as a web developer
+6. **Portfolio**: A showcase of selected projects
+7. **Testimonials**: Client and colleague feedback
+8. **Contact**: A contact form and personal contact information
+9. **404 Page**: A custom 404 page with a Three.js background
 
 ## Progressive Web App (PWA)
 The site is configured as a Progressive Web App, providing offline capabilities and an app-like experience on mobile devices.
@@ -106,7 +102,6 @@ Cloudinary is used for enhanced image optimization, ensuring fast load times and
 - Phone: (+212)689770809
   - [linkedin](https://www.linkedin.com/in/mohamedlaaguili2001/)
   - [github](https://www.github.com/MOHAMED-LAAGUILI)
-  - [facebook](https://www.facebook.com/profile.php?id=100014521591779)
   - [discord](https://discordapp.com/users/1316675038598139936)
 
 ## License

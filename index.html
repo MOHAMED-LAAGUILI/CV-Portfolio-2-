@@ -67,15 +67,6 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
 
-  <!-- Twitter Card Meta -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MOHAMED LAAGUILI | Full Stack Web Developer" />
-  <meta name="twitter:description"
-    content="Crafting seamless web experiences with Node.js, ExpressJS, React, Mongo/Postgres. Let's build something extraordinary together!" />
-  <meta name="twitter:image"
-    content="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512" />
-  <meta name="twitter:creator" content="@MohamedLaaguili" />
-
 
   <!-- Favicons -->
   <link rel="icon" href="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/192x192"
@@ -119,7 +110,6 @@
   <link rel="stylesheet" href="./assets/css/nav.css" />
   <link rel="stylesheet" href="./assets/css/hero.css" />
   <link rel="stylesheet" href="./assets/css/aboutme.css" />
-  <!-- <link rel="stylesheet" href="./assets/css/Achivements.css" /> -->
   <link rel="stylesheet" href="./assets/css/digitalskills.css" />
   <link rel="stylesheet" href="./assets/css/Resume.css" />
   <link rel="stylesheet" href="./assets/css/contact.css" />
@@ -336,28 +326,6 @@
     </section>
     <!-- End About Section -->
 
-    <!-- ======= achievement/facts Section =======
-    <section id="achievements" class="facts">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <div class="title-container">
-            <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy" title="blob gif">
-            <h2>Achievements</h2>
-          </div>
-          <img class="testimg"
-            src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/achivements"
-            alt="Achievements Logo" width="200px" loading="lazy" title="achievements" />
-          <div class="main-title position-relative">Here's a sample of what I've done so far</div>
-        </div>
-
-        <div class="row" id="achievements-container">
-           achievements dynamically inserted by JS 
-        </div>
-      </div>
-    </section>
-     End achievement/Facts Section -->
-
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills py-16">
       <div class="container" data-aos="fade-up">
@@ -379,67 +347,75 @@
     </section>
     <!-- End Skills Section -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume py-16">
-      <div class="container mx-auto px-4" data-aos="fade-up">
-        <!-- Section Title -->
-        <div class="section-title text-center mb-10">
-          <h2 class="text-3xl font-bold">
-            <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy" title="blob gif">
-            Resume
-          </h2>
+<!-- Resume Section -->
+<section id="resume" class="resume">
+  <div class="container">
+    <!-- Section Title -->
+    <div class="section-title text-center mb-12">
+      <h2 class="text-4xl font-bold">
+        <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
+          class="blob-image" loading="lazy" title="blob gif">
+       Resume
+      </h2>
+      
+    </div>
+  
+
+    <!-- Main Content -->
+    <div class="resume-content">
+      <!-- Left Column -->
+      <div class="resume-column">
+        <!-- Education Section -->
+        <div class="resume-section">
+          <h3 class="resume-title">
+            <i class="bi bi-mortarboard-fill"></i>
+            Education
+          </h3>
+          <div id="education-section" class="timeline">
+            <!-- Data will be inserted here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="resume-column">
+        <!-- Experience -->
+        <div class="resume-section">
+          <h3 class="resume-title">
+            <i class="bi bi-briefcase-fill"></i>
+            Experiences
+          </h3>
+          <div id="experience-section" class="timeline">
+            <!-- Data will be inserted here -->
+          </div>
         </div>
 
-        <!-- Main Content -->
-        <div class="grid lg:grid-cols-2 gap-8">
-          <!-- Left Column -->
-          <div class="lg:col-span-1">
-
-            <!-- Education Section -->
-            <h3 class="resume-title text-xl font-semibold mt-8">
-              <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-                loading="lazy" title="blob gif" width="35px" height="35px">
-              Education
-            </h3>
-            <div id="education-section">
-              <!-- Data will be inserted here -->
-            </div>
+        <!-- Certificates -->
+        <div class="resume-section">
+          <h3 class="resume-title">
+            <i class="bi bi-award-fill"></i>
+            Certificates & Awards
+          </h3>
+          <div id="certificates-section" class="certificates-grid">
+            <!-- Data will be inserted here -->
           </div>
 
-          <!-- Right Column -->
-          <div class="lg:col-span-1">
-            <!-- Experience -->
-            <h3 class="resume-title text-xl font-semibold mt-8"><img
-                src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-                loading="lazy" title="blob gif" width="35px" height="35px">Experiences</h3>
-            <div id="experience-section">
-              <!-- Data will be inserted here -->
-            </div>
-
-            <!-- Certificates -->
-            <h3 class="resume-title text-xl font-semibold mt-8"><img
-                src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-                loading="lazy" title="blob gif" width="35px" height="35px">Certificates | Awards</h3>
-            <div id="certificates-section">
-              <!-- Data will be inserted here -->
-            </div>
-
-            <div class="alert alert-warning bg-yellow-200 p-4 rounded-lg mt-6">
-              <i class="bi bi-exclamation-triangle-fill text-yellow-500 mr-3"></i>
-              <span class="font-bold">Note:</span>
-              <span class="ml-1">
+          <div class="note-card">
+            <i class="bi bi-info-circle-fill"></i>
+            <div>
+              <span class="note-title">Note:</span>
+              <span class="note-text">
                 Since 2022, I've shifted my focus from collecting certificates to truly mastering
                 new skills and acquiring real knowledge. For me, it's about growth and understanding, not just adding
                 paper to a collection.
               </span>
-
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Resume Section -->
+    </div>
+  </div>
+</section>
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services py-5 bg-light">
@@ -488,87 +464,102 @@
     </section>
     <!-- End Testimonials Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>
-            <img src="https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/blob" alt="Blob"
-              class="blob-image" loading="lazy">
-            Contact
-          </h2>
 
-          <p>Available all the time don't hesitate to reach out</p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <div class="title-icon">
+          <i class="bi bi-envelope-paper-heart"></i>
         </div>
+        <h2>Contact</h2>
+        <p>Available all the time — don't hesitate to reach out</p>
+      </div>
 
-        <!-- modify this form HTML and place wherever you want your form -->
-        <div class="container mt-4">
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <form id="my-form" action="https://formspree.io/f/xvgoekre" method="POST">
-                <div id="my-form-status"></div>
-
-                <!-- Name Field -->
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name:</label>
-                  <input type="text" name="name" class="form-control" id="name" autocomplete="name"
-                    placeholder="ur name goes here" required />
+      <div class="contact-wrapper">
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <div class="form-card">
+            <h3>Send a Message</h3>
+            <form id="contact-form" action="https://formspree.io/f/xvgoekre" method="POST">
+              <div class="form-status" id="form-status"></div>
+              
+              <!-- Name Field with Floating Label -->
+              <div class="form-field">
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder=" ">
+                <label for="name">Your Name</label>
+                <div class="field-icon">
+                  <i class="bi bi-person"></i>
                 </div>
-
-                <!-- Email Field -->
-                <div class="mb-3">
-                  <label for="email" class="form-label">E-mail:</label>
-                  <input type="email" name="email" class="form-control" id="email" autocomplete="email"
-                    placeholder="ur email goes here" required />
+              </div>
+              
+              <!-- Email Field with Floating Label -->
+              <div class="form-field">
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder=" ">
+                <label for="email">Your Email</label>
+                <div class="field-icon">
+                  <i class="bi bi-envelope"></i>
                 </div>
-
-                <!-- Message Field -->
-                <div class="mb-3">
-                  <label for="message" class="form-label">Message:</label>
-                  <textarea name="message" class="form-control" id="message" autocomplete="message"
-                    placeholder="ur message goes here" required></textarea>
+              </div>
+              
+              <!-- Message Field with Floating Label -->
+              <div class="form-field">
+                <textarea id="message" name="message" required placeholder=" "></textarea>
+                <label for="message">Your Message</label>
+                <div class="field-icon">
+                  <i class="bi bi-chat-text"></i>
                 </div>
-
-                <!-- Submit Button -->
-                <div class="text-center">
-                  <button id="my-form-button" type="submit" class="btn btn-primary">
-                    <i class="bi bi-send"></i> Send
-                  </button>
-                </div>
-              </form>
-
-            </div>
+              </div>
+              
+              <!-- Submit Button -->
+              <button type="submit" id="submit-button" class="submit-button">
+                <span>Send Message</span>
+                <i class="bi bi-send"></i>
+              </button>
+            </form>
           </div>
         </div>
-
-
-        <div class="row w-100 justify-content-center">
-          <div class="col-lg-6 col-md-8">
-            <div class="info p-5" style="border-radius: 60px;">
-              <div class="address">
-                <i class="bi bi-geo-alt floating"></i>
-                <h4>Location:</h4>
-                <p> 🇲🇦 | Maroc | Ksar El kebir</p>
+        
+        <!-- Contact Information -->
+        <div class="contact-info-container">
+          <div class="info-card">
+            <h3>Contact Information</h3>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="bi bi-geo-alt"></i>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope floating"></i>
-                <h4>E-mail:</h4>
-                <p> <a href="mailto:mohamed.dev.2001@gmail.com" target="_blank">mohamed.dev.2001@gmail.com</a> </p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone floating"></i>
-                <h4>Phone:</h4>
-                <p>
-                  <a href="tel:+212689770809"> (+212) 6 89 77 08 09</a>
-                </p>
+              <div class="info-content">
+                <h4>Location</h4>
+                <p>🇲🇦 | Maroc | Ksar El kebir</p>
               </div>
             </div>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h4>Email</h4>
+                <p><a href="mailto:mohamed.dev.2001@gmail.com">mohamed.dev.2001@gmail.com</a></p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="bi bi-phone"></i>
+              </div>
+              <div class="info-content">
+                <h4>Phone</h4>
+                <p><a href="tel:+212689770809">(+212) 6 89 77 08 09</a></p>
+              </div>
+            </div>
+          
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
     <!-- End Contact Section -->
 
   </main>
@@ -648,9 +639,6 @@
   <!-- particles JS -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   
-  <!-- Pure counter JS 
-  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-  -->
   <!-- SweetAlert2 JS -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -660,7 +648,6 @@
   <script src="./assets/js/Hero-Links.js"></script>
   <script src="./assets/js/HeroParticals.js"></script>
   <script src="./assets/js/about.js"></script>
-  <!-- <script src="./assets/js/achivement.js"></script> -->
   <script src="./assets/js/digitalskills.js"></script>
   <script src="./assets/js/cv-resume.js"></script>
   <script src="./assets/js/services.js"></script>
