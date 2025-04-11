@@ -2,9 +2,9 @@
 const navItems = [
   {
     href: "#hero",
-    icon: "bi bi-house-door",
+    icon: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512",
     label: "Home",
-    isImage: false,
+    isImage: true,
   },
   { 
     href: "#about", 
@@ -47,6 +47,12 @@ const navItems = [
     icon: "bi bi-envelope", 
     label: "Contact", 
     isImage: false 
+  },
+  { 
+    href: "404.html", 
+    icon: "bi bi-ban", 
+    label: "404", 
+    isImage: false 
   }
 ];
 
@@ -66,7 +72,7 @@ function renderNavMenu() {
       const img = document.createElement("img");
       img.src = item.icon;
       img.alt = item.label;
-      img.className = "nav-icon-img";
+      img.className = "nav-icon-img w-10";
       link.appendChild(img);
     } else {
       const icon = document.createElement("i");

@@ -3,11 +3,16 @@ node_modules/
 
 # Build and output directories
 build/
-dist/
+/dist/
 public/
 
 
+# ESLint cache file
+/.eslintcache
 
 # Ignore other IDE specific files
 .vscode/
 .idea/
+
+# Logs
+*.log

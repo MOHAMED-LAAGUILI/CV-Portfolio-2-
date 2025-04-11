@@ -1,160 +1,173 @@
 :root {
-    --primary: #7002ee;
-    --secondary: #4d01a5;
-    --primary-soft: #c174f5;
-    --background: #f9f9f9;
-    --shadow-color: rgba(0, 0, 0, .2)
+  --primary: #7002ee;
+  --secondary: #4d01a5;
+  --primary-soft: #c174f5;
+  --background: #f9f9f9;
+  --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 9997;
-    transition: all .5s;
-    padding: 15px;
-    overflow-y: auto
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 15px;
+  overflow-y: auto;
 }
 
-@media (max-width:991px) {
-    #header {
-        width: 300px;
-        background-color: rgba(0, 0, 0, .1);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-right: 1px solid #000;
-        left: -300px
-    }
+@media (max-width: 991px) {
+  #header {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-right: 1px solid #000;
+    left: -300px;
+  }
 }
 
-@media (min-width:991px) {
-    #main {
-        margin-left: 100px
-    }
+@media (min-width: 991px) {
+  #main {
+    margin-left: 100px;
+  }
 }
 
 .nav-menu {
-    padding: 0;
-    display: block
+  padding: 0;
+  display: block;
 }
 
 .nav-menu * {
-    margin: 0;
-    padding: 0;
-    list-style: none
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.nav-menu>ul>li {
-    position: relative;
-    white-space: nowrap
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
 }
 
 .nav-menu a,
 .nav-menu a:focus {
-    display: flex;
-    align-items: center;
-    color: #000;
-    padding: 10px 18px;
-    margin-bottom: 8px;
-    transition: .3s;
-    font-size: 15px;
-    border-radius: 50px;
-    background: #fff;
-    height: 56px;
-    width: 100%;
-    overflow: hidden;
-    border: 1px solid #000
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 50px;
+  background: #fff;
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #000;
 }
 
 .nav-menu a i,
 .nav-menu a:focus i {
-    font-size: 20px
+  font-size: 20px;
 }
 
 .nav-menu a span,
 .nav-menu a:focus span {
-    padding: 0 5px 0 7px;
-    color: #000
+  padding: 0 5px 0 7px;
+  color: #000;
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
+  .nav-menu a,
+  .nav-menu a:focus {
+    width: 56px;
+  }
 
-    .nav-menu a,
-    .nav-menu a:focus {
-        width: 56px
-    }
-
-    .nav-menu a span,
-    .nav-menu a:focus span {
-        display: none;
-        color: var(--primary)
-    }
+  .nav-menu a span,
+  .nav-menu a:focus span {
+    display: none;
+    color: var(--primary);
+  }
 }
 
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu a:hover,
-.nav-menu li:hover>a {
-    color: #fff;
-    background: linear-gradient(45deg, var(--primary), var(--primary-soft))
+.nav-menu li:hover > a {
+  color: #fff;
+  background: linear-gradient(45deg, var(--primary), var(--primary-soft));
 }
 
 .nav-menu .active span,
 .nav-menu .active:focus span,
 .nav-menu a:hover span,
-.nav-menu li:hover>a span {
-    color: #fff
+.nav-menu li:hover > a span {
+  color: #fff;
 }
 
 .nav-menu a:hover,
-.nav-menu li:hover>a {
-    width: 100%;
-    color: #fff
+.nav-menu li:hover > a {
+  width: 100%;
+  color: #fff;
 }
 
 .nav-menu a:hover span,
-.nav-menu li:hover>a span {
-    display: block
+.nav-menu li:hover > a span {
+  display: block;
 }
 
 .mobile-nav-toggle {
-    position: fixed;
-    background: linear-gradient(45deg, var(--primary), var(--primary-soft)) !important;
-    right: 10px;
-    top: 10px;
-    z-index: 9998;
-    border: 0;
-    background: 0 0;
-    font-size: 28px;
-    transition: all .4s;
-    outline: 0 !important;
-    line-height: 0;
-    cursor: pointer;
-    border-radius: 50%;
-    padding: 5px;
-    border: 3px solid white
+  position: fixed;
+  background: linear-gradient(
+    45deg,
+    var(--primary),
+    var(--primary-soft)
+  ) !important;
+  right: 10px;
+  top: 10px;
+  z-index: 9998;
+  border: 0;
+  background: 0 0;
+  font-size: 28px;
+  transition: all 0.4s;
+  outline: 0 !important;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  border: 3px solid white;
 }
 
 .mobile-nav-toggle i {
-    color: #45505b
+  color: #45505b;
 }
 
 .mobile-nav-active {
-    overflow: hidden
+  overflow: hidden;
 }
 
 .mobile-nav-active #header {
-    left: 0
+  left: 0;
 }
 
 .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
-    background: linear-gradient(45deg, var(--primary), var(--primary-soft));
-    border: 3px solid white
+  color: #fff;
+  background: linear-gradient(45deg, var(--primary), var(--primary-soft));
+  border: 3px solid white;
 }
 
 .nav-link.active {
-    background: linear-gradient(45deg, var(--primary), var(--primary-soft));
-    color: white
+  background: linear-gradient(45deg, var(--primary), var(--primary-soft));
+  color: white;
 }
+
+.nav-icon-img {
+    width: 50px;         /* or use Tailwind w-10 */
+    height: 50px;        /* or use Tailwind h-10 */
+    border-radius: 9999px; /* Fully rounded */
+    object-fit: cover;   /* Ensures the image fits the circle */
+    display: block;
+    margin-left: -16px ;
+  }
+  

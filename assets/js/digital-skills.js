@@ -2,6 +2,7 @@
 const skillGroups = [
   {
     groupName: "Core Web Technologies",
+
     skills: [
       {
         name: "HTML",
@@ -52,6 +53,11 @@ const skillGroups = [
         name: "Flowbite UI",
         logo: "https://flowbite.s3.amazonaws.com/brand/logo-light/mark/flowbite-logo.png",
         description: "Components for Tailwind CSS, including navigation and modals.",
+      },
+      {
+        name: "DaisyUI",
+        logo: "https://raw.githubusercontent.com/saadeghi/daisyui-images/master/images/daisyui-logo/favicon-192.png",
+        description: "A Tailwind CSS component library that simplifies UI building with ready-made, customizable themes and components.",
       }
     ],
   },
@@ -167,6 +173,11 @@ const skillGroups = [
         name: "Docker",
         logo: "https://cdn-icons-png.flaticon.com/512/919/919853.png",
         description: "A platform for automating the deployment, scaling, and management of applications in isolated containers.",
+      },
+      {
+        name: "Gulp",
+        logo: "https://www.svgrepo.com/show/303440/gulp-logo.svg",
+        description: "A toolkit for automating time-consuming tasks in your development workflow, such as minification, concatenation, and live-reloading."
       }
     ],
   },

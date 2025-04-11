@@ -1,1 +1,119 @@
-:root{--primary:#7002ee;--secondary:#4d01a5;--primary-soft:#c174f5;--hover-duration:0.6s}.services{padding:3rem 1rem}.services .icon-box{position:relative;overflow:hidden;text-align:center;padding:50px 20px;background:#fff!important;border-radius:15px;transition:all ease-in-out .3s;box-shadow:0 5px 30px rgba(0,0,0,.1);z-index:1}.services .icon-box .icon{position:relative;margin:0 auto 15px;font-size:3rem;color:#555;transition:color var(--hover-duration);z-index:2}.services .icon-box h4{position:relative;font-weight:700;margin-bottom:15px;font-size:1.5rem;line-height:1.4;color:#333;transition:color var(--hover-duration);z-index:2}.services .icon-box p{position:relative;font-size:1rem;color:#666;line-height:1.6;transition:color var(--hover-duration);z-index:2}.services .icon-box::before{content:"";position:absolute;bottom:-100%;left:50%;width:200%;height:200%;background:var(--primary);border-radius:50%;z-index:0;transition:transform var(--hover-duration),background var(--hover-duration);transform:translate(-50%,50%)}.services .icon-box:hover::before{transform:translate(-50%,-50%)}.services .icon-box:hover .icon,.services .icon-box:hover h4,.services .icon-box:hover p{color:#fff}.hover-scale:hover{transform:scale(1.05);transition:transform var(--hover-duration)}.transition-transform{transition:transform var(--hover-duration)}@media (max-width:991px){.services .icon-box{padding:40px 15px}.services .icon-box .icon{font-size:2.5rem}.services .icon-box h4{font-size:1.25rem}.services .icon-box p{font-size:.9rem}}@media (max-width:576px){.services .icon-box{padding:30px 10px}.services .icon-box .icon{font-size:2rem}.services .icon-box h4{font-size:1.15rem}.services .icon-box p{font-size:.85rem}}.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}@media (max-width:991px){.services-grid{gap:1.5rem}}@media (max-width:576px){.services-grid{gap:1rem}}
+:root {
+  --primary: #7002ee;
+  --secondary: #4d01a5;
+  --primary-soft: #c174f5;
+  --hover-duration: 0.6s;
+}
+.services {
+  padding: 3rem 1rem;
+}
+.services .icon-box {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff !important;
+  border-radius: 15px;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.services .icon-box .icon {
+  position: relative;
+  margin: 0 auto 15px;
+  font-size: 3rem;
+  color: #555;
+  transition: color var(--hover-duration);
+  z-index: 2;
+}
+.services .icon-box h4 {
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #333;
+  transition: color var(--hover-duration);
+  z-index: 2;
+}
+.services .icon-box p {
+  position: relative;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  transition: color var(--hover-duration);
+  z-index: 2;
+}
+.services .icon-box::before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: var(--primary);
+  border-radius: 50%;
+  z-index: 0;
+  transition: transform var(--hover-duration), background var(--hover-duration);
+  transform: translate(-50%, 50%);
+}
+.services .icon-box:hover::before {
+  transform: translate(-50%, -50%);
+}
+.services .icon-box:hover .icon,
+.services .icon-box:hover h4,
+.services .icon-box:hover p {
+  color: #fff;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform var(--hover-duration);
+}
+.transition-transform {
+  transition: transform var(--hover-duration);
+}
+@media (max-width: 991px) {
+  .services .icon-box {
+    padding: 40px 15px;
+  }
+  .services .icon-box .icon {
+    font-size: 2.5rem;
+  }
+  .services .icon-box h4 {
+    font-size: 1.25rem;
+  }
+  .services .icon-box p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .services .icon-box {
+    padding: 30px 10px;
+  }
+  .services .icon-box .icon {
+    font-size: 2rem;
+  }
+  .services .icon-box h4 {
+    font-size: 1.15rem;
+  }
+  .services .icon-box p {
+    font-size: 0.85rem;
+  }
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+} 
+
+@media (max-width: 991px) {
+  .services-grid {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .services-grid {
+    gap: 1rem;
+  }
+}
+
