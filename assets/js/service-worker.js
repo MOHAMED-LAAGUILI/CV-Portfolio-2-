@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const staticCacheName = "pwa-v2";
 self.addEventListener("install", function (event) {
   event.waitUntil(

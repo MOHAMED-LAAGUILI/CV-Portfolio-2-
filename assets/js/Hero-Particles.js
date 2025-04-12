@@ -1,3 +1,4 @@
+/* eslint-disable no-dupe-keys */
 /* eslint-disable no-undef */
 particlesJS("particles-js", {
   particles: {
@@ -51,7 +52,7 @@ particlesJS("particles-js", {
     repeat: "no-repeat",
     size: "cover",
   },
-  particles: {
+  particles : {
     number: { value: 150, density: { enable: !0, value_area: 1200 } },
     color: { value: "#ffffff" },
     shape: { type: "polygon", stroke: { width: 0, color: "#ffffff" } },
