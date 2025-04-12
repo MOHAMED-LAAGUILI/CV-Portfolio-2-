@@ -42,7 +42,7 @@ const paths = {
     'assets/js/Contact-Icons.js',
     'assets/js/cursor.js'
   ],
-  dist: 'dist'
+  dist: 'public'
 };
 
 // Error Handler
