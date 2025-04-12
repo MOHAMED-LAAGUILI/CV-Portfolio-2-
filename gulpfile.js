@@ -22,7 +22,8 @@ const paths = {
     'assets/css/preloader.css',
     'assets/css/services.css',
     'assets/css/testimonials.css',
-    'assets/css/footer.css',    'assets/css/scrollbar.css',
+    'assets/css/footer.css',
+    'assets/css/scrollbar.css',
     'assets/css/cursor.css'
   ],
   js: [
@@ -42,7 +43,7 @@ const paths = {
     'assets/js/Contact-Icons.js',
     'assets/js/cursor.js'
   ],
-  dist: 'dist'
+  dist: 'public' // 🔥 Updated for Vercel compatibility
 };
 
 // Error Handler
@@ -58,19 +59,19 @@ function handleError(taskName) {
 
 // CSS Task
 function css() {
-  return gulp.src(paths.css)
+  return gulp.src(paths.css, { allowEmpty: true }) // ✅ prevent crash if missing files
     .pipe(handleError('CSS'))
     .pipe(sourcemaps.init())
     .pipe(concat('bundle.css'))
     .pipe(cleanCSS({ compatibility: 'ie11' }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.dist));
+    .pipe(gulp.dest(paths.dist + '/css'));
 }
 
 // JS Task
 function js() {
-  return gulp.src(paths.js)
+  return gulp.src(paths.js, { allowEmpty: true })
     .pipe(handleError('JS'))
     .pipe(eslint())
     .pipe(eslint.format())
@@ -80,7 +81,7 @@ function js() {
     .pipe(terser())
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.dist));
+    .pipe(gulp.dest(paths.dist + '/js'));
 }
 
 // Watch Task

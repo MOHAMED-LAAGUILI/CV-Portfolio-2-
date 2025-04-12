@@ -1,0 +1,10 @@
+{
+    "builds": [
+      { "src": "gulpfile.js", "use": "@vercel/static-build", "config": {} }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/index.html" }
+    ],
+    "outputDirectory": "public"
+  }
+  

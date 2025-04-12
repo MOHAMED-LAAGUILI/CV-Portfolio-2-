@@ -105,7 +105,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Template Main CSS styles -->
-  <link rel="stylesheet" href="dist/bundle.min.css">
+  <link rel="stylesheet" href="public/css/bundle.min.css">
 
 
   <!-- Schema Markup for Person -->
@@ -635,7 +635,7 @@
 
 
   <!-- Template Main JS Files -->
-  <script src="dist/bundle.min.js"></script>
+  <script src="public/js/bundle.min.js"></script>
 
 
   <!-- Service Worker Caller for PWA -->
@@ -646,7 +646,7 @@
         window.addEventListener('load', () => {
           try {
             // Attempt to register the service worker
-            navigator.serviceWorker.register('./assets/js/service-worker.js')
+            navigator.serviceWorker.register('assets/js/service-worker.js')
               .then(registration => {
                 console.log('Service Worker registered successfully:', registration);
               })
