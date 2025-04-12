@@ -39,18 +39,18 @@ self.addEventListener("install", function (event) {
           // Local JS files
           "/assets/js/main.js",
           "/assets/js/nav.js",
-          "/assets/js/hero-links.js",
-          "/assets/js/hero-particles.js",
+          "/assets/js/hero-social-links.js",
+          "/assets/js/hero-particles-bg.js",
           "/assets/js/about-me.js",
           "/assets/js/digital-skills.js",
           "/assets/js/cv-resume.js",
           "/assets/js/services.js",
           "/assets/js/portfolio.js",
-          "/assets/js/testimonials.js",
+          "/assets/js/testimonials-section.js",
           "/assets/js/contact-form-message.js",
           "/assets/js/alert-form.js",
-          "/assets/js/footer.js",
-          "/assets/js/contact-icons.js",
+          "/assets/js/footer-section.js",
+          "/assets/js/fixed-contact-icons.js",
           "/assets/js/cursor.js",
       ];
       return (
