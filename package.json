@@ -4,8 +4,8 @@
   "description": "Welcome to my personal portfolio website! It showcases my skills, achievements, and projects as a Full Stack Web Developer. This site highlights my technical expertise and offers an overview of the services I provide. It also provides easy access to my contact details.",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp",
-    "watch": "gulp",
+    "build": "gulp build",
+    "watch": "gulp watch",
     "lint": "eslint src/js/**/*.js",
     "lint:fix": "eslint --fix src/js/**/*.js"
   },

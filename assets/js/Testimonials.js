@@ -83,9 +83,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 truncateText(text, 150);
             });
         }),
+
         testimonialList.appendChild(testimonialItem);
     }
   ),
+  
     new Swiper(".testimonials-slider", {
       slidesPerView: 1,
       spaceBetween: 20,
