@@ -22,8 +22,7 @@ const paths = {
     'assets/css/preloader.css',
     'assets/css/services.css',
     'assets/css/testimonials.css',
-    'assets/css/footer.css',
-    'assets/css/scrollbar.css',
+    'assets/css/footer.css',    'assets/css/scrollbar.css',
     'assets/css/cursor.css'
   ],
   js: [
@@ -43,10 +42,7 @@ const paths = {
     'assets/js/Contact-Icons.js',
     'assets/js/cursor.js'
   ],
-  dist: {
-    css: 'public/css',
-    js: 'public/js'
-  }
+  dist: 'dist'
 };
 
 // Error Handler
@@ -62,19 +58,19 @@ function handleError(taskName) {
 
 // CSS Task
 function css() {
-  return gulp.src(paths.css, { allowEmpty: true }) // ✅ prevent crash if missing files
+  return gulp.src(paths.css)
     .pipe(handleError('CSS'))
     .pipe(sourcemaps.init())
     .pipe(concat('bundle.css'))
     .pipe(cleanCSS({ compatibility: 'ie11' }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.dist.css));  // in css task
+    .pipe(gulp.dest(paths.dist));
 }
 
 // JS Task
 function js() {
-  return gulp.src(paths.js, { allowEmpty: true })
+  return gulp.src(paths.js)
     .pipe(handleError('JS'))
     .pipe(eslint())
     .pipe(eslint.format())
@@ -84,8 +80,8 @@ function js() {
     .pipe(terser())
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.dist.js));   // in js task
-  }
+    .pipe(gulp.dest(paths.dist));
+}
 
 // Watch Task
 function watchFiles() {
