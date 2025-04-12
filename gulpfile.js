@@ -16,7 +16,7 @@ const paths = {
     'assets/css/hero.css',
     'assets/css/about-me.css',
     'assets/css/digital-skills.css',
-    'assets/css/resume.css',
+    'assets/css/cv-resume.css',
     'assets/css/contact.css',
     'assets/css/portfolio.css',
     'assets/css/preloader.css',
