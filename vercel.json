@@ -10,7 +10,7 @@
       }
     ],
     "routes": [
-      { "src": "/index.html", "dest": "/index.html" }
+      { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
   
