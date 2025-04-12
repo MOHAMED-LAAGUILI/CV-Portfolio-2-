@@ -43,7 +43,10 @@ const paths = {
     'assets/js/Contact-Icons.js',
     'assets/js/cursor.js'
   ],
-  dist: 'public' // 🔥 Updated for Vercel compatibility
+  dist: {
+    css: 'public/css',
+    js: 'public/js'
+  }
 };
 
 // Error Handler
@@ -66,7 +69,7 @@ function css() {
     .pipe(cleanCSS({ compatibility: 'ie11' }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.dist + '/css'));
+    .pipe(gulp.dest(paths.dist.css));  // in css task
 }
 
 // JS Task
@@ -81,8 +84,8 @@ function js() {
     .pipe(terser())
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.dist + '/js'));
-}
+    .pipe(gulp.dest(paths.dist.js));   // in js task
+  }
 
 // Watch Task
 function watchFiles() {
