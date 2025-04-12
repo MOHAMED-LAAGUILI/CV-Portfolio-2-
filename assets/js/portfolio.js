@@ -5,7 +5,6 @@ const portfolioItems = [
     title: "MERN E-commerce App",
     description: "Full-stack e-commerce site, responsive and complete",
     link: "./404.html",
-    demoLink: "Unavailable",
     githubLink: "https://github.com/MOHAMED-LAAGUILI/MERN-Ecommerce-App",
   },
   {
@@ -14,7 +13,6 @@ const portfolioItems = [
     title: "React Express ChatApp",
     description: "Real-time chat app with session support",
     link: "./404.html",
-    demoLink: "Unavailable",
     githubLink: "https://github.com/MOHAMED-LAAGUILI/React-Express-ChatApp",
   },
   {
@@ -25,16 +23,6 @@ const portfolioItems = [
     link: "https://react-redux-ecommerce-app-hvhb.vercel.app/",
     demoLink: "<i class='bi bi-eye'></i>",
     githubLink: "https://github.com/MOHAMED-LAAGUILI/React-Redux-Ecommerce-App",
-  },
-  {
-    image:
-      "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Projects/Next-Shadcn-AdminDashboard",
-    title: "Next Dashboard",
-    description: "Admin Dashboard, built with ShadCn UI & Next",
-    link: "https://next-shadcn-admin-dashboard-ochre.vercel.app/",
-    demoLink: "<i class='bi bi-eye'></i>",
-    githubLink:
-      "https://github.com/MOHAMED-LAAGUILI/Next-Shadcn-AdminDashboard",
   },
   {
     image:
@@ -92,9 +80,18 @@ const portfolioItems = [
     title: "One UI |UI Template",
     description:
       "One UI provides a comprehensive set of tools and components to help you build beautiful, responsive, and accessible user interfaces.",
-    link: "https://vite-tailwind-ui-template.vercel.app/",
+    link: "https://one-ui-v2.vercel.app/",
     demoLink: "<i class='bi bi-eye'></i>",
-    githubLink: "https://github.com/MOHAMED-LAAGUILI/Vite-Tailwind-UITemplate",
+    githubLink: "https://github.com/MOHAMED-LAAGUILI/ONE-UI",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/Projects/work-flow-editor",
+    title: "Work Flow Editor",
+    description:
+      "",
+    link: "https://work-flow-editor.vercel.app/",
+    demoLink: "<i class='bi bi-eye'></i>",
   },
 ];
 function generatePortfolioSection() {

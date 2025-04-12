@@ -19,7 +19,7 @@ btn.addEventListener("click", function () {
           icon: "success",
           customClass: { popup: "glass-popup" },
         }),
-        (cvLink.href = "./assets/docs/CV-EN.pdf"),
+        (cvLink.href = "./assets/media/docs/pdf/CV-EN.pdf"),
         cvLink.click())
       : result.isDenied
       ? (Swal.fire({
@@ -28,7 +28,7 @@ btn.addEventListener("click", function () {
           icon: "success",
           customClass: { popup: "glass-popup" },
         }),
-        (cvLink.href = "./assets/docs/CV-FR.pdf"),
+        (cvLink.href = "./assets/media/docs/pdf/CV-FR.pdf"),
         cvLink.click())
       : Swal.fire({
           title: "Download Cancelled",

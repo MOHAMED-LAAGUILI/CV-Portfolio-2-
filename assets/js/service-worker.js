@@ -48,7 +48,7 @@ self.addEventListener("install", function (event) {
           "/assets/js/portfolio.js",
           "/assets/js/testimonials-section.js",
           "/assets/js/contact-form-message.js",
-          "/assets/js/alert-form.js",
+          "/assets/js/hero-alert.js",
           "/assets/js/footer-section.js",
           "/assets/js/fixed-contact-icons.js",
           "/assets/js/cursor.js",
