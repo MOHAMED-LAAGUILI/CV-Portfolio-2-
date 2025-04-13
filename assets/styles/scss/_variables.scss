@@ -1,21 +1,23 @@
-// Colors
-$primary: #7002ee;
-$primary-second: #c174f5;
-$primary-gradient: linear-gradient(45deg, $primary, $primary-second);
-$secondary: #4d01a5;
-$primary-soft: $primary-second;
-$black: #000;
-$white: #fff;
-$grey-light: #999;
-$background: #f9f9f9;
-$shadow-color: rgba(0, 0, 0, 0.2);
+// Main color scheme
+$primary-color: #7002ee;
+$secondary-color: #4d01a5;
+$soft-primary: #9d4edd;
 
-// Fonts
-$font-primary: 'Montserrat', sans-serif;
-$font-secondary: 'Open Sans', sans-serif;
+// Color variations
+$primary-rgb: 112, 2, 238;
+$secondary-rgb: 77, 1, 165;
+$soft-primary-rgb: 157, 78, 221;
 
-  // Scrollbar Design Tokens (optional but consistent)
 
-$scrollbar-width: 8px;
-$scrollbar-height: 12px;
-$scrollbar-border-radius: 10px;
+
+
+// Export as CSS variables for JavaScript access
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --soft-primary: #{$soft-primary};
+  
+  --primary-rgb: #{$primary-rgb};
+  --secondary-rgb: #{$secondary-rgb};
+  --soft-primary-rgb: #{$soft-primary-rgb};
+}

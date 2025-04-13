@@ -1,48 +1,183 @@
-// Global Styles
-* {
+// Global Variables
+:root {
+  // Brand Colors
+  --primary: #7002ee;
+  --secondary: #4d01a5;
+  --primary-soft: #c174f5;
+  --accent-color: #8705dd;
+  
+  // UI Colors
+  --background-color: #fff;
+  --contrast-color: #000;
+  --default-color: #45505b;
+  --text-light: #f4f4f4;
+  --text-dark: #2d2d2d;
+  --border-color: #ddd;
+  
+  // Typography
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+  
+  // Spacing
+  --section-padding: clamp(3rem, 8vw, 6rem);
+  --container-padding: clamp(1rem, 5vw, 2rem);
+  
+  // Transitions
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.5s ease;
+  
+  // Shadows
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  // Border Radius
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+}
+
+// Reset & Base Styles
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: $font-primary !important;
 }
 
-:root {
-  --primary: $primary;
-  --secondary: $secondary;
-  --primary-soft: $primary-soft;
-}
-
-body,
 html {
-  color: $black;
-  overflow-x: hidden;
   scroll-behavior: smooth;
-  cursor: url("https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/32x32"), auto;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
 }
 
+body {
+  font-family: var(--font-primary);
+  color: var(--default-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.75rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.5rem, 3vw, 2.5rem); }
+h4 { font-size: clamp(1.25rem, 2vw, 2rem); }
+h5 { font-size: clamp(1.1rem, 1.5vw, 1.5rem); }
+h6 { font-size: clamp(1rem, 1.25vw, 1.25rem); }
+
+p {
+  margin-bottom: 1rem;
+  font-size: clamp(0.875rem, 1vw, 1rem);
+}
+
+// Links
 a {
   color: var(--primary);
   text-decoration: none;
-}
-a:hover {
-  color: var(--primary);
-  text-decoration: none;
-}
-
-// Heading Styles
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-secondary;
+  transition: color var(--transition-fast);
+  
+  &:hover {
+    color: var(--secondary);
+  }
 }
 
+// Container
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+// Sections
+section {
+  padding: var(--section-padding) 0;
+}
+
+// Utility Classes
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.d-flex { display: flex; }
+.flex-wrap { flex-wrap: wrap; }
+.justify-content-center { justify-content: center; }
+.align-items-center { align-items: center; }
+
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-light { background-color: var(--background-color); }
+
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-light { color: var(--text-light); }
+.text-dark { color: var(--text-dark); }
+
+// Animations
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-medium);
+}
+
+.slide-up {
+  animation: slideUp var(--transition-medium);
+}
+
+// Media Queries
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+// Back to Top Button
 .back-to-top {
-  border: 2px solid $white;
+  border: 2px solid var(--white);
   position: fixed;
   visibility: hidden;
   opacity: 0;
   right: 30px !important;
   bottom: 30px !important;
   z-index: 9997;
-  background: $primary;
+  background: var(--primary);
   width: 50px !important;
   height: 50px !important;
   border-radius: 50px;
@@ -50,31 +185,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 .back-to-top i {
   font-size: 45px !important;
-  color: $white;
+  color: var(--white);
   line-height: 0;
   padding: 40px;
 }
 .back-to-top:hover {
-  background: $primary;
-  color: $white;
+  background: var(--primary);
+  color: var(--white);
 }
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
 }
 
-// Media Queries and Other Styles
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-}
-
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
+// Section Title
 .section-title {
   text-align: center;
   padding-bottom: 30px;
@@ -86,7 +210,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: var(--default-color);
 }
 .section-title h2::before {
   content: "";
@@ -104,17 +228,12 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: $primary;
+  background: var(--primary);
   bottom: 0;
   left: calc(50% - 20px);
 }
 
-// More styles follow...
-
-
-.section-title p {
-  margin-bottom: 0;
-}
+// Arrow Image
 .arrow-image {
   width: 100px;
   margin-top: 40px;
@@ -122,10 +241,14 @@ section {
   transform: rotate(260deg);
   display: block;
 }
+
+// Blob Image
 .blob-image {
   width: 70px;
   padding-bottom: 20px;
 }
+
+// Floating
 .floating {
   animation: floating 2.3s ease-in-out infinite;
   transition: 0.7s;
@@ -135,155 +258,4 @@ section {
     transform: translate(0, 20px);
   }
 }
-.coffee-icon {
-  position: fixed;
-  bottom: 165px;
-  right: 20px;
-  background: #f1e20c;
-  border-radius: 50%;
-  padding: 5px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  z-index: 1000;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease,
-    background-color 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(1);
-}
-.coffee-icon img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-.coffee-icon::after {
-  content: "Support Me";
-  position: absolute;
-  bottom: 5px;
-  right: 70px;
-  background: #ffdd00;
-  color: #000;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-.coffee-icon:hover {
-  transform: scale(1.1) rotate(15deg);
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.5);
-  opacity: 0.9;
-  background: #ffdd00;
-}
-.coffee-icon:hover::after {
-  opacity: 1;
-}
-.coffee-icon:hover img {
-  transform: scale(1.2);
-}
-.whatsapp-icon {
-  position: fixed;
-  bottom: 95px;
-  right: 20px;
-  background: linear-gradient(135deg, #18beab, #1ce766);
-  border-radius: 50%;
-  padding: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  z-index: 1000;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease,
-    background-color 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(1);
-}
-.whatsapp-icon img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-.whatsapp-icon:hover {
-  transform: scale(1.1) rotate(15deg);
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.5);
-  opacity: 0.9;
-  background-color: #075e54;
-}
-.whatsapp-icon:focus {
-  outline: 3px solid #007bff;
-  transform: scale(1.05);
-}
-.whatsapp-icon:hover img {
-  transform: scale(1.2);
-}
-.whatsapp-icon::after {
-  content: "Whatsapp +212689770809";
-  position: absolute;
-  bottom: 5px;
-  right: 70px;
-  background-color: #25d366;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-.whatsapp-icon:hover::after {
-  opacity: 1;
-}
-.phone-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 22px;
-  border-radius: 50%;
-  padding: 15px;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  z-index: 1000;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease,
-    background-color 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(1);
-}
-.phone-icon:hover {
-  transform: scale(1.1) rotate(15deg);
-  opacity: 0.9;
-}
-.phone-icon:focus {
-  transform: scale(1.05);
-}
-.phone-icon::after {
-  content: "Call me +212689770809";
-  position: absolute;
-  bottom: 5px;
-  right: 60px;
-  background-color: #0a50e9;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-.phone-icon:hover::after {
-  opacity: 1;
-}
-.cell-phone {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  background-color: #0a50e9;
-  color: #fff !important;
-  border-radius: 10px;
-  transition: 0.7s;
-  padding: 3px;
-  font-size: 40px;
-}
+

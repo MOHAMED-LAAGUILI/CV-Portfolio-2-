@@ -1,0 +1,184 @@
+// Import variables
+@import 'variables';
+
+// Coffee Icon
+.coffee-icon {
+  position: fixed;
+  bottom: 165px;
+  right: 20px;
+  background: $primary-color;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 6px 12px rgba($primary-color, 0.4);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease,
+    background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  &::after {
+    content: "Support Me";
+    position: absolute;
+    bottom: 5px;
+    right: 70px;
+    background: $soft-primary;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: scale(1.1) rotate(15deg);
+    box-shadow: 0 10px 18px rgba($primary-color, 0.5);
+    opacity: 0.9;
+    background: $secondary-color;
+
+    img {
+      transform: scale(1.2);
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+// Whatsapp Icon
+.whatsapp-icon {
+  position: fixed;
+  bottom: 95px;
+  right: 20px;
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 6px 12px rgba($primary-color, 0.4);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease,
+    background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+
+  img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    transform: scale(1.1) rotate(15deg);
+    box-shadow: 0 10px 18px rgba($primary-color, 0.5);
+    opacity: 0.9;
+    background: $secondary-color;
+
+    img {
+      transform: scale(1.2);
+    }
+  }
+
+  &:focus {
+    outline: 3px solid $soft-primary;
+    transform: scale(1.05);
+  }
+
+  &::after {
+    content: "Whatsapp +212689770809";
+    position: absolute;
+    bottom: 5px;
+    right: 70px;
+    background: $primary-color;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+// Phone Icon
+.phone-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 22px;
+  border-radius: 50%;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease,
+    background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  background: $primary-color;
+  box-shadow: 0 6px 12px rgba($primary-color, 0.4);
+
+  &:hover {
+    transform: scale(1.1) rotate(15deg);
+    opacity: 0.9;
+    background: $secondary-color;
+  }
+
+  &:focus {
+    transform: scale(1.05);
+  }
+
+  &::after {
+    content: "Call me +212689770809";
+    position: absolute;
+    bottom: 5px;
+    right: 60px;
+    background: $soft-primary;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+// Cell Phone Icon
+.cell-phone {
+  box-shadow: 0 6px 12px rgba($primary-color, 0.4);
+  background-color: $primary-color;
+  color: #fff !important;
+  border-radius: 10px;
+  transition: 0.7s;
+  padding: 3px;
+  font-size: 40px;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}

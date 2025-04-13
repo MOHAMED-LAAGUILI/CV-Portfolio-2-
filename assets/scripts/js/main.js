@@ -1,6 +1,4 @@
-
 import './index.js';
-
 import './nav.js';
 import './hero-social-links.js';
 import './hero-particles-bg.js';

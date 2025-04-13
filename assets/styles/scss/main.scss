@@ -1,20 +1,29 @@
-// assets/scss/main.scss
+// Main SCSS File
+// Author: MOHAMED LAAGUILI
+// Description: Main stylesheet that imports all components
 
+// Import variables first
 @import 'variables';
 
+// Base styles and variables
 @import 'index';
 
+// Layout components
 @import 'nav';
 @import 'hero';
+@import 'footer';
+
+// Section components
 @import 'about-me';
 @import 'digital-skills';
 @import 'cv-resume';
-@import 'contact';
 @import 'portfolio';
-@import 'preloader';
 @import 'services';
 @import 'testimonials';
-@import 'footer';
+@import 'contact';
+
+// UI components and utilities
+@import 'preloader';
 @import 'scrollbar';
-@import '404';
 @import 'cursor';
+@import 'fixed-contact-icons'; // Added fixed contact icons styles

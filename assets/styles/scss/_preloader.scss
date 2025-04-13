@@ -1,95 +1,177 @@
+// Modern Preloader Styles
 :root {
   --primary: #7002ee;
   --secondary: #4d01a5;
   --primary-soft: #c174f5;
   --ripple-color: rgba(112, 2, 238, 0.3);
   --wave-duration: 2s;
+  --spin-duration: 1.5s;
+  --fade-duration: 0.5s;
+  --backdrop-blur: 10px;
+  --loader-size: clamp(80px, 10vw, 120px);
+  --inner-loader-size: calc(var(--loader-size) * 0.75);
+  --logo-size: calc(var(--loader-size) * 0.5);
 }
+
+// Preloader Container
 #preloader {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(var(--backdrop-blur));
+  transition: opacity var(--fade-duration) ease-out;
+
+  &.fade-out {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
+
+// Main Loader
 .loader {
-  width: 80px;
-  height: 80px;
+  width: var(--loader-size);
+  height: var(--loader-size);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  border: 8px solid var(--primary);
-  border-radius: 50%;
-  animation: spin 1.5s ease-in-out infinite;
-  overflow: hidden;
-  position: relative;
-}
-.inner-loader {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  border: 6px solid var(--primary);
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  animation: spin 1.5s ease-in-out infinite;
-}
-.preloader-logo {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  z-index: 10;
-}
-.loader:before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: rgba(112, 2, 238, 0.1);
-  box-shadow: 0 0 25px rgba(112, 2, 238, 0.3);
-  animation: wave 2s ease-in-out infinite;
-  pointer-events: none;
-  z-index: 1;
-}
-@keyframes wave {
-  0% {
-    transform: scale(1);
-    opacity: 0.6;
+  
+  // Outer Ring
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: clamp(4px, 0.5vw, 8px) solid transparent;
+    border-top-color: var(--primary);
+    border-right-color: var(--primary-soft);
+    border-radius: 50%;
+    animation: spin var(--spin-duration) cubic-bezier(0.5, 0, 0.5, 1) infinite;
   }
-  25% {
-    transform: scale(1.5);
-    opacity: 0.4;
+  
+  // Inner Ring
+  .inner-loader {
+    position: absolute;
+    width: var(--inner-loader-size);
+    height: var(--inner-loader-size);
+    border: clamp(3px, 0.4vw, 6px) solid transparent;
+    border-bottom-color: var(--secondary);
+    border-left-color: var(--primary-soft);
+    border-radius: 50%;
+    animation: spin var(--spin-duration) cubic-bezier(0.5, 0, 0.5, 1) infinite reverse;
   }
-  50% {
-    transform: scale(2);
-    opacity: 0.2;
+
+  // Logo
+  .preloader-logo {
+    position: absolute;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    object-fit: contain;
+    z-index: 10;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
-  75% {
-    transform: scale(1.5);
-    opacity: 0.4;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.6;
+
+  // Ripple Effect
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+      circle,
+      var(--ripple-color) 0%,
+      transparent 70%
+    );
+    animation: ripple var(--wave-duration) cubic-bezier(0, 0.5, 0.5, 1) infinite;
   }
 }
+
+// Animations
 @keyframes spin {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+}
+
+// Loading Text
+.loading-text {
+  position: absolute;
+  bottom: calc(var(--loader-size) * -0.5);
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInOut 2s ease-in-out infinite;
+
+  &::after {
+    content: '...';
+    animation: ellipsis 1.5s steps(3, end) infinite;
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes ellipsis {
+  0% { content: '.'; }
+  33% { content: '..'; }
+  66% { content: '...'; }
+}
+
+// Mobile Optimization
+@media (max-width: 768px) {
+  :root {
+    --backdrop-blur: 5px;
+  }
+  
+  .loader {
+    &::before {
+      animation-duration: 1.5s;
+    }
+  }
+  
+  .loading-text {
+    font-size: 12px;
+    letter-spacing: 1px;
   }
 }
