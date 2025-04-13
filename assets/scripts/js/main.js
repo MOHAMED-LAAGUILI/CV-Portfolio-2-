@@ -1,5 +1,6 @@
 
 import './index.js';
+
 import './nav.js';
 import './hero-social-links.js';
 import './hero-particles-bg.js';
@@ -14,6 +15,3 @@ import './hero-alert.js';
 import './footer-section.js';
 import './fixed-contact-icons.js';
 import './cursor.js';
-
-// Optionally, you can include shared logic or init routines here
-console.log("Main bundle loaded.");
