@@ -1,0 +1,27 @@
+{
+  "name": "cv-portfolio-2-",
+  "version": "1.0.0",
+  "description": "Welcome to my personal portfolio website! It showcases my skills, achievements, and projects as a Full Stack Web Developer. This site highlights my technical expertise and offers an overview of the services I provide. It also provides easy access to my contact details.",
+  "main": "index.js",
+ "scripts": {
+  "sass:build": "sass assets/styles/scss/main.scss assets/styles/css/main.css --style=compressed",
+  "sass:watch": "sass --watch assets/styles/scss/main.scss:assets/styles/css/main.css --style=expanded"
+}
+
+,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MOHAMED-LAAGUILI/Portfolio-2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MOHAMED-LAAGUILI/Portfolio-2020/issues"
+  },
+  "homepage": "https://github.com/MOHAMED-LAAGUILI/Portfolio-2020#readme",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  }
+}
