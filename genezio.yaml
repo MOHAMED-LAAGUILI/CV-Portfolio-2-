@@ -1,0 +1,11 @@
+frontend:
+    path: ./
+    publish: ""
+    scripts:
+        build: ""
+        deploy: ""
+    subdomain: laaguili-dev
+          
+name: laaguili-dev
+region: us-east-1
+yamlVersion: 2
