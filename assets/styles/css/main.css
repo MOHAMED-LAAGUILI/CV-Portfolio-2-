@@ -1,18 +1,10 @@
 @charset "UTF-8";
 :root {
-  --primary-color: #7002ee;
-  --secondary-color: #4d01a5;
-  --soft-primary: #9d4edd;
-  --primary-rgb: 112, 2, 238;
-  --secondary-rgb: 77, 1, 165;
-  --soft-primary-rgb: 157, 78, 221;
-}
-
-:root {
   --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
   --secondary: #4d01a5;
   --primary-soft: #c174f5;
-  --accent-color: #8705dd;
   --background-color: #fff;
   --contrast-color: #000;
   --default-color: #45505b;
@@ -319,6 +311,8 @@ section {
 }
 :root {
   --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
   --secondary: #4d01a5;
   --primary-soft: #c174f5;
   --background: #f9f9f9;
@@ -484,6 +478,8 @@ section {
 
 :root {
   --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
   --secondary: #4d01a5;
   --primary-soft: #c174f5;
 }
@@ -676,6 +672,8 @@ section {
 
 :root {
   --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
   --secondary: #4d01a5;
   --primary-soft: #c174f5;
 }
@@ -760,6 +758,8 @@ footer div img {
 }
 :root {
   --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
   --secondary: #4d01a5;
   --primary-soft: #c174f5;
 }
@@ -804,8 +804,11 @@ footer div img {
 }
 
 :root {
-  --primary: linear-gradient(45deg, #7002ee, #c174f5);
-  --secondary: #f0f4f8;
+  --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
+  --secondary: #4d01a5;
+  --primary-soft: #c174f5;
   --text: #333;
   --text-secondary: #666;
   --background: #ffffff;
@@ -1392,6 +1395,8 @@ body {
 }
 :root {
   --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
   --secondary: #4d01a5;
   --primary-soft: #c174f5;
   --background-color: #fff;
@@ -1555,6 +1560,8 @@ body {
 
 :root {
   --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
   --secondary: #4d01a5;
   --primary-soft: #c174f5;
   --hover-duration: 0.6s;
@@ -1684,6 +1691,8 @@ body {
 }
 :root {
   --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
   --secondary: #4d01a5;
   --primary-soft: #c174f5;
 }
@@ -1815,6 +1824,7 @@ body {
   --primary: #7002ee;
   --primary-light: #8f3df5;
   --primary-dark: #5a01c0;
+  --secondary: #4d01a5;
   --primary-soft: #c174f5;
   --primary-transparent: rgba(112, 2, 238, 0.05);
   --text-color: #45505b;
@@ -2158,6 +2168,8 @@ body {
 }
 :root {
   --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
   --secondary: #4d01a5;
   --primary-soft: #c174f5;
   --ripple-color: rgba(112, 2, 238, 0.3);
@@ -2312,10 +2324,10 @@ body {
 }
 :root {
   --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
   --secondary: #4d01a5;
   --primary-soft: #c174f5;
-  --background: #f9f9f9;
-  --shadow-color: rgba(0, 0, 0, 0.2);
   --scrollbar-width: 8px;
   --scrollbar-height: 12px;
   --scrollbar-border-radius: 10px;
@@ -2383,13 +2395,14 @@ body {
   }
 }
 :root {
+  --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
+  --secondary: #4d01a5;
+  --primary-soft: #c174f5;
   --cursor-size: 40px;
   --cursor-ring-size: 60px;
   --flare-size: 12px;
-  --cursor-color: #7002ee;
-  --cursor-ring-color: rgba-primary(0.4);
-  --flare-color: rgba-primary(0.7);
-  --cursor-shadow: rgba-primary(0.5);
   --transition-duration: 0.3s;
   --flare-transition-duration: 0.3s;
   --flare-opacity-duration: 0.3s;
@@ -2412,7 +2425,7 @@ body {
   overflow: hidden;
 }
 .cursor.active {
-  background-color: #4d01a5;
+  background-color: var(--primary);
 }
 
 #cursor-logo {
@@ -2461,22 +2474,21 @@ footer,
   }
 }
 :root {
-  --primary-color: #7002ee;
-  --secondary-color: #4d01a5;
-  --soft-primary: #9d4edd;
-  --primary-rgb: 112, 2, 238;
-  --secondary-rgb: 77, 1, 165;
-  --soft-primary-rgb: 157, 78, 221;
+  --primary: #7002ee;
+  --primary-light: #8f3df5;
+  --primary-dark: #5a01c0;
+  --secondary: #4d01a5;
+  --primary-soft: #c174f5;
 }
 
 .coffee-icon {
   position: fixed;
   bottom: 165px;
   right: 20px;
-  background: #7002ee;
-  border-radius: 50%;
-  padding: 5px;
-  box-shadow: 0 6px 12px rgba(112, 2, 238, 0.4);
+  background: var(--primary);
+  border-radius: 30%;
+  padding: 3px;
+  box-shadow: 0 6px 12px rgba(var(--primary), 0.4);
   cursor: pointer;
   z-index: 1000;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
@@ -2496,7 +2508,7 @@ footer,
   position: absolute;
   bottom: 5px;
   right: 70px;
-  background: #9d4edd;
+  background: var(--primary);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -2507,9 +2519,9 @@ footer,
 }
 .coffee-icon:hover {
   transform: scale(1.1) rotate(15deg);
-  box-shadow: 0 10px 18px rgba(112, 2, 238, 0.5);
+  box-shadow: 0 10px 18px rgba(var(--primary), 1);
   opacity: 0.9;
-  background: #4d01a5;
+  background: var(--secondary);
 }
 .coffee-icon:hover img {
   transform: scale(1.2);
@@ -2522,10 +2534,11 @@ footer,
   position: fixed;
   bottom: 95px;
   right: 20px;
-  background: linear-gradient(135deg, #7002ee, #4d01a5);
-  border-radius: 50%;
-  padding: 15px;
-  box-shadow: 0 6px 12px rgba(112, 2, 238, 0.4);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 30%;
+  border: 2px solid white;
+  padding: 10px;
+  box-shadow: 0 6px 12px rgba(var(--primary), 0.4);
   cursor: pointer;
   z-index: 1000;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
@@ -2542,15 +2555,15 @@ footer,
 }
 .whatsapp-icon:hover {
   transform: scale(1.1) rotate(15deg);
-  box-shadow: 0 10px 18px rgba(112, 2, 238, 0.5);
+  box-shadow: 0 10px 18px rgba(var(--primary), 1);
   opacity: 0.9;
-  background: #4d01a5;
+  background: var(--secondary);
 }
 .whatsapp-icon:hover img {
   transform: scale(1.2);
 }
 .whatsapp-icon:focus {
-  outline: 3px solid #9d4edd;
+  outline: 3px solid var(--primary-soft);
   transform: scale(1.05);
 }
 .whatsapp-icon::after {
@@ -2558,7 +2571,7 @@ footer,
   position: absolute;
   bottom: 5px;
   right: 70px;
-  background: #7002ee;
+  background: var(--primary);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -2574,9 +2587,8 @@ footer,
 .phone-icon {
   position: fixed;
   bottom: 20px;
-  right: 22px;
-  border-radius: 50%;
-  padding: 15px;
+  right: 18px;
+  padding: 8px;
   width: 60px;
   height: 60px;
   cursor: pointer;
@@ -2586,13 +2598,10 @@ footer,
   justify-content: center;
   align-items: center;
   transform: scale(1);
-  background: #7002ee;
-  box-shadow: 0 6px 12px rgba(112, 2, 238, 0.4);
 }
 .phone-icon:hover {
   transform: scale(1.1) rotate(15deg);
   opacity: 0.9;
-  background: #4d01a5;
 }
 .phone-icon:focus {
   transform: scale(1.05);
@@ -2602,7 +2611,7 @@ footer,
   position: absolute;
   bottom: 5px;
   right: 60px;
-  background: #9d4edd;
+  background: var(--primary);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -2616,8 +2625,8 @@ footer,
 }
 
 .cell-phone {
-  box-shadow: 0 6px 12px rgba(112, 2, 238, 0.4);
-  background-color: #7002ee;
+  box-shadow: 0 6px 12px rgba(var(--primary), 0.4);
+  background-color: var(--primary);
   color: #fff !important;
   border-radius: 10px;
   transition: 0.7s;
@@ -2625,7 +2634,7 @@ footer,
   font-size: 40px;
 }
 .cell-phone:hover {
-  background-color: #4d01a5;
+  background-color: var(--secondary);
 }
 
 /*# sourceMappingURL=main.css.map */

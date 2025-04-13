@@ -54,15 +54,11 @@ const skillGroups = [
         logo: "https://flowbite.s3.amazonaws.com/brand/logo-light/mark/flowbite-logo.png",
         description: "Components for Tailwind CSS, including navigation and modals.",
       },
-      {
-        name: "DaisyUI",
-        logo: "https://raw.githubusercontent.com/saadeghi/daisyui-images/master/images/daisyui-logo/favicon-192.png",
-        description: "A Tailwind CSS component library that simplifies UI building with ready-made, customizable themes and components.",
-      }
+    
     ],
   },
   {
-    groupName: "Frontend Frameworks",
+    groupName: "Frontend Frameworks & Libraries",
     skills: [
       {
         name: "React",
@@ -88,6 +84,11 @@ const skillGroups = [
         name: "Vite",
         logo: "https://tse2.mm.bing.net/th?id=OIP.wf8ivLs6ExVeBxZ7R26nHwAAAA&pid=Api&P=0&h=180",
         description: "A fast frontend build tool and development server.",
+      },
+      {
+        name: "i18n",
+        logo: "https://avatars.githubusercontent.com/u/8546082?s=280&v=4",
+        description: "A powerful internationalization framework for translating applications effortlessly.",
       }
     ],
   },
@@ -139,11 +140,7 @@ const skillGroups = [
         logo: "https://github.com/devicons/devicon/raw/master/icons/postgresql/postgresql-original.svg",
         description: "A powerful, open-source relational database system that uses and extends the SQL language.",
       },
-      {
-        name: "Redis",
-        logo: "https://banner2.cleanpng.com/20180421/vxq/aved0ejlh.webp",
-        description: "An open-source, in-memory key-value store used as a database, cache, and message broker.",
-      }
+      
     ],
   },
   {
@@ -165,6 +162,16 @@ const skillGroups = [
         description: "A free, open-source code editor by Microsoft with support for multiple programming languages.",
       },
       {
+        name: "Vercel",
+        logo: "https://pipedream.com/s.v0/app_XaLh2x/logo/orig",
+        description: "Deploy web apps instantly with a global edge network and seamless developer experience.",        
+      },
+      {
+        name: "Windsurf",
+        logo: "https://exafunction.github.io/public/images/ides/windsurf-logo.svg",
+        description: "A free, open-source code editor by Codeium with support for multiple programming languages.",
+      },
+      {
         name: "PHPStorm",
         logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/PhpStorm_Icon.svg/2048px-PhpStorm_Icon.svg.png",
         description: "A powerful IDE for PHP development, providing advanced code editing and debugging features.",
@@ -174,98 +181,11 @@ const skillGroups = [
         logo: "https://cdn-icons-png.flaticon.com/512/919/919853.png",
         description: "A platform for automating the deployment, scaling, and management of applications in isolated containers.",
       },
-      {
-        name: "Gulp",
-        logo: "https://www.svgrepo.com/show/303440/gulp-logo.svg",
-        description: "A toolkit for automating time-consuming tasks in your development workflow, such as minification, concatenation, and live-reloading."
-      }
+     
     ],
   },
-  {
-    groupName: "CMS & Site Builders",
-    skills: [
-      {
-        name: "WordPress",
-        logo: "https://pngimg.com/uploads/wordpress/wordpress_PNG28.png",
-        description: "A popular open-source content management system for building websites and blogs.",
-      }
-    ],
-  },
-  {
-    groupName: "Cloud & Services",
-    skills: [
-      {
-        name: "AWS S3",
-        logo: "https://images.seeklogo.com/logo-png/31/1/amazon-web-services-aws-logo-png_seeklogo-319188.png",
-        description: "A comprehensive and widely adopted cloud platform from Amazon.",
-      },
-      {
-        name: "Office 365",
-        logo: "https://www.seekpng.com/png/detail/772-7721081_office-365-logo-and-products-microsoft-office.png",
-        description: "A cloud-based subscription service by Microsoft that includes access to popular applications.",
-      },
-      {
-        name: "i18n",
-        logo: "https://avatars.githubusercontent.com/u/8546082?s=280&v=4",
-        description: "A powerful internationalization framework for translating applications effortlessly.",
-      }
-    ],
-  },
-  {
-    groupName: "Full Stack Solutions",
-    skills: [
-      {
-        name: "Basic Stack",
-        logo: "https://thumbs.dreamstime.com/b/vector-collection-web-development-shield-signs-html-css-javascript-isolated-icons-white-background-38571884.jpg",
-        description: "The foundational technologies for web development: HTML, CSS, and JavaScript.",
-      },
-      {
-        name: "LIR Stack",
-        logo: "https://miro.medium.com/v2/resize:fit:1358/1*FQIlE1Xxu9ckg06KMNrIqw.png",
-        description: "A full-stack web development framework using Laravel, Inertia, and React.",
-      },
-      {
-        name: "Inertia JS",
-        logo: "https://avatars0.githubusercontent.com/u/47703742?s=280&v=4",
-        description: "A modern framework that connects Laravel and React, Vue, or Svelte seamlessly.",
-      }
-    ],
-  },
-  {
-    groupName: "Laravel Packages",
-    skills: [
-      {
-        name: "Chatify",
-        logo: "https://cdn.dribbble.com/userupload/5282041/file/still-fd506922d96a13da3c29f37f6906a551.png",
-        description: "A Laravel package for building real-time chat applications with features such as private, group chats, and more.",
-      },
-      {
-        name: "Log Viewer",
-        logo: "https://i.ytimg.com/vi/5K1ELOp4d-o/maxresdefault.jpg",
-        description: "A package for easily viewing Laravel log files in a beautiful web interface.",
-      },
-      {
-        name: "Horizon",
-        logo: "https://vincentbean.com/assets/horizon.png",
-        description: "A Laravel package for managing Redis queues with a beautiful dashboard.",
-      },
-      {
-        name: "Spatie Media Library",
-        logo: "https://avatars.githubusercontent.com/u/7535935?s=280&v=4",
-        description: "A powerful package for handling file uploads and media management in Laravel.",
-      },
-      {
-        name: "Spatie Permissions & Roles",
-        logo: "https://avatars.githubusercontent.com/u/7535935?s=280&v=4",
-        description: "A flexible package for managing user roles and permissions within Laravel applications.",
-      },
-      {
-        name: "Spatie Log Activities",
-        logo: "https://avatars.githubusercontent.com/u/7535935?s=280&v=4",
-        description: "A package to log user activities within your application.",
-      }
-    ],
-  }
+
+
 ];
 
 // Enhanced rendering with animation and better UX

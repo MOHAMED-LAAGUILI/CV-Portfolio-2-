@@ -51,7 +51,7 @@ const navItems = [
   { 
     href: "404.html", 
     icon: "bi bi-ban", 
-    label: "404", 
+    label: "404 Page", 
     isImage: false 
   }
 ];

@@ -2,13 +2,12 @@
 // Author: MOHAMED LAAGUILI
 // Description: Main stylesheet that imports all components
 
-// Import variables first
-@import 'variables';
 
 // Base styles and variables
 @import 'index';
 
 // Layout components
+
 @import 'nav';
 @import 'hero';
 @import 'footer';
