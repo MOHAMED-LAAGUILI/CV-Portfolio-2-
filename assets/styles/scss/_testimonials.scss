@@ -1,8 +1,10 @@
+// Global Styles
 :root {
-  --primary: #7002ee;
-  --secondary: #4d01a5;
-  --primary-soft: #c174f5;
+  --primary: $primary;
+  --secondary: $secondary;
+  --primary-soft: $primary-soft;
 }
+
 .testimonials .section-header {
   margin-bottom: 40px;
 }

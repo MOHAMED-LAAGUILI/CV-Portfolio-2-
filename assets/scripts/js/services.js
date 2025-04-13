@@ -11,7 +11,7 @@ const servicesData = [
       color: "purple",
       description:
         "Ensure your site is always up-to-date and running smoothly.",
-    },
+    }, 
     {
       title: "SEO",
       icon: "bi bi-google",

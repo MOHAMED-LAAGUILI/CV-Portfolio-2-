@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "Welcome to my personal portfolio website! It showcases my skills, achievements, and projects as a Full Stack Web Developer. This site highlights my technical expertise and offers an overview of the services I provide. It also provides easy access to my contact details.",
   "main": "index.js",
- "scripts": {
-  "sass:build": "sass assets/styles/scss/main.scss assets/styles/css/main.css --style=compressed",
-  "sass:watch": "sass --watch assets/styles/scss/main.scss:assets/styles/css/main.css --style=expanded"
-}
-
-,
+  "type": "module",
+  "scripts": {
+    "sass:build": "sass assets/styles/scss/main.scss assets/styles/css/main.css --style=compressed",
+    "sass:watch": "sass --watch assets/styles/scss/main.scss:assets/styles/css/main.css --style=expanded",
+    "js:build": "esbuild assets/scripts/js/main.js --bundle --minify --outfile=assets/scripts/main.js",
+    "js:watch": "esbuild assets/scripts/js/main.js --bundle --minify --outfile=assets/scripts/main.js --watch",
+    "lint:js": "eslint assets/scripts/js/*.js",
+    "lint:html": "eslint /*.html",
+    "lint": "npm run lint:js && npm run lint:html",
+    "prepare": "husky install"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MOHAMED-LAAGUILI/Portfolio-2020.git"
@@ -16,12 +21,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/MOHAMED-LAAGUILI/Portfolio-2020/issues"
   },
   "homepage": "https://github.com/MOHAMED-LAAGUILI/Portfolio-2020#readme",
   "devDependencies": {
+    "esbuild": "^0.25.2",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-html": "^8.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "prettier": "^3.5.3",
     "sass": "^1.86.3"
   }
 }

@@ -1,0 +1,29 @@
+{
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"  // Add Prettier configuration
+    ],
+    "plugins": [
+      "html",
+      "prettier"  // Add Prettier plugin
+    ],
+    "rules": {
+      "no-unused-vars": "warn",
+      "no-console": "off",
+      "prettier/prettier": "error"  // Ensure code is formatted correctly with Prettier
+    },
+    "overrides": [
+      {
+        "files": ["*.html"],
+        "rules": {
+          "no-undef": "off"  // Ignore undefined variables in HTML files
+        }
+      }
+    ]
+  }
+  

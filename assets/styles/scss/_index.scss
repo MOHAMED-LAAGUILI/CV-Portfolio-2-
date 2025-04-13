@@ -1,22 +1,25 @@
+// Global Styles
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat, sans-serif !important;
+  font-family: $font-primary !important;
 }
+
 :root {
-  --primary: linear-gradient(45deg, #7002ee, #c174f5);
-  --secondary: #4d01a5;
-  --primary-soft: #c174f5;
+  --primary: $primary;
+  --secondary: $secondary;
+  --primary-soft: $primary-soft;
 }
+
 body,
 html {
-  color: #000;
+  color: $black;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  cursor: url("https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/32x32"),
-    auto;
+  cursor: url("https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/32x32"), auto;
 }
+
 a {
   color: var(--primary);
   text-decoration: none;
@@ -25,23 +28,21 @@ a:hover {
   color: var(--primary);
   text-decoration: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Open Sans", sans-serif;
+
+// Heading Styles
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
 }
+
 .back-to-top {
-  border: 2px solid white;
+  border: 2px solid $white;
   position: fixed;
   visibility: hidden;
   opacity: 0;
   right: 30px !important;
   bottom: 30px !important;
   z-index: 9997;
-  background: linear-gradient(45deg, var(--primary), var(--primary-soft));
+  background: $primary;
   width: 50px !important;
   height: 50px !important;
   border-radius: 50px;
@@ -49,27 +50,31 @@ h6 {
 }
 .back-to-top i {
   font-size: 45px !important;
-  color: #fff;
+  color: $white;
   line-height: 0;
   padding: 40px;
 }
 .back-to-top:hover {
-  background: linear-gradient(45deg, var(--primary), var(--primary-soft));
-  color: #fff;
+  background: $primary;
+  color: $white;
 }
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
 }
+
+// Media Queries and Other Styles
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
+
 section {
   padding: 60px 0;
   overflow: hidden;
 }
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
@@ -99,10 +104,14 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: var(--primary);
+  background: $primary;
   bottom: 0;
   left: calc(50% - 20px);
 }
+
+// More styles follow...
+
+
 .section-title p {
   margin-bottom: 0;
 }
