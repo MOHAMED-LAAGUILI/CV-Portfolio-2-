@@ -2,10 +2,10 @@
   --cursor-size: 40px;
   --cursor-ring-size: 60px;
   --flare-size: 12px;
-  --cursor-color: #7002ee;
-  --cursor-ring-color: rgba(119, 0, 255, 0.4);
-  --flare-color: rgba(112, 2, 238, 0.7);
-  --cursor-shadow: rgba(112, 2, 238, 0.5);
+  --cursor-color: #ffffff;
+  --cursor-ring-color: rgba(255, 255, 255, 0.4);
+  --flare-color: rgba(255, 255, 255, 0.7);
+  --cursor-shadow: rgba(255, 255, 255, 0.5);
   --transition-duration: 0.3s;
   --flare-transition-duration: 0.3s;
   --flare-opacity-duration: 0.3s;
@@ -13,7 +13,7 @@
 .cursor {
   position: absolute;
   z-index: 9;
-  background-color: var(--cursor-color, #fff);
+  background-color: var(--cursor-color, #ffffff);
   width: var(--cursor-size);
   height: var(--cursor-size);
   border-radius: 50%;

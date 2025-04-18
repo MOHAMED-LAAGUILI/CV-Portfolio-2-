@@ -3,7 +3,7 @@ const navItems = [
   {
     href: "#hero",
     icon: "https://res.cloudinary.com/djmafhmnw/image/upload/f_auto,q_auto/v1/Portfolio/512x512",
-    label: "Home",
+    label: "Hero",
     isImage: true,
   },
   { 

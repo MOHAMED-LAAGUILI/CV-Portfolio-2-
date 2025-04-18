@@ -162,16 +162,6 @@ const skillGroups = [
         description: "A free, open-source code editor by Microsoft with support for multiple programming languages.",
       },
       {
-        name: "Vercel",
-        logo: "https://pipedream.com/s.v0/app_XaLh2x/logo/orig",
-        description: "Deploy web apps instantly with a global edge network and seamless developer experience.",        
-      },
-      {
-        name: "Windsurf",
-        logo: "https://exafunction.github.io/public/images/ides/windsurf-logo.svg",
-        description: "A free, open-source code editor by Codeium with support for multiple programming languages.",
-      },
-      {
         name: "PHPStorm",
         logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/PhpStorm_Icon.svg/2048px-PhpStorm_Icon.svg.png",
         description: "A powerful IDE for PHP development, providing advanced code editing and debugging features.",

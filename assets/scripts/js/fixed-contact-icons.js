@@ -1,7 +1,7 @@
 // Array of contact icon objects with their attributes
 const contactIcons = [
     {
-      className: "phone-icon",
+      className: "phone-icon floating",
       linkHref: "tel:+212689770809",
       linkClass: "cell-phone",
       content: '<i class="bi bi-phone"></i>',
@@ -11,7 +11,7 @@ const contactIcons = [
       imgTitle: null,
     },
     {
-      className: "whatsapp-icon",
+      className: "whatsapp-icon floating",
       linkHref: "https://wa.me/212689770809", // Corrected to WhatsApp link
       linkClass: null,
       content: null,
@@ -21,7 +21,7 @@ const contactIcons = [
       imgTitle: "whatsapp logo",
     },
     {
-      className: "coffee-icon",
+      className: "coffee-icon floating",
       linkHref: "https://www.buymeacoffee.com/mohamedlaaguili", // Corrected to Buy Me a Coffee link
       linkClass: null,
       content: null,

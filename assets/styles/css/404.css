@@ -4,12 +4,17 @@
   --primary-soft: #c174f5;
   --white: white;
   --shadow: rgba(0, 0, 0, 0.1);
+  --text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+  --glow: 0 0 10px rgba(112, 2, 238, 0.5),
+         0 0 20px rgba(112, 2, 238, 0.3),
+         0 0 30px rgba(112, 2, 238, 0.2);
 }
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: var(--white);
-  color: #333;
+  background-color: #0a0a0a;
+  color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,6 +23,7 @@ body {
   overflow: hidden;
   transition: background-color 0.5s ease-in-out;
 }
+
 #starsCanvas {
   position: fixed;
   top: 0;
@@ -28,90 +34,137 @@ body {
   background-size: cover;
   transition: opacity 0.3s ease;
 }
+
 .error-page {
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
   z-index: 10;
   position: relative;
   animation: fadeIn 1.5s ease-in-out;
+  backdrop-filter: blur(0px);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 600px;
+  margin: 0 20px;
 }
+
 .error-page h1 {
   display: flex;
   justify-content: center;
-  font-size: clamp(80px, 10vw, 150px);
+  gap: 0.5rem;
+  font-size: clamp(100px, 15vw, 180px);
   color: var(--white);
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 5px var(--shadow);
+  margin: 0 0 1.5rem;
+  text-shadow: var(--text-shadow);
+  font-weight: 900;
+  letter-spacing: -2px;
 }
+
 .digit {
   opacity: 0;
-  transform: scale(0.5);
-  animation: fadeInScale 1.5s ease-in-out forwards;
+  transform: scale(0.5) translateY(50px);
+  animation: fadeInScale 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  display: inline-block;
+  line-height: 1;
+  text-shadow: var(--glow);
+  position: relative;
 }
-.digit:nth-child(1) {
-  animation-delay: 0s;
+
+.digit:nth-child(1) { animation-delay: 0.2s; }
+.digit:nth-child(2) { animation-delay: 0.4s; }
+.digit:nth-child(3) { animation-delay: 0.6s; }
+
+.error-page p {
+  font-size: clamp(18px, 2.5vw, 24px);
+  margin: 0 0 2rem;
+  color: var(--white);
+  text-shadow: var(--text-shadow);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 1s;
+  font-weight: 300;
+  line-height: 1.6;
 }
-.digit:nth-child(2) {
-  animation-delay: 0.2s;
+
+.error-page a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--glow);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 1.2s;
 }
-.digit:nth-child(3) {
-  animation-delay: 0.4s;
+
+.error-page a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(112, 2, 238, 0.6);
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
 }
+
+.error-page a:active {
+  transform: translateY(0);
+}
+
 @keyframes fadeInScale {
   0% {
     opacity: 0;
-    transform: scale(0.5);
+    transform: scale(0.5) translateY(50px);
+  }
+  60% {
+    transform: scale(1.1) translateY(-10px);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
-.error-page p {
-  font-size: clamp(16px, 2vw, 24px);
-  margin-bottom: 20px;
-  color: var(--white);
-  text-shadow: 1px 1px 3px var(--shadow);
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.error-page a {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-  border: 1px solid #000;
-  border-radius: 5px;
-  background-color: var(--primary);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 50px;
-  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
-}
-.error-page a:hover {
-  box-shadow: 2px 2px 5px var(--primary);
-  font-weight: 600;
-  color: #000;
-  background-color: #fff;
-  border-color: #000;
-}
+
 @media (max-width: 480px) {
+  .error-page {
+    padding: 1.5rem;
+  }
+  
   .error-page h1 {
-    font-size: 80px;
+    font-size: clamp(80px, 20vw, 120px);
   }
-  .error-page p {
-    font-size: 14px;
-  }
+  
   .error-page a {
-    font-size: 14px;
-    padding: 8px 20px;
+    padding: 0.8rem 1.5rem;
   }
 }

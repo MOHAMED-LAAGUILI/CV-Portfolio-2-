@@ -3,6 +3,7 @@ const cursor = document.getElementById("cursor"),
   body = document.querySelector("body"),
   heroSection = document.querySelector(".hero"),
   footerSection = document.querySelector("#footer");
+  page404 = document.querySelector("#page-404");
 let cursorFlareTimeout,
   cursorColor = localStorage.getItem("cursorColor") || "#7002ee",
   ringColor = localStorage.getItem("cursorRingColor") || "rgb(255, 255, 255)",
@@ -51,7 +52,8 @@ updateCursorColors(cursorColor, ringColor, flareColor),
       (cursorRing.style.top = o + "px"),
       createCursorFlare(r, o),
       (heroSection && isCursorInSection(e, heroSection)) ||
-      (footerSection && isCursorInSection(e, footerSection))
+      (footerSection && isCursorInSection(e, footerSection) ||
+      page404 && isCursorInSection(e, page404))
         ? (updateCursorColors(
             "#ffffff",
             "rgb(255, 255, 255)",
