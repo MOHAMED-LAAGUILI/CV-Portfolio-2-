@@ -1,42 +1,46 @@
 /* eslint-disable no-unused-vars */
-const staticCacheName = "pwa-v2";
-self.addEventListener("install", function (event) {
+const staticCacheName = 'pwa-v4'
+self.addEventListener('install', function (event) {
   event.waitUntil(
-    caches.open("pwa-v2").then(function (cache) {
+    caches.open('pwa-v4').then(function (cache) {
       const resourcesToCache = [
-        "./",
-        "/index.html",
-        "/404.html",
-        
+        './',
+        '/index.html',
+        '/404.html',
+
         // External resources
-        "https://unpkg.com/aos@2.3.1/dist/aos.css",
-        "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css",
-        "https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css",
-        "https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.css",
-            // Local CSS files
-            "/assets/styles/css/main.css",
-            
-        "https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js",
-        "https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js",
-        "https://unpkg.com/aos@2.3.1/dist/aos.js",
-        "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",
-        "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js",
-        "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js",
-        "https://cdn.jsdelivr.net/npm/sweetalert2@11",
-          // Local JS files
-          "/assets/scripts/main.js",
-      ];
+        'https://unpkg.com/aos@2.3.1/dist/aos.css',
+        'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css',
+        'https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css',
+        'https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.css',
+        // Local CSS files
+        '/assets/styles/css/main.css',
+        '/assets/styles/css/404-cursor.css',
+        './assets/styles/css/404.css',
+
+        'https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js',
+        'https://unpkg.com/aos@2.3.1/dist/aos.js',
+        'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js',
+        'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js',
+        'https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js',
+        'https://cdn.jsdelivr.net/npm/sweetalert2@11',
+        // Local JS files
+        '/assets/scripts/main.js',
+        '/assets/scripts/404-stars-bg.js',
+
+      ]
       return (
-        console.log("Caching resources:", resourcesToCache),
+        console.log('Caching resources:', resourcesToCache),
         cache.addAll(resourcesToCache).catch(function (error) {
-          console.error("Failed to add resources to cache:", error);
+          console.error('Failed to add resources to cache:', error)
         })
-      );
+      )
     })
-  );
+  )
 }),
-  self.addEventListener("fetch", function (event) {
-    event.request.url.startsWith("chrome-extension://") ||
+  self.addEventListener('fetch', function (event) {
+    event.request.url.startsWith('chrome-extension://') ||
       event.respondWith(
         caches
           .match(event.request)
@@ -44,30 +48,30 @@ self.addEventListener("install", function (event) {
             return (
               cachedResponse ||
               fetch(event.request).then(function (networkResponse) {
-                return caches.open("pwa-v2").then(function (cache) {
+                return caches.open('pwa-v4').then(function (cache) {
                   return (
                     cache.put(event.request, networkResponse.clone()),
                     networkResponse
-                  );
-                });
+                  )
+                })
               })
-            );
+            )
           })
           .catch(function () {
-            return caches.match("/index.html");
+            return caches.match('/index.html')
           })
-      );
+      )
   }),
-  self.addEventListener("activate", function (event) {
-    const cacheWhitelist = ["pwa-v2"];
+  self.addEventListener('activate', function (event) {
+    const cacheWhitelist = ['pwa-v2']
     event.waitUntil(
       caches.keys().then(function (cacheNames) {
         return Promise.all(
           cacheNames.map(function (cacheName) {
             if (!cacheWhitelist.includes(cacheName))
-              return caches.delete(cacheName);
+              return caches.delete(cacheName)
           })
-        );
+        )
       })
-    );
-  });
+    )
+  })
